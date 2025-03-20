@@ -1,0 +1,121 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+$fa-font: 'Font Awesome 5 Free';
+
+$device-mins: (
+    "sm": 600px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px
+);
+
+$device-maxes: (
+    "xs": 600px,
+    "sm": 768px,
+    "md": 992px,
+    "lg": 1200px
+);
+
+@function device-min($sizeKey) {
+    @return map-get($device-mins, $sizeKey);
+}
+
+@function device-max($sizeKey) {
+    @return map-get($device-maxes, $sizeKey);
+}
+
+.flex {
+    display: flex;
+    &-row {
+        flex-direction: row;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+    &-column {
+        flex-direction: column;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    &-center {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.block {
+    display: block;
+}
+
+$colors: (
+    "blue": #1E6F9F,
+    "white": #FFF,
+    "icon": #808080,
+    "light-gray": #444,
+    "bg": #0c0711,
+    "checkbox": #4EA8DE,
+    "text": #0D0D0D
+);
+
+@function theme-color($color) {
+    @return map-get($colors, $color);
+}
+
+.text {
+    @each $key, $value in $colors {
+        &-#{$key} {
+            color: $value;
+            &-transparent {
+                color: rgba($value, 0);
+            }
+        }
+        &-hover-#{$key} {
+            &:hover {
+                color: $value;
+                &-transparent {
+                    color: rgba($value, 0);
+                }
+            }
+        }
+    }
+}
+
+.bg {
+    @each $key, $value in $colors {
+        &-#{$key} {
+            background-color: $value;
+            &-transparent {
+                background-color: rgba($value, 0);
+            }
+        }
+        &-hover-#{$key} {
+            &:hover {
+                background-color: $value;
+                &-transparent {
+                    background-color: rgba($value, 0);
+                }
+            }
+        }
+    }
+}
+
+.fs {
+    &-inherit {
+        font-size: inherit;
+    }
+}
+
+.space-infront {
+    margin-left: 1rem;
+}
+.space-above {
+    margin-top: 1rem;
+}

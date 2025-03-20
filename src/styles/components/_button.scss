@@ -1,0 +1,8 @@
+.button {
+  border: none;
+  cursor: pointer;
+  &-text {
+    font-weight: bold;
+    color: inherit;
+  }
+}

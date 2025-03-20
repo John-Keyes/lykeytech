@@ -1,0 +1,40 @@
+# Installing node and setting it as the base image for instructions that follow.
+FROM node:16.14.0-alpine as base
+
+RUN apk update
+RUN apk add "alpine>=1.2.12-r2"
+RUN apk add git
+
+ARG MODE
+ENV MODE ${MODE}
+
+WORKDIR /app
+
+COPY package.json .
+COPY next.config.js .
+COPY next-env.d.ts .
+COPY tsconfig.json .
+COPY .env .
+COPY src ./src
+COPY public ./public
+COPY cypress ./cypress
+COPY .next ./.next
+RUN npm install
+
+RUN mkdir -p /usr/local/bin
+COPY ./tools/docker/scripts/docker-modes.sh /usr/local/bin/docker-modes.sh
+RUN chmod +x /usr/local/bin/docker-modes.sh
+
+#Dev
+FROM base as dev
+
+WORKDIR /app
+
+CMD /usr/local/bin/docker-modes.sh app $MODE
+
+#build
+FROM base as build
+
+WORKDIR /app
+
+RUN npm run build

@@ -1,0 +1,20 @@
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "@fortawesome/fontawesome-free/scss/v4-shims";
+
+@import "base/general";
+@import "base/main";
+
+@import "components/border";
+@import "components/button";
+@import "components/footer";
+@import "components/form";
+@import "components/header";
+@import "components/loading";
+@import "components/page-error";
+
+@import "pages/home";
+@import "pages/resume";
+

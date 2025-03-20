@@ -1,0 +1,64 @@
+
+.border {
+  border: 1px solid theme-color("white");
+  &-bottom {
+    border-bottom-style: solid;
+    @for $i from 1 through 9 {
+      &-#{$i} {
+        border-bottom-width: $i + px;
+      }
+    }
+    @each $key, $value in $colors {
+      &-#{$key} {
+        border-bottom-color: $value;
+      }
+    }
+  }
+  &-top {
+    border-top-style: solid;
+    @for $i from 1 through 9 {
+      &-#{$i} {
+        border-top-width: $i + px;
+      }
+    }
+    @each $key, $value in $colors {
+      &-#{$key} {
+        border-top-color: $value;
+      }
+    }
+  }
+  &-left {
+    border-left-style: solid;
+    @for $i from 1 through 9 {
+      &-#{$i} {
+        border-left-width: $i + px;
+      }
+    }
+    @each $key, $value in $colors {
+      &-#{$key} {
+        border-left-color: $value;
+      }
+    }
+  }
+  &-right {
+    border-right-style: solid;
+    @for $i from 1 through 9 {
+      &-#{$i} {
+        border-right-width: $i + px;
+      }
+    }
+    @each $key, $value in $colors {
+      &-#{$key} {
+        border-right-color: $value;
+      }
+    }
+  }
+}
+.rounded {
+  &-sm {
+    border-radius: 0.75rem;
+  }
+  &-md {
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,32 @@
+@mixin common-root-attributes {
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+}
+#bottom-nav-root {
+    background-color: theme-color("darker-bg");
+    @include common-root-attributes;
+    @media screen and (max-width: device-max("md")) {
+        display: none;
+    }
+}
+
+#bottom-nav-root-mobile {
+    background-color: theme-color("darker-bg");
+    @include common-root-attributes;
+    height: 65px;
+    @media screen and (min-width: device-min("lg")) {
+        display: none;
+    }
+}
+
+#mobile-footer {
+    padding:0;
+    list-style-type: none;
+    height: 100%;
+    justify-content: space-around;
+}
+.space-infront {
+    margin-left: 1rem;
+}
