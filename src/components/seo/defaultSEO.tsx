@@ -5,8 +5,8 @@ import getConfig from 'next/config';
 const {publicRuntimeConfig: {clientUrl}} = getConfig();
 
 //const THUMBNAIL = ".png";
-const DEFAULT_TITLE = "YKey – Tech partner who can built web and mobile apps";
-const DEFAULT_DESCRIPTION = "YKey.";
+const DEFAULT_TITLE = "LyKey – Tech partner who can built web and mobile apps";
+const DEFAULT_DESCRIPTION = "LyKey";
 /*const KEYWORDS= ["LyKey", "Software,Development", "Engineering", "Software Engineering", "Software Developer", "Software Development", 
 	"LyKeyTech", "LyKey", "Tech", "Web Developer", "Web Development", "Mobile Development", "Mobile Developer", "Application", 
 	"Application Development", "App", "Developer", "Web", "Mobile", "Computer Science", "Bachelor of Science", "Computer", "Science"

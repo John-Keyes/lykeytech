@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: theme-color("white");
+    //background-color: theme-color("white");
     color: theme-color("text");
     font-family: Inter;
     -webkit-font-smoothing: antialiased;
@@ -46,8 +46,7 @@ body {
     cursor: pointer;
   }
   a, .a {
-    text-decoration: none;  
-    color: #fff;
+    text-decoration: none;
     font-weight: 700;
     cursor: pointer;
   }

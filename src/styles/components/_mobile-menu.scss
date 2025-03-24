@@ -1,0 +1,37 @@
+#mobile-menu-container {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+}
+#mobile-menu-top {
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@keyframes slideInLeft {
+    
+}
+
+#mobile-menu-list {
+    
+}
+
+.mobile-menu-list-item {
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#mobile-menu-logo {
+    height: 50px;
+    width: 50px;
+    //width: 240px;
+    &-container {
+
+    }
+
+}

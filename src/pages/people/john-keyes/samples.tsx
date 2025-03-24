@@ -78,7 +78,6 @@ const Samples: NextPage = () => (
                                               <Link href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
                                                   {"Sass"}
                                               </Link>
-                  
                                           </p></li>
                                           </ul>
                                     </SubTitle>

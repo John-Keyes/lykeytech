@@ -76,6 +76,9 @@ $colors: (
             &-transparent {
                 color: rgba($value, 0);
             }
+            &-half {
+                color: rgba($value, 0.5);
+            }
         }
         &-hover-#{$key} {
             &:hover {

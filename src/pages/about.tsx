@@ -10,9 +10,17 @@ const About: NextPage = () => (
                 <Title className="text-color2" text="About" />
                     <SubTitle id="overview" text="Overview">
                         <p className="p">
-                            LyKeyTech is
+                            LyKeyTech helps clients with their needs concerning web and mobile applications.
                         </p>
                         </SubTitle>
+                        <SubTitle id="our-services" text="Our Services">
+                            <p className="p">
+                                We 
+                            </p>
+                            <p className="p">
+                                LyKeyTech
+                            </p>
+                    </SubTitle>
                     <SubTitle id="our-goals" text="Our Goals">
                             <p className="p">
                                 Our goal is to provide quality 

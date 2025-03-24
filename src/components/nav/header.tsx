@@ -25,15 +25,19 @@ const Header = () => {
         return <></>;
     }
     return (
-            <div ref={topNavRoot} id="top-nav-root" className={`flex fit-width ${(atTop && (!pathname.includes("about"))) ? "bg-bg-transparent": "bg-bg"}`}>
+            <div ref={topNavRoot} id="top-nav-root" className={`flex fit-width ${atTop ? "bg-bg-half": "bg-bg"}`}>
                 <nav id="top-nav" className="flex fit-width content-container">
                     <Link id="header-logo-container" href="/">
                         <Image alt="Logo" src={Logo} className="logo"/>
                     </Link>
                     <div className="route-container-not-signin flex">
-                        <Link className="route text-hover-color1" href="/portfolio/samples">Samples</Link>
-                        <Link className="route text-hover-color2" href="/about">About</Link>
-                        <Link className="route text-hover-color3" href="/contact">Contact</Link>
+                    <Link className="route text-hover-color2" href="/">Home</Link>
+                    <PopMenu trigger={<Link className="route text-white text-hover-color1" href="/people">Samples</Link>}>
+                        <Link className="route text-white text-hover-color1" href="/people/john-keyes">John Keyes</Link>
+                    </PopMenu>
+                    <Link className="route text-white text-hover-color1" href="/samples">Samples</Link>
+                        
+                    <Link className="route text-hover-color2" href="/about">About</Link>
                     </div>
                 </nav>
             </div>

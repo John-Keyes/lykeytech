@@ -1,4 +1,4 @@
-import React, { ComponentProps, ReactNode } from 'react';
+import React, { ComponentProps, ReactNode, useState } from 'react';
 import { WriteClipBoard } from '../../lib/helpers/browser';
 
 interface SubTitlePropsType extends ComponentProps<"h2"> { 
@@ -9,10 +9,11 @@ interface SubTitlePropsType extends ComponentProps<"h2"> {
 
 const SubTitle = (props : SubTitlePropsType) => {
     const {id, children, text, className} = props;
+    const [h2Enter, seth2Enter] = useState<boolean>(false);
     return (
         <>
-            <h2 {...props} className={`flex ${className}`}>
-                <span id={`${id}-paperclip`} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className="fa-solid sub-title-link-align fa-paperclip cursor-pointer"/>
+            <h2 {...props} className={`flex cursor-pointer ${className}`} onMouseEnter={() => seth2Enter(true)} onMouseLeave={() => seth2Enter(false)}>
+                {h2Enter && <span id={`${id}-paperclip`} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className="fa-solid sub-title-link-align cursor-pointer fa-copy"/>}
                 <span id={`${id}-text`} className="sub-title">{text}</span>
             </h2>
             {children && (

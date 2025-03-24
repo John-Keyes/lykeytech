@@ -23,10 +23,10 @@ const Resume: NextPage = () => (
             </div>
             <div>
                 <ul>
-                <li><p className="resume-p"><a href="https://www.lykeytech.com" target="_blank" rel="noopener noreferrer">Website</a></p></li>
-                    <li><p className="resume-p"><a href="https://github.com/John-Keyes" target="_blank" rel="noopener noreferrer">Github</a></p></li>
-                    <li><p className="resume-p"><a href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p></li>
-                    <li><p className="resume-p"><a href="https://cmscritic.com/" target="_blank" rel="noopener noreferrer">Work example in a team</a></p></li>
+                <li><p className="resume-p"><a href="https://www.lykeytech.com" className="text-white" target="_blank" rel="noopener noreferrer">Website</a></p></li>
+                    <li><p className="resume-p"><a href="https://github.com/John-Keyes" className="text-white" target="_blank" rel="noopener noreferrer">Github</a></p></li>
+                    <li><p className="resume-p"><a href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" className="text-white" target="_blank" rel="noopener noreferrer">LinkedIn</a></p></li>
+                    <li><p className="resume-p"><a href="https://cmscritic.com/" className="text-white" target="_blank" rel="noopener noreferrer">Work example in a team</a></p></li>
                 </ul>
             </div>
         </div>
