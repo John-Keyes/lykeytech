@@ -7,7 +7,7 @@ import Button from 'src/components/button';
 
 const About: NextPage = () => (
         <div className="flex flex-column content-container">
-                <Title className="text-color2" text="About" />
+                <Title className="text-bg" text="About" />
                     <SubTitle id="overview" text="Overview">
                         <p className="p">
                             LyKeyTech helps clients with their needs concerning web and mobile applications.

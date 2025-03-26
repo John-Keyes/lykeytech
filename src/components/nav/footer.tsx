@@ -13,9 +13,9 @@ const Footer = () => {
     return (
         <>
             <div id="bottom-nav-root">
-                <p className="p flex content-container">
-                    Contact Me:  
-                    <Link href="mailto:john.keyes@lykey.com">
+                <div className="flex content-container">
+                    <span className="text-white">Contact Me:</span>
+                    <Link className="space-infront" href="mailto:john.keyes@lykey.com">
                         <span className="fa-solid fa-envelope text-white text-hover-color1"/>
                     </Link>
                     <Link className="space-infront" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">
@@ -27,7 +27,7 @@ const Footer = () => {
                     <span className="text-white space-infront">
                         &copy; 2025 LyKeyTech LLC
                     </span>
-                </p>
+                </div>
             </div>
             <div id="bottom-nav-root-mobile">
                 <ul id="mobile-footer" className="flex">

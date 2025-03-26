@@ -1,6 +1,6 @@
 
 .border {
-  border: 1px solid theme-color("white");
+  border: 1px solid theme-color("bg");
   &-bottom {
     border-bottom-style: solid;
     @for $i from 1 through 9 {

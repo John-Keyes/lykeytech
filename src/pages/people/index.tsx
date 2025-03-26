@@ -7,7 +7,7 @@ import Button from 'src/components/button';
 
 const People: NextPage = () => (
         <div className="flex flex-column content-container">
-                <Title className="text-color2" text="People" />
+                <Title className="text-bg" text="People" />
                     <SubTitle id="john-keyes" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" className="text-blue" target="_blank" rel="noopener noreferrer">John Keyes</Link>}>
                         <p className="p">
                             John Keyes is the Owner of LyKeyTech, he is an application developer
