@@ -5,8 +5,8 @@ import getConfig from 'next/config';
 const {publicRuntimeConfig: {clientUrl}} = getConfig();
 
 //const THUMBNAIL = ".png";
-const DEFAULT_TITLE = "LyKey – Tech partner who can built web and mobile apps";
-const DEFAULT_DESCRIPTION = "LyKey";
+const DEFAULT_TITLE = "LyKeyTech – Tech partner who can built web and mobile apps";
+const DEFAULT_DESCRIPTION = "LyKeyTech";
 /*const KEYWORDS= ["LyKey", "Software,Development", "Engineering", "Software Engineering", "Software Developer", "Software Development", 
 	"LyKeyTech", "LyKey", "Tech", "Web Developer", "Web Development", "Mobile Development", "Mobile Developer", "Application", 
 	"Application Development", "App", "Developer", "Web", "Mobile", "Computer Science", "Bachelor of Science", "Computer", "Science"
@@ -41,34 +41,34 @@ const DefaultSEO = () => {
 				additionalLinkTags={[
 					{
 						rel: "shortcut-icon",
-						href: `${clientUrl}/images/meta/favicon.ico`,
+						href: `/images/meta/favicon.ico`,
 						type: "image/x-icon"
 					},
 					{
 						rel: "icon",
 						type: "image/png",
 						sizes: "16x16",
-						href: `${clientUrl}/images/meta/favicon-16x16.png`,
+						href: `/images/meta/favicon-16x16.png`,
 					},
 					{
 						rel: "icon",
 						type: "image/png",
 						sizes: "32x32",
-						href: `${clientUrl}/images/meta/favicon-32x32.png`,
+						href: `/images/meta/favicon-32x32.png`,
 					},
 					{
 						rel: "apple-touch-icon",
 						type: "image/png",
 						sizes: "180x180",
-						href: `${clientUrl}/images/meta/apple-touch-icon.png`,
+						href: `/images/meta/apple-touch-icon.png`,
 					},
 					{
 						rel: "manifest",
-						href: `${clientUrl}/site.webmanifest`,
+						href: `/site.webmanifest`,
 					},
 					{
 						rel: "mask-icon",
-						href: `${clientUrl}/images/meta/safari-pinned-tab.svg`,
+						href: `/images/meta/safari-pinned-tab.svg`,
 						color: "#000000",
 					},
 				]}

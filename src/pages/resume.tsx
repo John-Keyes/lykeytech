@@ -53,7 +53,7 @@ const Resume: NextPage = () => (
                     <li><p className="resume-p">Linux / UNIX</p></li>
                     <li><p className="resume-p">HTML</p></li>
                     <li><p className="resume-p">CSS, SCSS, Bootstrap</p></li>
-                    <li><p className="resume-p">OOP: JavaScript, TypeScript, Java, C#</p></li>
+                    <li><p className="resume-p">OOP: JavaScript, TypeScript, Java, C#, Python</p></li>
                     <li><p className="resume-p">.NET Core</p></li>
                     <li><p className="resume-p">Node</p></li>
                     <li><p className="resume-p">RDMS: MySQL</p></li>
@@ -245,22 +245,6 @@ const Resume: NextPage = () => (
                 </div>
             </div>
         </div>
-        {/*<div className="resume-body-section">
-            <div className="resume-body-section-title-container">
-                <h2 className="resume-body-section-title">Related Projects</h2>
-            </div>
-            <div className="resume-body-section-body">
-                <div className="resume-body-section-body-item-body-container">
-                    <div className="resume-body-section-body-item-title-container">
-                        <h3>SIC and SICXE Assembler</h3>
-                    </div>
-                    <ul className="resume-body-section-body-item_list">
-                        <li><p className="resume-p">This program assembled SIC assembly to an object file.</p></li>
-                        <li><p className="resume-p">I used C language.</p></li>
-                    </ul>
-                </div>
-            </div>
-</div>*/}
         
 	</div>
 </div>

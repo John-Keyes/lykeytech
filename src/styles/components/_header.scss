@@ -15,7 +15,12 @@
         }
     }
 }
-
+#mobile-menu-visibility {
+    display: flex;
+    @media screen and (min-width: device-min("lg")) {
+        display: none;
+    }
+}
 
 .dropdown-route {
     margin-left: 0.5rem;

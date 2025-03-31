@@ -3,6 +3,7 @@
     z-index: 3;
     top: 0;
     right: 0;
+    transition: left 0.3s ease-in-out;
 }
 #mobile-menu-top {
     font-size: 16px;
@@ -12,26 +13,14 @@
     padding-right: 1rem;
 }
 
-@keyframes slideInLeft {
-    
-}
-
-#mobile-menu-list {
-    
-}
+.slide-element.slid {
+    left: -100px; //Adjust value for desired slide distance 
+  }
 
 .mobile-menu-list-item {
-    justify-content: space-between;
+    width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-#mobile-menu-logo {
-    height: 50px;
-    width: 50px;
-    //width: 240px;
-    &-container {
-
-    }
-
+    justify-content:space-between;
+    align-items: center;
 }

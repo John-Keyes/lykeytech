@@ -6,7 +6,7 @@ const Footer = () => {
     const {pathname, replace} = useRouter();
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     //const IsActiveRoute = (optionName: string) => pathname.includes(optionName) ? "bg-white text-darker-bg" : "";
-
+    //john.keyes@lykey.com
     if(pathname == "/resume") {
         return <></>;
     }
@@ -15,7 +15,7 @@ const Footer = () => {
             <div id="bottom-nav-root">
                 <div className="flex content-container">
                     <span className="text-white">Contact Me:</span>
-                    <Link className="space-infront" href="mailto:john.keyes@lykey.com">
+                    <Link className="space-infront" href="mailto:johnschool432@gmail.com">
                         <span className="fa-solid fa-envelope text-white text-hover-color1"/>
                     </Link>
                     <Link className="space-infront" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">

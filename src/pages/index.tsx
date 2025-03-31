@@ -4,43 +4,51 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Title from '../components/layout/title';
 import SubTitle from 'src/components/layout/subTitle';
-import Endorsement from 'src/components/endorsement';
+import Endorsement from 'src/components/layout/endorsement';
+import Button from 'src/components/button';
+import Image from 'next/image';
+import Contact from 'src/components/layout/contact';
 
 const Home: NextPage = () => {
-    const {push, reload} = useRouter();
     return (
-        <div id="home">
-            <div id="welcome-section" className="flex flex-center content-container">                
+            <div className="flex flex-column">
                 {/*<Carousel/>*/}
                 <div className="border border-text carousel"/>
-            </div>
-            <div className="flex flex-column content-container">
-                <Title id="lkeytechllc-title" text="LyKeyTech" className="fit-width text-bg"/>
-                    <SubTitle id="about-lykeytechllc" text="About LKeyTech LLC">
+
+                <div className="content-container content-container-padding">
+                    <Title id="lkeytechllc-title" text="LyKeyTech" className="fit-width text-bg"/>
+                    <Image src="/images/john-keyes-pfp.jpg" alt="John Keyes" width="64" height="64" />
+                    <SubTitle id="about" text="Hello">
+                        <h3>My name is <Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" className="text-blue" target="_blank" rel="noopener noreferrer">John Keyes</Link></h3>
                         <p className="p">
-                            LyKeyTech is I build 
+                            I build web and mobile applications that help fulfill any need. 
+                            I build applications with immersive user experiences and performance efficient applications.
                         </p>
                         <p className="p">
-                            <Link href="/about" className="text-blue" target="_blank" rel="noopener noreferrer">{"Read More >>"}</Link>
+                            <Link href="/resume" className="text-text" target="_blank" rel="noopener noreferrer">Preview Resume</Link>.
                         </p>
+                        <p className="p">
+                            <Button className="join-button rounded-md bg-bg rounded-sm">
+                                <span className="button-text">Download</span>
+                            </Button>
+                        </p>    
                     </SubTitle>
+                </div>
+                <div className="content-container">
                     <SubTitle id="samples" text="Samples">
+                        <h3><Link href="https://github.com/John-Keyes" className="text-blue" target="_blank" rel="noopener noreferrer">Github</Link></h3>
                         <p className="p">
-                            These are projects that th, or in a team with other professionals.
+                            These are samples that I have worked on completely by myself, or in a team.
                         </p>
                         <p className="p">
-                            <Link href="/portfolio/samples" className="text-blue" target="_blank" rel="noopener noreferrer">{"Read More >>"}</Link>
+                            <Link href="/samples" className="text-blue" target="_blank" rel="noopener noreferrer">{"Read More >>"}</Link>
                         </p>
-                    </SubTitle>
-                    <SubTitle id="people" text="People">
-                        <p className="p">
-                            Who is behind this?
-                        </p>
-                        <p className="p">
-                            <Link href="/people" className="text-blue" target="_blank" rel="noopener noreferrer">{"Read More >>"}</Link>
-                        </p>
-                    </SubTitle>    
-                    <SubTitle id="endorsements-received" text="Endorsements Received">
+                        <h3><Link href="https://github.com/John-Keyes" className="text-blue" target="_blank" rel="noopener noreferrer">Work In Teams</Link></h3>
+                    </SubTitle>  
+                </div> 
+                <div className="content-container">
+                    <SubTitle id="endorsements" text="Endorsements Received">
+                        
                         <Endorsement
                             person="Matthew Garrepy"
                             personLink="https://www.linkedin.com/in/mattgarrepy/"
@@ -60,8 +68,9 @@ const Home: NextPage = () => {
                                     asset to any team."
                         />
                     </SubTitle>
+                    </div>
+                    <Contact/>
             </div>
-        </div>
     );
 }
 

@@ -19,7 +19,6 @@ const App = ({Component, pageProps}: AppProps & {pageProps: {[key: string]: any}
 
       <main className="fit-width fit-height">
         <Header/>
-        <Footer/>
         <Component {...pageProps} />
       </main>
     </>
