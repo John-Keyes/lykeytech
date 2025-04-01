@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    //background-color: theme-color("white");
-    color: theme-color("text");
+    background-color: theme-color("gray");
+    color: theme-color("white");
     font-family: Inter;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -68,18 +68,6 @@ body {
     height: 100%;
   }
 
-  .task-text {
-    font-size: 14px;
-  }
-
-  .button-card-radius {
-    border-radius: 8px;
-  }
-
-  .page-padding {
-    padding-top: 250px;
-}
-
 .arrow-link {
   text-align: start;
   width: 100%;
@@ -107,4 +95,41 @@ ul {
   &-link-align {
     padding-top: 15px;
   }
+}
+
+.transition {
+  &-fast {
+    transition: 0.3s;
+  }
+}
+
+#starter-img-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/starter1");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#starter-img-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/starter2");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#starter-img-3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/starter3");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

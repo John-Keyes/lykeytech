@@ -1,19 +1,21 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import React, { ComponentProps, ReactNode, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
+import Button from '../button';
 
 
-const DownloadIcon = () => {
+const DownloadIcon = ({href = "#"}: {href?: string}) => {
     const downloadLink = useRef<HTMLAnchorElement>(null);
-    const HandleSpanClick = () => {
+    const HandleButtonClick = () => {
         downloadLink?.current?.click();
     }
     
     return (
-                <div>
-                    <span className="bg-bg rounded-md text-white fa-solid fa-download" onClick={HandleSpanClick}/>
-                    <Link ref={downloadLink} href="/docs/john_keyes_resume.docx" style={{display: "none"}} download></Link>
-                </div>
+                <>
+                    <Button onClick={HandleButtonClick}>
+                        <span className="text-white fa-solid fa-download" />
+                    </Button>
+                    <Link ref={downloadLink} href={href} style={{display: "none"}} download></Link>
+                </>
     );
 }
 export default DownloadIcon;

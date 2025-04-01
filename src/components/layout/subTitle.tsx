@@ -13,8 +13,8 @@ const SubTitle = (props : SubTitlePropsType) => {
     return (
         <>
             <h2 {...props} className={`flex cursor-pointer ${className}`} onMouseEnter={() => seth2Enter(true)} onMouseLeave={() => seth2Enter(false)}>
-                {h2Enter && <span id={`${id}-copy`} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className="fa-solid sub-title-link-align cursor-pointer fa-copy"/>}
                 <span id={`${id}-text`} className="sub-title">{text}</span>
+                {h2Enter && <span id={`${id}-copy`} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className="fa-solid sub-title-link-align cursor-pointer fa-copy"/>}
             </h2>
             {children && (
                 <section id={`${id}-section-body`}>

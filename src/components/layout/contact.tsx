@@ -2,9 +2,9 @@ import Link from "next/link";
 import SubTitle from "./subTitle";
 
 const Contact = () => (
-                <div className="bg-bg">
+                <div className="bg-dark-purple home-section-padding">
                     <div className="content-container flex-column">
-                        <SubTitle id="contact" text="Get in Touch">
+                        <SubTitle id="contact" className="text-white" text="Contact Me">
                             <span className="text-white">Contact Me:</span>
                             <Link className="space-infront" href="mailto:johnschool432@gmail.com">
                                 <span className="fa-solid fa-envelope text-white text-hover-color1"/>

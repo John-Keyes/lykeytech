@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const PageError = ({statusCode, details}: {statusCode: number, details?: string | undefined}) => {
     return (
-        <div className="page-error rounded-md flex-column flex-center bg-bg">
+        <div className="page-error rounded-md flex-column flex-center bg-dark-purple">
             <h1>{statusCode
           ? `Error ${statusCode} occurred on server`
           : 'An error occurred on client'}</h1>

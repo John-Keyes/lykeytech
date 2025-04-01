@@ -11,8 +11,8 @@ const Title = (props : TitlePropsType) => {
     const [h1Enter, seth1Enter] = useState<boolean>(false);
     return (
         <h1 {...props} onClick={() => WriteClipBoard(window.location.href)} onMouseEnter={() => seth1Enter(true)} onMouseLeave={() => seth1Enter(false)} className={`flex cursor-pointer ${className}`} >
-           {h1Enter && <span id={`${id}-copy`} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className="fa-solid sub-title-link-align cursor-pointer fa-copy"/>}
             <span id={`${id}-text`} className="title">{text}</span>
+            {h1Enter && <span id={`${id}-copy`} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className="fa-solid sub-title-link-align cursor-pointer fa-copy"/>}
         </h1>
     );
 }

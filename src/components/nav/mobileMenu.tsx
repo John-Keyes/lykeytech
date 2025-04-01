@@ -4,32 +4,36 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../../public/images/logo.png';
 
-const MobileMenu = ({menuOpen, setMenuOpen}: {menuOpen: boolean, setMenuOpen: Dispatch<SetStateAction<boolean>>}) => {
+interface MobileMenuType {
+    menuOpen: boolean,
+    setMenuOpen: Dispatch<SetStateAction<boolean>>
+}
+const MobileMenu = (props: MobileMenuType) => {
     return (
-        <div id="mobile-menu-container" className="flex flex-column bg-bg">
+        <div id="mobile-menu-container" className="flex flex-column bg-dark-purple" style={{}}>
             <div id="mobile-menu-top" className="flex flex-row flex-center">
-                <span onClick={() => setMenuOpen(!menuOpen)} className="fa-solid text-white cursor-pointer fa-chevron-left"/>
+                <span onClick={() => props.setMenuOpen(!props.menuOpen)} className="fa-solid text-white cursor-pointer fa-chevron-left"/>
                 <h2 className="text-white">Menu</h2>
             </div>
             <div className="flex flex-column flex-center">
                     <Link className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#about">
                         <span className="fa-solid fa-chevron-left"/>
-                        <h3 className="space-infront">About</h3> 
+                        <h3>About</h3> 
                         <span className="fa-solid fa-address-card"/>
                     </Link>
                     <Link className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#samples">
                         <span className="fa-solid fa-chevron-left"/>
-                        <h3 className="space-infront">Samples</h3>
+                        <h3>Samples</h3>
                         <span className="fa-solid fa-code"/>
                     </Link>
                     <Link className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#endorsements">
                         <span className="fa-solid fa-chevron-left"/>
-                        <h3 className="space-infront">Endorsements</h3>
+                        <h3>Endorsements</h3>
                         <span className="fa-solid fa-handshake"/>
                     </Link>
                     <Link className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#contact">
                         <span className="fa-solid fa-chevron-left"/>
-                        <h3 className="space-infront">Contact</h3>
+                        <h3>Contact</h3>
                         <span className="fa-solid fa-address-book"/>
                     </Link>
             </div>
