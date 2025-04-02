@@ -3,7 +3,6 @@ import {AppProps} from 'next/app';
 import DefaultSEO from 'src/components/seo/defaultSEO';
 import PageSEO from 'src/components/seo/pageSEO';
 import Header from 'src/components/nav/header';
-import Footer from 'src/components/nav/footer';
 import '../styles/_app.scss';
 
 const App = ({Component, pageProps}: AppProps & {pageProps: {[key: string]: any}}) => {

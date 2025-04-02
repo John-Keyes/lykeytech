@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NextPage } from 'next';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-const Resume: NextPage = () => (
+const Resume: NextPage = () => {
+    const {push} = useRouter();
+    useEffect(() => {
+       push("/");
+    }, [])
+    return (
     <div id="resume-root">
 	<div id="resume-side-bar">
         <div className="resume-side-bar-section">
             <div className="resume-side-bar-section-title-container">
-                <h2 className="resume-side-bar-section-title">Contact Me</h2>
+                <h2 className="resume-side-bar-section-title text-white">Contact Me</h2>
             </div>
             <div>
                 <ul>
                     <li><p className="resume-p">Orlando, Florida</p></li>
-                    <li><p className="resume-p">Call: <a href="tel:+14073983915" target="_blank" rel="noopener noreferrer">+1 407-398-3915</a></p></li>
-                    <li><p className="resume-p">Email: <a href="mailto:johnschool432@gmail.com" target="_blank" rel="noopener noreferrer">johnschool432@gmail.com</a></p></li>
+                    <li><p className="resume-p">Call: <a href="tel:+14073983915" className="text-white" target="_blank" rel="noopener noreferrer">+1 407-398-3915</a></p></li>
+                    <li><p className="resume-p">Email: <a href="mailto:johnschool432@gmail.com" className="text-white" target="_blank" rel="noopener noreferrer">johnschool432@gmail.com</a></p></li>
                 </ul>
             </div>
         </div>
@@ -88,11 +94,11 @@ const Resume: NextPage = () => (
             <div className="resume-body-section-body">
             <div className="resume-body-section-body-item">
                     <div className="resume-body-section-body-item-title-container">
-                        <h3><Link href="https://www.playerepic.com/" target="_blank" rel="noopener noreferrer">Player Epic</Link></h3>
+                        <h3><Link href="https://www.playerepic.com/" className="text-white" target="_blank" rel="noopener noreferrer">Player Epic</Link></h3>
                     </div>
                     <div className="resume-body-section-body-item-body-container">
                         <div>
-                            <h4>{"Software Engineer (Part Time and Unpaid)"}</h4>
+                            <h4>{"Software Engineer (Part Time)"}</h4>
                             <p className="resume-p">08/2024 - Present</p>
                         </div>
                         <ul className="resume-body-section-body-item_list">
@@ -111,7 +117,7 @@ const Resume: NextPage = () => (
                 </div>
                 <div className="resume-body-section-body-item">
                     <div className="resume-body-section-body-item-title-container">
-                        <h3><Link href="https://outlier.ai/" target="_blank" rel="noopener noreferrer">Outlier.ai</Link></h3>
+                        <h3><Link href="https://outlier.ai/" className="text-white" target="_blank" rel="noopener noreferrer">Outlier.ai</Link></h3>
                         <p className="resume-p">Address: 398 11th Street San Francisco, CA 94103 United States</p>
                     </div>
                     <div className="resume-body-section-body-item-body-container">
@@ -140,9 +146,9 @@ const Resume: NextPage = () => (
                 </div>
                 <div className="resume-body-section-body-item">
                     <div className="resume-body-section-body-item-title-container">
-                        <h3><a href="https://www.solodev.com/" target="_blank" rel="noopener noreferrer">Solodev</a></h3>
+                        <h3><a href="https://www.solodev.com/" className="text-white" target="_blank" rel="noopener noreferrer">Solodev</a></h3>
                         <p className="resume-p">Address: 800 N Magnolia Ave #1400, Orlando, FL 32803</p>
-                        <p className="resume-p"><Link href="tel:+18008597656" target="_blank" rel="noopener noreferrer">800-859-7656</Link></p>
+                        <p className="resume-p"><Link href="tel:+18008597656" target="_blank" rel="noopener noreferrer" className="text-white">800-859-7656</Link></p>
                     </div>
                     <div className="resume-body-section-body-item-body-container">
                         <div>
@@ -185,9 +191,9 @@ const Resume: NextPage = () => (
                 </div>
                 <div className="resume-body-section-body-item">
                     <div className="resume-body-section-body-item-title-container">
-                        <h3><Link href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">Resilience</Link></h3>
+                        <h3><Link href="https://mylearningtools.org/" className="text-white" target="_blank" rel="noopener noreferrer">Resilience</Link></h3>
                         <p className="resume-p">4103 USF Cedar Cir, 202 Tampa, FL 33620</p>
-                        <p className="resume-p"><Link href="tel:+18138107943" target="_blank" rel="noopener noreferrer">813-810-7943</Link></p>
+                        <p className="resume-p"><Link className="text-white" href="tel:+18138107943" target="_blank" rel="noopener noreferrer">813-810-7943</Link></p>
                     </div>
                     <div className="resume-body-section-body-item-body-container-group">
                         <div className="resume-body-section-body-item-body-container">
@@ -249,6 +255,7 @@ const Resume: NextPage = () => (
 	</div>
 </div>
 );
+};
 
 Resume.getInitialProps = async () => {
     return {

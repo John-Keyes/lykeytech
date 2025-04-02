@@ -6,7 +6,7 @@ interface CardProps extends ComponentProps<"div"> {
 }
 
 const Card = ({children, className, ...props}: CardProps) => (
-    <div className={`card border-icon rounded-md ${className}`} {...props}>
+    <div className={`card ${className}`} {...props}>
         {children}
     </div>
 );

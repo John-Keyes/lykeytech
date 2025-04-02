@@ -1,6 +1,5 @@
 import React, { ComponentProps, ReactNode } from 'react';
 import Link from 'next/link';
-import { NextPage } from 'next';
 import Card from '../card';
 
 interface EndorsementProps extends ComponentProps<"div">{
@@ -12,7 +11,7 @@ interface EndorsementProps extends ComponentProps<"div">{
 
 const Endorsement = ({person, personLink, text, className}: EndorsementProps) => (
     
-                    <Card className={className}>
+                    <Card className={`${className}`}>
                         <h3><Link href={personLink} className="text-white text-hover-dark-blue" target="_blank" rel="noopener noreferrer">{person}</Link></h3>
                         <p className="p">&quot;{text}&quot;</p>
                     </Card>

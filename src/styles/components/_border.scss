@@ -1,5 +1,6 @@
 
 .border {
+  border-style: solid;
   @for $i from 1 through 9 {
     &-#{$i} {
       border-width: $i + px;
@@ -70,5 +71,8 @@
   }
   &-md {
     border-radius: 1rem;
+  }
+  &-pfp {
+    border-radius: 50%;
   }
 }

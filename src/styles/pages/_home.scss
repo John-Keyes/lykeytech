@@ -9,31 +9,23 @@
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
+    &::-webkit-scrollbar {
+        width: 10px;
+        &-track {
+          background-color: theme-color("dark-purple"); 
+          border-radius: 10px;
+        }
+        &-thumb {
+          background: theme-color("light-purple"); 
+          border-radius: 10px;
+          &:hover {
+            background: theme-color("purple"); 
+          }
+        }
+      }
 }
 
 .home-section-padding {
     padding-top: 40px;
     padding-bottom: 40px;
-}
-
-#welcome-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    flex-direction: column;
-    @media screen and (min-width: device-min("lg")) {
-        flex-direction: row;
-    }
-}
-#desc-container {
-    @media screen and (min-width: device-min("lg")) {
-        padding-left: 15rem;
-    }
-}
-#home-h2 {
-    font-size: 2rem;
-    justify-content: center;
-    @media screen and (max-width: device-max("md")) {
-        text-align: center;
-        padding-bottom: 1rem;
-    }
 }

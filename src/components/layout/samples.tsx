@@ -6,9 +6,9 @@ import Card from 'src/components/card';
 
 
 const Samples = () => (
-        <div className="bg-light-gray">
-                <div className="flex flex-column content-container content-container-padding">
-                    <SubTitle id="work-samples" text="Work Samples">
+    <div className="bg-dark-purple home-section-padding border-top border-top-3 border-top-light-purple">
+                <div className="flex flex-column content-container">
+                    <SubTitle id="samples" text="Samples">
                                       <h3 id="github-projects"><Link href="https://github.com/John-Keyes" target="_blank" rel="noopener noreferrer">Github Projects</Link></h3>
                                         <h4>lykey-restapi</h4>
                                         <p className="p">This project shows how to setup authentication and authorization the backend.</p>
