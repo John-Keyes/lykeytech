@@ -36,7 +36,6 @@ const Samples = () => (
                                               <Tag href="https://sass-lang.com/" text="SCSS"/>
                                               <Tag href="https://www.mysql.com/" text="MySQL"/>
                                           </p>
-                                        <Card>
                                     <h3 id="work-in-teams">Work In Teams</h3>
                                       <h4>
                                           <Link href="https://cmscritic.com" target="_blank" rel="noopener noreferrer">
@@ -58,7 +57,6 @@ const Samples = () => (
                                               <Tag href="https://redis.io/" text="Redis"/>
                                               <Tag href="https://sass-lang.com/" text="SCSS"/>
                                           </p>
-                                          </Card>
                                     <h3>MySELENA Application</h3>
                                     <ul>
                                     <li><p className="p">

@@ -1,6 +1,9 @@
 .tag {
-    padding-left: 0.15rem;
-    padding-right: 0.15rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    &-gap {
+        gap: 0.5rem;
+    }
 }

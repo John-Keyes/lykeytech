@@ -1,0 +1,22 @@
+@mixin starter-img {
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#starter-img-1 {
+    background-image: url("/images/starter1");
+    @include starter-img;
+  }
+  #starter-img-2 {
+    background-image: url("/images/starter2");
+    @include starter-img;
+  }
+  #starter-img-3 {
+    background-image: url("/images/starter3");
+    @include starter-img;
+  }

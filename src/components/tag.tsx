@@ -8,7 +8,7 @@ interface TagProps extends ComponentProps<"a"> {
 }
 
 const Tag = (props: TagProps) => {
-    return <Link className={`tag rounded-md border-3 transition-fast border-purple bg-transparent bg-hover-light-purple ${props.className}`} href={props.href}>{props.text}</Link>;
+    return <Link className={`tag rounded-md transition-fast text-white gradient-purple bg-hover-light-purple ${props.className}`} href={props.href}>{props.text}</Link>;
 }
 
 export default Tag;

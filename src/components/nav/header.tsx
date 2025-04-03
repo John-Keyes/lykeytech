@@ -24,11 +24,11 @@ const Header = () => {
     }, [topNavRoot]);*/
     
     if(pathname == "/resume") {
-        return <></>;
+        return <></>;//border-bottom border-bottom-3 border-bottom-light-purple
     }
     //${atTop ? "bg-dark-purple-half": "bg-dark-purple"}
     return (
-            <div ref={topNavRoot} id="top-nav-root" className={`flex fit-width bg-dark-purple border-bottom border-bottom-3 border-bottom-light-purple`}>
+            <div ref={topNavRoot} id="top-nav-root" className={`flex fit-width bg-dark-purple`}>
                 <nav id="top-nav" className="flex fit-width content-container">
                     <Link id="header-logo-container" href="/">
                         <Image alt="Logo" src={logo} className="logo"/>

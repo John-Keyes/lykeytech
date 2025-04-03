@@ -99,33 +99,9 @@ ul {
   }
 }
 
-#starter-img-1 {
-  width: 100%;
-  height: 100%;
-  background-image: url("/images/starter1");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#starter-img-2 {
-  width: 100%;
-  height: 100%;
-  background-image: url("/images/starter2");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#starter-img-3 {
-  width: 100%;
-  height: 100%;
-  background-image: url("/images/starter3");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.gradient {
+  &-purple {
+    background-color: linear-gradient(to left, theme-color("dark-purple"), theme-color("purple"), theme-color("light-purple"))
+  }
+
 }
