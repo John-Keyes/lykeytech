@@ -42,34 +42,34 @@ const DefaultSEO = () => {
 				additionalLinkTags={[
 					{
 						rel: "shortcut-icon",
-						href: `/images/meta/favicon.ico`,
+						href: `${clientUrl}/images/meta/favicon.ico`,
 						type: "image/x-icon"
 					},
 					{
 						rel: "icon",
 						type: "image/png",
 						sizes: "16x16",
-						href: `/images/meta/favicon-16x16.png`,
+						href: `${clientUrl}/images/meta/favicon-16x16.png`,
 					},
 					{
 						rel: "icon",
 						type: "image/png",
 						sizes: "32x32",
-						href: `/images/meta/favicon-32x32.png`,
+						href: `${clientUrl}/images/meta/favicon-32x32.png`,
 					},
 					{
 						rel: "apple-touch-icon",
 						type: "image/png",
 						sizes: "180x180",
-						href: `/images/meta/apple-touch-icon.png`,
+						href: `${clientUrl}/images/meta/apple-touch-icon.png`,
 					},
 					{
 						rel: "manifest",
-						href: `/site.webmanifest`,
+						href: `${clientUrl}/site.webmanifest`,
 					},
 					{
 						rel: "mask-icon",
-						href: `/images/meta/safari-pinned-tab.svg`,
+						href: `${clientUrl}/images/meta/safari-pinned-tab.svg`,
 						color: "#000000",
 					},
 				]}
