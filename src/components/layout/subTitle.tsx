@@ -1,5 +1,5 @@
 import React, { ComponentProps, ReactNode, useState } from 'react';
-import { WriteClipBoard } from '../../lib/helpers/browser';
+import { WriteClipBoard } from '../../lib/browser';
 
 interface SubTitlePropsType extends ComponentProps<"h2"> { 
     children?: ReactNode, 

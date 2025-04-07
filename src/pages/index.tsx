@@ -8,6 +8,7 @@ import PopMenu from 'src/components/popMenu';
 import Card from 'src/components/card';
 import Tag from 'src/components/tag';
 import About from 'src/components/layout/about';
+import { starter1, starter2, starter3, starter4 } from 'src/lib/static';
 
 const Home: NextPage = () => {
     return (
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
                             <h3>Work In Teams</h3>
                             <Card className="bg-text flex flex-row flex-center border-top border-top-5 border-top-light-blue card-hover-blue card-between">
                                 <Link href="https://cmscritic.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="/images/starter2.png" className="space-above border border-light-blue button-glow-blue" alt="CMSCritic" width="350" height="190"/>
+                                    <img src={starter2} className="space-above border border-light-blue button-glow-blue" alt="CMSCritic" width="350" height="190"/>
                                 </Link>
                                 <div className="space-above flex flex-column text-end text-center-lg width-half">
                                     <h4>
@@ -68,7 +69,7 @@ const Home: NextPage = () => {
                                     </p>
                                 </div>
                                 <Link href="https://github.com/John-Keyes/lykey-rest-api" target="_blank" rel="noopener noreferrer">
-                                    <img src="/images/starter4.png" className="rounded-pfp space-above border border-light-purple button-glow-purple" alt="MySELENA" width="150" height="150"/>
+                                    <img src={starter4} className="rounded-pfp space-above border border-light-purple button-glow-purple" alt="MySELENA" width="150" height="150"/>
                                 </Link>
                             </Card>
                             <Card className="bg-text flex flex-row flex-center border-top border-top-5 border-top-light-blue card-hover-blue card-space-above space-below card-between">
@@ -117,12 +118,12 @@ const Home: NextPage = () => {
                                     </p>
                                 </div>
                                 <Link href="https://github.com/John-Keyes/lykey-rest-api" target="_blank" rel="noopener noreferrer">
-                                    <img className="space-above card-img-blur border border-light-purple button-glow-purple" src="/images/starter1.png" alt="REST API" width="250" height="300"/>
+                                    <img className="space-above card-img-blur border border-light-purple button-glow-purple" src={starter1} alt="REST API" width="250" height="300"/>
                                 </Link>
                             </Card>
                             <Card className="bg-text flex flex-row flex-center card-space-above space-below card-between border-top border-top-5 border-top-light-blue card-hover-blue"> 
                                 <Link href="https://github.com/John-Keyes/task-frontend" target="_blank" rel="noopener noreferrer">
-                                    <img src="/images/starter3.png" className="space-above border border-light-blue button-glow-blue" alt="task" width="300" height="190"/>
+                                    <img src={starter3} className="space-above border border-light-blue button-glow-blue" alt="task" width="300" height="190"/>
                                 </Link>
                                 <div className="space-above flex flex-column text-end width-half">        
                                     <h4> 
@@ -146,7 +147,7 @@ const Home: NextPage = () => {
             </div>
             <div className="home-section-padding border-top border-top-3 border-top-light-purple">
                 <div className="flex flex-column content-container">
-                    <SubTitle id="endorsements" text="Endorsements Received">
+                    <SubTitle id="endorsements" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
                         <div className="flex flex-row card-divider">
                             <Endorsement
                                 person="Matthew Garrepy"
@@ -161,7 +162,7 @@ const Home: NextPage = () => {
                             />
                             <Endorsement
                                 person="Luis G. Sanchez"
-                                personLink="https://www.linkedin.com/in/luisgustavosc/"
+                                personLink="https://luisgustavosc.com/"
                                 text="John is an outstanding developer with a quick ability to adapt and solve problems. During our React 
                                         app rebuild, he rapidly understood our methodologies and delivered high-quality code that perfectly 
                                         matched our prototypes. His thoroughness, commitment, and attention to detail make him a valuable 

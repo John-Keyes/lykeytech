@@ -1,11 +1,11 @@
 import React, {useEffect, useRef, useState} from 'react';
 import Link from 'next/link';
-import logo from '../../../public/images/logo.png';
 import Button from '../button';
 import {useRouter} from 'next/router';
 import Image from 'next/image';
 import PopMenu from '../popMenu';
 import MobileMenu from './mobileMenu';
+import { logo } from 'src/lib/static';
 
 const Header = () => {
     const {push, pathname} = useRouter();

@@ -1,5 +1,5 @@
 import React, { ComponentProps, ReactNode, useState } from 'react';
-import { WriteClipBoard } from '../../lib/helpers/browser';
+import { WriteClipBoard } from '../../lib/browser';
 
 interface TitlePropsType extends ComponentProps<"h1"> { 
     text: string | ReactNode, 
