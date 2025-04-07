@@ -1,8 +1,6 @@
 import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react';
-import { useRouter } from 'next/router';
-import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../../../public/images/logo.png';
+import { logo } from 'src/lib/static';
 import Button from '../button';
 
 interface MobileMenuType {
@@ -59,7 +57,7 @@ const MobileMenu = (props: MobileMenuType) => {
                 &copy; 2025 LyKeyTech
             </p>
             <div id="mobile-menu-logo-container" className="flex flex-center">
-                <Image id="mobile-menu-logo" alt="Logo" src={Logo} className="logo"/>
+                <img id="mobile-menu-logo" alt="Logo" src={logo} width="80" height="80"/>
             </div>
         </div>
     );

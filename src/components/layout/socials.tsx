@@ -14,6 +14,9 @@ const Socials = () => (
                                     <span className="fa-brands fa-github fa-2xl text-white text-hover-black"/>
                                 </Link>
                                 <span className="text-white space-infront">
+                                    Developed by John Keyes
+                                </span>
+                                <span className="text-white space-infront">
                                     &copy; 2025 LyKeyTech LLC
                                 </span>
                             </div>

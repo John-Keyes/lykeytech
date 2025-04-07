@@ -1,4 +1,4 @@
-import React, { ComponentProps, ReactNode } from 'react';
+import React, { ComponentProps } from 'react';
 import Link from 'next/link';
 import Card from '../card';
 

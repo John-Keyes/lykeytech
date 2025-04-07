@@ -1,4 +1,4 @@
-import React, { ComponentProps, ReactNode, useState } from 'react';
+import React, { ComponentProps, ReactNode } from 'react';
 import { WriteClipBoard } from '../../lib/browser';
 
 interface TitlePropsType extends ComponentProps<"h1"> { 

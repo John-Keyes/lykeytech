@@ -1,9 +1,6 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useRef, useState} from 'react';
 import Link from 'next/link';
-import Button from '../button';
 import {useRouter} from 'next/router';
-import Image from 'next/image';
-import PopMenu from '../popMenu';
 import MobileMenu from './mobileMenu';
 import { logo } from 'src/lib/static';
 
@@ -20,7 +17,7 @@ const Header = () => {
             <div ref={topNavRoot} id="top-nav-root" className="flex fit-width bg-dark-purple">
                 <nav id="top-nav" className="flex fit-width content-container">
                     <Link id="header-logo-container" href="/">
-                        <Image alt="Logo" src={logo} className="logo"/>
+                        <img alt="Logo" src={logo} width="80" height="80"/>
                     </Link>
                     <div id="mobile-menu-container-visibility">
                         <span className="fa-solid fa-bars cursor-pointer text-white" onClick={() => setMenuOpen(!menuOpen)} />
