@@ -65,7 +65,6 @@ crash.log
 # environment
 *.env
 .mylogin.cnf
-*package-lock.json
 *yarn.lock
 run-temp.sh
 docker-compose.override.yml
