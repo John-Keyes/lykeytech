@@ -1,12 +1,13 @@
 import { useRouter } from 'next/router';
 import { DefaultSeo, LogoJsonLd } from 'next-seo';
 import getConfig from 'next/config';
+import { logo } from 'src/lib/static';
 
 const {publicRuntimeConfig: {clientUrl}} = getConfig();
 
-//const THUMBNAIL = ".png";
-const DEFAULT_TITLE = "LyKeyTech – Tech partner who can built web and mobile apps";
-const DEFAULT_DESCRIPTION = "LyKeyTech";
+const THUMBNAIL = logo;
+const DEFAULT_TITLE = "LyKeyTech – Building Better Applications";
+const DEFAULT_DESCRIPTION = "I build web and mobile applications that help fulfill any need. I build applications with immersive user experiences and performance efficient applications.";
 /*const KEYWORDS= ["LyKey", "Software,Development", "Engineering", "Software Engineering", "Software Developer", "Software Development", 
 	"LyKeyTech", "LyKey", "Tech", "Web Developer", "Web Development", "Mobile Development", "Mobile Developer", "Application", 
 	"Application Development", "App", "Developer", "Web", "Mobile", "Computer Science", "Bachelor of Science", "Computer", "Science"
@@ -29,12 +30,12 @@ const DefaultSEO = () => {
 					type: "website",
 					locale: "en_US",
 					siteName: "SFS1",
-					/*images: [
+					images: [
 						{
 							url: THUMBNAIL,
 							alt: "Thumbnail"
 						}
-					],*/
+					],
 				}}
 				twitter={{
 					cardType: "summary_large_image",

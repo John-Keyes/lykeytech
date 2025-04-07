@@ -81,9 +81,12 @@ const Home: NextPage = () => {
                                 <div className="flex flex-column text-end width-half space-above">
                                     <h4>
                                         <Link className="text-white text-hover-clear-blue" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
-                                            USICK
+                                            USICK.com
                                         </Link>
                                     </h4>
+                                    <p className="p">
+                                        USICK.com is a site where you can enter the symptoms you are experiencing and receive a list of possible medical issues. On the results page, you are given the address of nearby medical facilities.
+                                    </p>
                                     <p className="p">
                                         <Tag className="tag-blue" href="https://svelte.dev/" text="Svelte"/>
                                         <Tag className="tag-blue space-infront" href="https://learn.microsoft.com/en-us/dotnet/csharp/" text="C#"/>
