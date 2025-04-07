@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 
-const mode = process.env.NODE_ENV;
+
+const clientUrl = process.env.NODE_ENV == "production" ? "/lykeytech" : "";
 module.exports = {
-  basePath: mode == "production" ? "/lykeytech" : "", 
+  basePath: clientUrl,
 	reactStrictMode: true,
-	output: "standalone"
+	output: "standalone",
+  publicRuntimeConfig: {
+    clientUrl
+  }
 };
