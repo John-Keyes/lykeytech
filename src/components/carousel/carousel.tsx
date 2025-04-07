@@ -1,4 +1,4 @@
-import { ComponentProps, ReactElement, ReactNode, useEffect, useRef, useState } from 'react';
+import { ComponentProps, ReactElement, ReactNode, useEffect, cloneElement, useRef, useState, Children } from 'react';
 import Circle from './circle';
 
 interface CarouselProps extends ComponentProps<"div"> { 
@@ -16,7 +16,7 @@ const Carousel = (props: CarouselProps) => {
                     <div id={`carousel-slide-${index}`} className="">{slide}</div>
                 ))}
                 <div className="flex flex-center carousel-circle">
-                    {props.slides.map((element, index) => <Circle id={`carousel-circle-${index}`} index={index} className="text-light-gray" slideId={slideId} setSlideId={setSlideId}/>)}
+                    {props.slides.map((element, index) => <Circle id={`carousel-circle-${index}`} index={index} slideId={slideId} setSlideId={setSlideId}/>)}
                 </div>
             </div>
     );

@@ -2,6 +2,11 @@
     text-decoration: none; 
     font-weight: bold;
     font-size: 1.25rem;
+    color: theme-color("white");
+    transition: color 0.3s linear;
+    &:hover {
+        color: theme-color("lighter-purple");
+    }
 }
 
 .route-container {

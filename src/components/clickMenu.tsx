@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from 'react';
 
-type PopMenuCommonProps = {
+type ClickMenuCommonProps = {
     children: ReactNode,
     className?: string,
     ariaLabel?: string,
@@ -8,11 +8,11 @@ type PopMenuCommonProps = {
 }
 
 
-const PopMenu = ({children, className, ariaLabel, trigger} : PopMenuCommonProps) => {
+const ClickMenu = ({children, className, ariaLabel, trigger} : ClickMenuCommonProps) => {
     const [bodyDisplay, setBodyDisplay] = useState("none");
     return (
-        <div aria-label={ariaLabel} className={`pop-menu-container ${className}`} onMouseLeave={() => setBodyDisplay("none")}>
-            <div className="pop-menu-trigger" onMouseEnter={() => setBodyDisplay("flex")}>
+        <div aria-label={ariaLabel} className={`pop-menu-container ${className}`} onClick={() => setBodyDisplay("none")}>
+            <div className="pop-menu-trigger" onClick={() => setBodyDisplay("flex")}>
                 {trigger}
             </div>
             <div className="pop-menu-body bg-text" style={{display: bodyDisplay}}>
@@ -22,4 +22,4 @@ const PopMenu = ({children, className, ariaLabel, trigger} : PopMenuCommonProps)
     );
 }
 
-export default PopMenu;
+export default ClickMenu;

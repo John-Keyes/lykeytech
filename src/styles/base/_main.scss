@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    background-color: theme-color("gray");
+    background-color: theme-color("dark-purple");
     color: theme-color("white");
     font-family: Inter;
     -webkit-font-smoothing: antialiased;
@@ -35,9 +39,9 @@ body {
 
   
   .p {
-    font-size: 1.5rem;
-    padding-top: 1rem; 
-    padding-bottom: 1rem;
+    font-size: 1rem;
+    //padding-top: 1rem; 
+    //padding-bottom: 1rem;
     font-weight: 500;
   }
 
@@ -65,15 +69,13 @@ body {
     width: 100%;
   }
 
+  .width-half {
+    width: 50%;
+  }
+
   .fit-height {
     height: 100%;
   }
-
-ul {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  padding-inline-start: 0px;
-}
 
 .title {
   font-size: 4rem; 
@@ -85,12 +87,32 @@ ul {
 .sub-title {
   font-size: 2.5rem;
   font-weight: 700;
-  @media screen and (max-width: device-max("md")) {
-    justify-content: center;
-  }
   &-link-align {
     padding-top: 15px;
   }
+  &-icon {
+    visibility: hidden;
+    &:hover {
+      visibility: visible;
+    }
+  }
+}
+
+h2, h3, h4 {
+  justify-content: start;
+  @media screen and (max-width: device-max("md")) {
+    justify-content: center;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 650;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .transition {
@@ -99,9 +121,25 @@ ul {
   }
 }
 
-.gradient {
-  &-purple {
-    background-color: linear-gradient(to left, theme-color("dark-purple"), theme-color("purple"), theme-color("light-purple"))
+::-webkit-scrollbar {
+  width: 10px;
+  &-track {
+    background-color: theme-color("dark-purple"); 
   }
+  &-thumb {
+    background-color: theme-color("lighter-purple"); 
+    border-radius: 10px;
+    &:hover {
+      background-color: theme-color("purple"); 
+    }
+  }
+}
 
+.overflow {
+  &-hidden {
+    overflow: hidden;
+  }
+  &-scroll {
+    overflow: scroll;
+  }
 }

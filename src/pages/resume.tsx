@@ -4,10 +4,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const Resume: NextPage = () => {
-    const {push} = useRouter();
-    useEffect(() => {
-       push("/");
-    }, [])
     return (
     <div id="resume-root">
 	<div id="resume-side-bar">
@@ -259,8 +255,8 @@ const Resume: NextPage = () => {
 
 Resume.getInitialProps = async () => {
     return {
-        pageTitle: "Resume LyKey",
-        pageDescription: "John Keyes Resume | LyKey Tech"
+        pageTitle: "Resume",
+        pageDescription: "John Keyes Resume | LyKeyTech"
     }
 }
 export default Resume;

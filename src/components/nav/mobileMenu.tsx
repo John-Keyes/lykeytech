@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useEffect } from 'react';
+import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,8 +10,21 @@ interface MobileMenuType {
     setMenuOpen: Dispatch<SetStateAction<boolean>>
 }
 const MobileMenu = (props: MobileMenuType) => {
+    const mobileMenuRef = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+        const HandleClickOutside = (e: any) => {
+          if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.currentTarget)) {
+            props.setMenuOpen(!props.menuOpen);
+          }
+        }
+        document.addEventListener("mousedown", HandleClickOutside);
+        return () => {
+          // Unbind the event listener on clean up
+          document.removeEventListener("mousedown", HandleClickOutside);
+        };
+      }, [mobileMenuRef]);
     return (
-        <div id="mobile-menu-container" className="flex flex-column bg-dark-purple" style={{display: props.menuOpen ? "flex": "none"}}>
+        <div ref={mobileMenuRef} id="mobile-menu-container" className="flex flex-column bg-dark-purple" style={{display: props.menuOpen ? "flex": "none"}}>
             <div id="mobile-menu-top" className="flex flex-row flex-center">
                 <span onClick={() => props.setMenuOpen(!props.menuOpen)} className="fa-solid text-white cursor-pointer fa-chevron-left"/>
                 <h2 className="text-white">Menu</h2>
@@ -29,12 +42,7 @@ const MobileMenu = (props: MobileMenuType) => {
                         <h3>Endorsements</h3>
                         <span className="fa-solid fa-handshake"/>
                     </Link>
-                    {/*<Link className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#contact">
-                        <span className="fa-solid fa-chevron-left"/>
-                        <h3>Contact</h3>
-                        <span className="fa-solid fa-address-book"/>
-                    </Link>*/}
-                    <Button className="bg-purple bg-hover-light-purple"><Link href="mailto:johnschool432@gmail.com" className="text-white">Contact Me</Link></Button>
+                    <Button className="bg-purple bg-hover-light-purple button-glow-purple"><Link href="mailto:johnschool432@gmail.com" className="text-white">Contact Me</Link></Button>
             </div>
             <div className="flex flex-center space-above">
                 <Link href="mailto:johnschool432@gmail.com">

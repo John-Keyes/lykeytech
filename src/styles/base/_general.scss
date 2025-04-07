@@ -65,11 +65,10 @@ $colors: (
     "blue": #1E6F9F,
     "white": #FFF,
     "dark-gray": #222,
-    "gray": #333,
-    "light-gray": #444,
     "dark-purple": #0c0711,
     "purple": #482b66,
     "light-purple": #9457d4,
+    "lighter-purple": #c590fc,
     "clear-blue": #4EA8DE,
     "dark-red":#630000,
     "black": #000000,
@@ -81,6 +80,39 @@ $colors: (
 }
 
 .text {
+    &-start {
+        text-align:start;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    text-align: start;
+                }
+            }
+        }
+    }
+    &-center {
+        text-align:center;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &-end {
+        text-align: end;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    text-align: end;
+                }
+            }
+        }
+    }
+    &-inherit {
+        color: inherit;
+    }
     @each $key, $value in $colors {
         &-#{$key} {
             color: $value;
@@ -106,15 +138,15 @@ $colors: (
             &-transparent {
                 background-color: rgba($value, 0);
             }
-            &-half {
-                color: rgba($value, 0.5);
-            }
         }
         &-hover-#{$key} {
             &:hover {
                 background-color: $value;
                 &-transparent {
                     background-color: rgba($value, 0);
+                }
+                &-glow {
+                    box-shadow: 0 0px 10px $value;
                 }
             }
         }
@@ -127,9 +159,14 @@ $colors: (
     }
 }
 
-.space-infront {
-    margin-left: 1rem;
-}
-.space-above {
-    margin-top: 1rem;
+.space {
+    &-infront {
+        margin-left: 1rem;
+    }
+    &-above {
+        margin-top: 1rem;
+    }
+    &-below {
+        margin-bottom: 1rem;
+    }
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { ComponentProps, ReactNode, useState } from 'react';
+import Button from './button';
 
 interface TagProps extends ComponentProps<"a"> {
     href: string,
@@ -7,8 +8,10 @@ interface TagProps extends ComponentProps<"a"> {
     className?: string
 }
 
-const Tag = (props: TagProps) => {
-    return <Link className={`tag rounded-md transition-fast text-white gradient-purple bg-hover-light-purple ${props.className}`} href={props.href}>{props.text}</Link>;
-}
+const Tag = (props: TagProps) => (
+    <Button className={`tag rounded-md transition-fast ${props.className}`}>
+        <span>&#183; <Link className="text-inherit" href={props.href}>{props.text}</Link> &#183;</span>
+    </Button>
+);
 
 export default Tag;

@@ -8,11 +8,11 @@ interface TitlePropsType extends ComponentProps<"h1"> {
 
 const Title = (props : TitlePropsType) => {
     const {id, text, className} = props;
-    const [h1Enter, seth1Enter] = useState<boolean>(false);
+    //const [h1Enter, seth1Enter] = useState<boolean>(false);
     return (
-        <h1 {...props} onClick={() => WriteClipBoard(window.location.href)} onMouseEnter={() => seth1Enter(true)} onMouseLeave={() => seth1Enter(false)} className={`flex cursor-pointer ${className}`} >
+        <h1 {...props} onClick={() => WriteClipBoard(window.location.href)} className={`flex cursor-pointer ${className}`} >
             <span id={`${id}-text`} className="title">{text}</span>
-            {h1Enter && <span id={`${id}-copy`} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className="fa-solid sub-title-link-align cursor-pointer fa-copy space-infront"/>}
+            {/*h1Enter && <span id={`${id}-copy`} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className="fa-solid sub-title-link-align cursor-pointer fa-copy space-infront"/>*/}
         </h1>
     );
 }

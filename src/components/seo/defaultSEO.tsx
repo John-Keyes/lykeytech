@@ -10,8 +10,9 @@ const DEFAULT_DESCRIPTION = "LyKeyTech";
 /*const KEYWORDS= ["LyKey", "Software,Development", "Engineering", "Software Engineering", "Software Developer", "Software Development", 
 	"LyKeyTech", "LyKey", "Tech", "Web Developer", "Web Development", "Mobile Development", "Mobile Developer", "Application", 
 	"Application Development", "App", "Developer", "Web", "Mobile", "Computer Science", "Bachelor of Science", "Computer", "Science"
+	"Portfolio", "Resume", "Work Samples", "Socials", "Contact"
 ];*/
-const KEYWORDS = "LyKey, Software,Development, Engineering, Software Engineering, Software Developer, Software Development, LyKeyTech, LyKey, Tech, Web Developer, Web Development, Mobile Development, Mobile Developer, Application, Application Development, App, Developer, Web, Mobile, Computer Science, Bachelor of Science, Computer, Science";
+const KEYWORDS = "LyKey, Software,Development, Engineering, Software Engineering, Software Developer, Software Development, LyKeyTech, LyKey, Tech, Web Developer, Web Development, Mobile Development, Mobile Developer, Application, Application Development, App, Developer, Web, Mobile, Computer Science, Bachelor of Science, Computer, Science, Portfolio, Resume, Work Samples, Socials, Contact";
 
 const DefaultSEO = () => {
 	const router = useRouter();

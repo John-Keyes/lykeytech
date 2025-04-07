@@ -11,8 +11,8 @@ interface EndorsementProps extends ComponentProps<"div">{
 
 const Endorsement = ({person, personLink, text, className}: EndorsementProps) => (
     
-                    <Card className={`${className}`}>
-                        <h3><Link href={personLink} className="text-white text-hover-dark-blue" target="_blank" rel="noopener noreferrer">{person}</Link></h3>
+                    <Card className={className || ""}>
+                        <h3><Link href={personLink} className="text-white" target="_blank" rel="noopener noreferrer">{person}</Link></h3>
                         <p className="p">&quot;{text}&quot;</p>
                     </Card>
             
