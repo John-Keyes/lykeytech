@@ -3,7 +3,7 @@ import SubTitle from "./subTitle";
 import Button from "../button";
 
 const Socials = () => (
-                        <SubTitle id="socials" className="text-white" sectionClassName="flex flex-column flex-center space-below" text="Contact">
+                        <SubTitle id="socials" className="text-white" sectionclassName="flex flex-column flex-center space-below" text="Contact">
                             <Button className="bg-purple bg-hover-light-purple button-glow-purple"><Link href="mailto:johnschool432@gmail.com" className="text-white">Send Message</Link></Button>
                             <h3>Socials</h3>
                             <div className="flex flex-row">

@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { DefaultSeo, LogoJsonLd } from 'next-seo';
 import getConfig from 'next/config';
 
-const {publicRuntimeConfig: {clientUrl}} = getConfig();
+const {basePath} = getConfig();
 
 //const THUMBNAIL = ".png";
 const DEFAULT_TITLE = "LyKeyTech – Tech partner who can built web and mobile apps";
@@ -21,11 +21,11 @@ const DefaultSEO = () => {
 			<DefaultSeo
 				defaultTitle={DEFAULT_TITLE}
 				description={DEFAULT_DESCRIPTION}
-				canonical={clientUrl}
+				canonical={basePath}
 				openGraph={{
 					title: DEFAULT_TITLE,
 					description: DEFAULT_DESCRIPTION,
-					url: clientUrl + router.asPath,
+					url: basePath + router.asPath,
 					type: "website",
 					locale: "en_US",
 					siteName: "SFS1",
@@ -98,8 +98,8 @@ const DefaultSEO = () => {
 			/>
 
 			<LogoJsonLd
-				logo={`${clientUrl}/images/logo.png`}
-				url={clientUrl as string}
+				logo={`${basePath}/images/logo.png`}
+				url={basePath as string}
 			/>
     	</>
   	)
