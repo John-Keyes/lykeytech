@@ -28,15 +28,15 @@ const MobileMenu = (props: MobileMenuType) => {
                 <h2 className="text-white">Menu</h2>
             </div>
             <div id="mobile-menu-list" className="flex flex-column flex-center">
-                    <Link className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#about">
-                        <h3>About</h3> 
-                        <span className="fa-solid fa-address-card"/>
-                    </Link>
-                    <Link className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#samples">
+                        <Link onClick={() => props.setMenuOpen(false)} href="#about" className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white">
+                            <h3>About</h3> 
+                            <span className="fa-solid fa-address-card"/>
+                        </Link>
+                    <Link onClick={() => props.setMenuOpen(false)} className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#samples">
                         <h3>Samples</h3>
                         <span className="fa-solid fa-code"/>
                     </Link>
-                    <Link className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#endorsements">
+                    <Link onClick={() => props.setMenuOpen(false)} className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#endorsements">
                         <h3>Endorsements</h3>
                         <span className="fa-solid fa-handshake"/>
                     </Link>
