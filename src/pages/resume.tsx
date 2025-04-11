@@ -14,7 +14,7 @@ const Resume: NextPage = () => {
                 <ul>
                     <li><p className="resume-p">Orlando, Florida</p></li>
                     <li><p className="resume-p">Call: <a href="tel:+14073983915" className="text-white" target="_blank" rel="noopener noreferrer">+1 407-398-3915</a></p></li>
-                    <li><p className="resume-p">Email: <a href="mailto:johnschool432@gmail.com" className="text-white" target="_blank" rel="noopener noreferrer">johnschool432@gmail.com</a></p></li>
+                    <li><p className="resume-p">Email: <a href="mailto:john.keyes@lykeytech.com" className="text-white" target="_blank" rel="noopener noreferrer">john.keyes@lykeytech.com</a></p></li>
                 </ul>
             </div>
         </div>

@@ -40,10 +40,10 @@ const MobileMenu = (props: MobileMenuType) => {
                         <h3>Endorsements</h3>
                         <span className="fa-solid fa-handshake"/>
                     </Link>
-                    <Button className="bg-purple bg-hover-light-purple button-glow-purple"><Link href="mailto:johnschool432@gmail.com" className="text-white">Contact Me</Link></Button>
+                    <Button className="bg-purple bg-hover-light-purple button-glow-purple"><Link href="mailto:john.keyes@lykeytech.com" className="text-white">Contact Me</Link></Button>
             </div>
             <div className="flex flex-center space-above">
-                <Link href="mailto:johnschool432@gmail.com">
+                <Link href="mailto:john.keyes@lykeytech.com">
                     <span className="text-white fa-solid fa-envelope text-hover-dark-red"/>
                 </Link>
                 <Link className="space-infront" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">
