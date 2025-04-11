@@ -1,9 +1,6 @@
 import { useRouter } from 'next/router';
 import { DefaultSeo, LogoJsonLd } from 'next-seo';
-import getConfig from 'next/config';
 import { logo } from 'src/lib/static';
-
-const {publicRuntimeConfig: {clientUrl}} = getConfig();
 
 const THUMBNAIL = logo;
 const DEFAULT_TITLE = "LyKeyTech – Building Better Applications";
@@ -22,11 +19,11 @@ const DefaultSEO = () => {
 			<DefaultSeo
 				defaultTitle={DEFAULT_TITLE}
 				description={DEFAULT_DESCRIPTION}
-				canonical={clientUrl}
+				canonical="/"
 				openGraph={{
 					title: DEFAULT_TITLE,
 					description: DEFAULT_DESCRIPTION,
-					url: clientUrl + router.asPath,
+					url: "/" + router.asPath,
 					type: "website",
 					locale: "en_US",
 					siteName: "SFS1",
@@ -43,34 +40,34 @@ const DefaultSEO = () => {
 				additionalLinkTags={[
 					{
 						rel: "shortcut-icon",
-						href: `${clientUrl}/images/meta/favicon.ico`,
+						href: "/images/meta/favicon.ico",
 						type: "image/x-icon"
 					},
 					{
 						rel: "icon",
 						type: "image/png",
 						sizes: "16x16",
-						href: `${clientUrl}/images/meta/favicon-16x16.png`,
+						href: "/images/meta/favicon-16x16.png",
 					},
 					{
 						rel: "icon",
 						type: "image/png",
 						sizes: "32x32",
-						href: `${clientUrl}/images/meta/favicon-32x32.png`,
+						href: "/images/meta/favicon-32x32.png",
 					},
 					{
 						rel: "apple-touch-icon",
 						type: "image/png",
 						sizes: "180x180",
-						href: `${clientUrl}/images/meta/apple-touch-icon.png`,
+						href: "/images/meta/apple-touch-icon.png",
 					},
 					{
 						rel: "manifest",
-						href: `${clientUrl}/site.webmanifest`,
+						href: "/site.webmanifest",
 					},
 					{
 						rel: "mask-icon",
-						href: `${clientUrl}/images/meta/safari-pinned-tab.svg`,
+						href: "/images/meta/safari-pinned-tab.svg",
 						color: "#000000",
 					},
 				]}
@@ -99,8 +96,8 @@ const DefaultSEO = () => {
 			/>
 
 			<LogoJsonLd
-				logo={`${clientUrl}/images/logo.png`}
-				url={clientUrl as string}
+				logo="/images/logo.png"
+				url="/"
 			/>
     	</>
   	)
