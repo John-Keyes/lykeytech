@@ -1,8 +1,4 @@
 .tag {
-    /*padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;*/
     padding: 0.5rem;
     &-blue {
         color: theme-color("light-blue");
@@ -27,7 +23,7 @@
             box-shadow: 0 0px 10px theme-color("lighter-purple");
         }
     }
-    &-gap {
-        gap: 1rem;
+    &-p {
+        line-height: 50px;
     }
 }

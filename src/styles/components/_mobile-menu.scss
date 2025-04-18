@@ -25,6 +25,10 @@
     padding-right: 2rem;
     justify-content:space-between;
     align-items: center;
+    transition: color 0.3s linear;
+    &:hover {
+        color: theme-color("lighter-purple");
+    }
 }
 
 #mobile-menu-list {

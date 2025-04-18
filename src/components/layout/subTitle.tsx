@@ -5,20 +5,18 @@ interface SubTitlePropsType extends ComponentProps<"h2"> {
     children?: ReactNode, 
     text: string | ReactNode, 
     className?: string,
-    sectionclassName?: string
+    sectionclassname?: string
 }
 
 const SubTitle = (props : SubTitlePropsType) => {
-    const {id, children, text, className, sectionclassName} = props;
-    //const [h2Enter, seth2Enter] = useState<string | undefined>("hidden");
+    const {id, children, text, className, sectionclassname} = props;
     return (
         <>
             <h2 {...props} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className={`flex cursor-pointer  ${className || ""}`}>
                 <span id={`${id}-text`} className="sub-title text-hover-inherit">{text}</span>
-                {/*<span id={`${id}-copy`} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} style={{visibility: h2Enter}}className={`space-infront sub-title fa-solid fa-sm sub-title-link-align cursor-pointer fa-copy ${iconClassName || ""}`}/>*/}
             </h2>
             {children && (
-                <section id={`${id}-section-body`} className={sectionclassName || ""}>
+                <section id={`${id}-section-body`} className={sectionclassname || ""}>
                     {children}
                 </section>
             )}

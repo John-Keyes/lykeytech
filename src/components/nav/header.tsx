@@ -5,7 +5,7 @@ import MobileMenu from './mobileMenu';
 import { logo } from 'src/lib/static';
 
 const Header = () => {
-    const {push, pathname} = useRouter();
+    const {pathname} = useRouter();
     const topNavRoot = useRef<HTMLDivElement>(null);
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     
@@ -20,7 +20,7 @@ const Header = () => {
                         <img alt="Logo" src={logo} width="80" height="80"/>
                     </Link>
                     <div id="mobile-menu-container-visibility">
-                        <span className="fa-solid fa-bars cursor-pointer text-white" onClick={() => setMenuOpen(!menuOpen)} />
+                        <span className="fa-solid fa-bars fa-xl cursor-pointer text-white" onClick={() => setMenuOpen(!menuOpen)} />
                         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                     </div>
                     <div className="route-container flex">

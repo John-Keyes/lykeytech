@@ -30,7 +30,7 @@ $device-maxes: (
         @each $key, $value in $device-mins {
             &-#{$key} {
                 @media screen and (min-width: $value) {
-                    flex-direction: row;
+                    flex-direction: row !important;
                 }
             }
         }
@@ -40,7 +40,19 @@ $device-maxes: (
         @each $key, $value in $device-mins {
             &-#{$key} {
                 @media screen and (min-width: $value) {
-                    flex-direction: column;
+                    flex-direction: column !important;
+                }
+            }
+        }
+    }
+    &-start {
+        align-items: start;
+        justify-content: start;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    align-items: center;
+                    justify-content: start !important;
                 }
             }
         }
@@ -81,11 +93,11 @@ $colors: (
 
 .text {
     &-start {
-        text-align:start;
+        text-align: start;
         @each $key, $value in $device-mins {
             &-#{$key} {
                 @media screen and (min-width: $value) {
-                    text-align: start;
+                    text-align: start !important;
                 }
             }
         }
@@ -95,7 +107,7 @@ $colors: (
         @each $key, $value in $device-mins {
             &-#{$key} {
                 @media screen and (min-width: $value) {
-                    text-align: center;
+                    text-align: center !important; 
                 }
             }
         }
@@ -105,7 +117,7 @@ $colors: (
         @each $key, $value in $device-mins {
             &-#{$key} {
                 @media screen and (min-width: $value) {
-                    text-align: end;
+                    text-align: end !important;
                 }
             }
         }

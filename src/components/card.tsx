@@ -1,11 +1,11 @@
 import {ComponentProps} from 'react';
 
 
-interface CardProps extends ComponentProps<"div"> {
+export interface CardPropsType extends ComponentProps<"div"> {
     className?: string;
 }
 
-const Card = ({children, className, ...props}: CardProps) => (
+const Card = ({children, className, ...props}: CardPropsType) => (
     <div className={`card ${className}`} {...props}>
         {children}
     </div>

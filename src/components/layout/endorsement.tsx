@@ -2,18 +2,19 @@ import React, { ComponentProps } from 'react';
 import Link from 'next/link';
 import Card from '../card';
 
-interface EndorsementProps extends ComponentProps<"div">{
-    person: string, 
-    personLink: string, 
-    text: string,
-    className?: string,
+interface EndorsementProps extends ComponentProps<"div"> {
+    person: string;
+    personLink: string;
+    text: string;
+    hoverColor: string;
+    className?: string;
 }
 
-const Endorsement = ({person, personLink, text, className}: EndorsementProps) => (
+const Endorsement = (props: EndorsementProps) => (
     
-                    <Card className={className || ""}>
-                        <h3><Link href={personLink} className="text-white" target="_blank" rel="noopener noreferrer">{person}</Link></h3>
-                        <p className="p">&quot;{text}&quot;</p>
+                    <Card className={props.className || ""}>
+                        <h3><Link href={props.personLink} className={`text-white text-hover-${props.hoverColor}`} target="_blank" rel="noopener noreferrer">{props.person}</Link></h3>
+                        <p className="p">&quot;{props.text}&quot;</p>
                     </Card>
             
 );

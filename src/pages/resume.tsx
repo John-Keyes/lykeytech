@@ -74,7 +74,7 @@ const Resume: NextPage = () => {
 	<div id="resume-body">
         <div className="resume-body-section">
             <div className="resume-body-section-title-container">
-                <h1 className="resume-title">John Keyes | Software Engineer</h1>
+                <h1 className="resume-title">John Keyes</h1>
             </div>
             <div className="resume-body-section-body">
                 <p className="resume-p"> 

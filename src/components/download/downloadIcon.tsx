@@ -16,7 +16,7 @@ const DownloadIcon = (props: DownloadIconType) => {
     }
     
     return (
-                <div className="flex flex-row">
+                <div className="flex flex-row flex-center flex-start-md">
                     <Button onClick={HandleButtonClick} className={props.className || ""}>
                         <span className="text-white fa-solid fa-download" />
                         {props.children}

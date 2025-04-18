@@ -12,31 +12,30 @@ const MobileMenu = (props: MobileMenuType) => {
     useEffect(() => {
         const HandleClickOutside = (e: any) => {
           if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.currentTarget)) {
-            props.setMenuOpen(!props.menuOpen);
+            props.setMenuOpen(false);
           }
         }
         document.addEventListener("mousedown", HandleClickOutside);
         return () => {
-          // Unbind the event listener on clean up
           document.removeEventListener("mousedown", HandleClickOutside);
         };
       }, [mobileMenuRef]);
     return (
-        <div ref={mobileMenuRef} id="mobile-menu-container" className="flex flex-column bg-dark-purple" style={{display: props.menuOpen ? "flex": "none"}}>
+        <div ref={mobileMenuRef} id="mobile-menu-container" className="flex-column bg-dark-purple" style={{display: props.menuOpen ? "flex": "none"}}>
             <div id="mobile-menu-top" className="flex flex-row flex-center">
-                <span onClick={() => props.setMenuOpen(!props.menuOpen)} className="fa-solid text-white cursor-pointer fa-chevron-left"/>
+                <span onClick={() => props.setMenuOpen(false)} className="fa-solid text-white cursor-pointer fa-chevron-left"/>
                 <h2 className="text-white">Menu</h2>
             </div>
             <div id="mobile-menu-list" className="flex flex-column flex-center">
-                        <Link onClick={() => props.setMenuOpen(false)} href="#about" className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white">
-                            <h3>About</h3> 
-                            <span className="fa-solid fa-address-card"/>
-                        </Link>
-                    <Link onClick={() => props.setMenuOpen(false)} className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#samples">
+                    <Link onClick={() => props.setMenuOpen(false)} href="#about" className="mobile-menu-list-item flex flex-row text-white">
+                        <h3>About</h3> 
+                        <span className="fa-solid fa-address-card"/>
+                    </Link>
+                    <Link onClick={() => props.setMenuOpen(false)} className="mobile-menu-list-item flex flex-row text-white" href="#samples">
                         <h3>Samples</h3>
                         <span className="fa-solid fa-code"/>
                     </Link>
-                    <Link onClick={() => props.setMenuOpen(false)} className="mobile-menu-list-item flex flex-row text-white text-hover-color1 border-top-1 border-top-white" href="#endorsements">
+                    <Link onClick={() => props.setMenuOpen(false)} className="mobile-menu-list-item flex flex-row text-white" href="#endorsements">
                         <h3>Endorsements</h3>
                         <span className="fa-solid fa-handshake"/>
                     </Link>

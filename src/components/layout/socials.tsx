@@ -3,7 +3,7 @@ import SubTitle from "./subTitle";
 import Button from "../button";
 
 const Socials = () => (
-                        <SubTitle id="socials" className="text-white" sectionclassName="flex flex-column flex-center space-below" text="Contact">
+                        <SubTitle id="socials" className="text-white" sectionclassname="flex flex-column flex-center space-below" text="Contact">
                             <Button className="bg-purple bg-hover-light-purple button-glow-purple"><Link href="mailto:john.keyes@lykeytech.com" className="text-white">Send Message</Link></Button>
                             <h3>Socials</h3>
                             <div className="flex flex-row">
@@ -13,13 +13,16 @@ const Socials = () => (
                                 <Link className="space-infront" href="https://github.com/John-Keyes" target="_blank" rel="noopener noreferrer">
                                     <span className="fa-brands fa-github fa-2xl text-white text-hover-black"/>
                                 </Link>
-                                <span className="text-white space-infront">
-                                    Developed by John Keyes
+                            </div>
+                            <div className="flex flex-column space-above">
+                                <span className="text-white">
+                                    Created solely by John Keyes.
                                 </span>
                                 <span className="text-white space-infront">
                                     &copy; 2025 LyKeyTech LLC
                                 </span>
                             </div>
+                            
                         </SubTitle>
 );
 

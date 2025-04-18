@@ -1,0 +1,23 @@
+.sample {
+    &-mobile {
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        @media screen and (max-width: device-max("sm")) {
+            display: flex;
+        }
+    }
+    &-desktop {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: device-max("sm")) {
+            display: none;
+        }
+    }
+    &-row {
+        flex-direction: row;
+    }
+    &-reverse {
+        flex-direction: row-reverse;
+    }
+}
