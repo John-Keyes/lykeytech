@@ -87,29 +87,6 @@ const Resume: NextPage = () => {
                 <h2 className="resume-body-section-title">Work Experience</h2>
             </div>
             <div className="resume-body-section-body">
-            <div className="resume-body-section-body-item">
-                    <div className="resume-body-section-body-item-title-container">
-                        <h3><Link href="https://www.playerepic.com/" className="text-white" target="_blank" rel="noopener noreferrer">Player Epic</Link></h3>
-                    </div>
-                    <div className="resume-body-section-body-item-body-container">
-                        <div>
-                            <h4>{"Software Engineer (Part Time)"}</h4>
-                            <p className="resume-p">08/2024 - Present</p>
-                        </div>
-                        <ul className="resume-body-section-body-item_list">
-                            <li>
-                                <p className="resume-p">
-                                    Designed the UI/UX of a version of the "PlayerEpicMobileHealth" application with Figma.
-                                </p>
-                            </li>
-                            <li>
-                                <p className="resume-p">
-                                    Developed and maintained a version of the "PlayerEpicMobileHealth" application with React-Native.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
                 <div className="resume-body-section-body-item">
                     <div className="resume-body-section-body-item-title-container">
                         <h3><Link href="https://outlier.ai/" className="text-white" target="_blank" rel="noopener noreferrer">Outlier.ai</Link></h3>

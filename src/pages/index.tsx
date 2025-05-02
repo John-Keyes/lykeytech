@@ -51,6 +51,7 @@ const Home: NextPage = () => {
                                                         <Tag className="tag-blue space-infront" href="https://www.docker.com/" text="Docker"/>
                                                         <Tag className="tag-blue space-infront" href="https://redis.io/" text="Redis"/>
                                                         <Tag className="tag-blue space-infront" href="https://sass-lang.com/" text="SCSS"/>
+                                                        <Tag className="tag-blue space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>
                                 </p>
                             </Sample>
                             <Sample
@@ -70,7 +71,7 @@ const Home: NextPage = () => {
                                 flexDesktopDirection="reverse"
                             >
                                 <p className="p">
-                                    SELENA is a mobile application that contains a curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointer text-white text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
+                                    SELENA is a mobile application is a platform for a curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointer text-white text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
                                 </p>
                                 <p className="p">
                                     Collaborators: The SELENA Application Development Team
@@ -106,7 +107,7 @@ const Home: NextPage = () => {
                                 flexDesktopDirection="row"
                             >
                                 <p className="p">
-                                    USICK.com is a resource where a person can enter the symptoms they are experiencing and receive a list of possible medical issues. On the results page, you are given the address of nearby medical facilities.
+                                    USICK.com is a resource where a person that is feeling unwell can enter the symptoms they are experiencing into a form. We use the APIMedic's symptom-checker API to retreive a list of possible medical issues based on those symptoms. We also utilized the Geolocation API and Google Map's "Place API" to display the address of each medical center within a 10 mile radius of the user's location.
                                 </p>
                                 <p className="p">
                                     Collaborators: Software Engineering classmates
@@ -129,14 +130,14 @@ const Home: NextPage = () => {
                                 sampleTitle={
                                     <h3>
                                         <Link className="text-white text-hover-lighter-purple" href="https://github.com/John-Keyes/lykey-rest-api" target="_blank" rel="noopener noreferrer">
-                                            lykey-restapi
+                                            REST-API
                                         </Link>
                                     </h3>
                                 }
                                 className="card-purple"
                                 flexDesktopDirection="reverse"
                             >
-                                <p className="p">In this project, I setup authentication and authorization on the backend.</p>
+                                <p className="p">A generic REST-API template that has authentication, authorization, user, and user posession functionality. The next features are still under construction.</p>
                                     <p className="p tag-p">
                                         <Tag className="tag-purple" href="https://www.python.org/" text="Python"/>
                                         <Tag className="tag-purple space-infront" href="https://fastapi.tiangolo.com/" text="FastAPI"/>
@@ -147,6 +148,7 @@ const Home: NextPage = () => {
                                         <Tag className="tag-purple space-infront" href="https://alembic.sqlalchemy.org/"  text="Alembic"/>
                                         <Tag className="tag-purple space-infront" href="https://sass-lang.com/"  text="SCSS"/>
                                         <Tag className="tag-purple space-infront" href="https://docs.python.org/3/library/venv.html"  text="VENV"/>
+                                        <Tag className="tag-purple space-infront" href="https://swagger.io/tools/swagger-ui/"  text="Swagger"/>                               
                                     </p>
                             </Sample>
                             <Sample
@@ -163,7 +165,7 @@ const Home: NextPage = () => {
                                 className="card-blue"
                                 flexDesktopDirection="row"
                             >
-                                <p className="p">The combination of the task-frontend & task-backend is just a project that shows people I am knowledgable on how full stack development works.</p>
+                                <p className="p">task-frontend and task-backend make up one full stack project. This project allows users to create, edit, and delete tasks.</p>
                                     <p className="p tag-p">
                                         <Tag className="tag-blue" href="https://nextjs.org/" text="Next"/>
                                         <Tag className="tag-blue space-infront" href="https://www.prisma.io/" text="Prisma"/>
@@ -172,6 +174,7 @@ const Home: NextPage = () => {
                                         <Tag className="tag-blue space-infront" href="https://www.docker.com/" text="Docker"/>
                                         <Tag className="tag-blue space-infront" href="https://sass-lang.com/" text="SCSS"/>
                                         <Tag className="tag-blue space-infront" href="https://www.mysql.com/" text="MySQL"/>
+                                        <Tag className="tag-blue space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>
                                     </p>
                             </Sample>
                         </div>
@@ -202,7 +205,7 @@ const Home: NextPage = () => {
                                         app rebuild, he rapidly understood our methodologies and delivered high-quality code that perfectly 
                                         matched our prototypes. His thoroughness, commitment, and attention to detail make him a valuable 
                                         asset to any team."
-                                        className="space-above card-blue"
+                                className="space-above card-blue"
                             />
                         </div>
                     </SubTitle>

@@ -19,7 +19,9 @@ const DownloadIcon = (props: DownloadIconType) => {
                 <div className="flex flex-row flex-center flex-start-md">
                     <Button onClick={HandleButtonClick} className={props.className || ""}>
                         <span className="text-white fa-solid fa-download" />
-                        {props.children}
+                        <span className="space-infront">
+                            {props.children}
+                        </span>
                     </Button>
                     <Link ref={downloadLink} href={props.href || "#"} style={{display: "none"}} download/>
                 </div>

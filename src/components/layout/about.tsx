@@ -4,7 +4,7 @@ import SubTitle from "./subTitle";
 import Title from "./title";
 import Card from "../card";
 import { myPfp, resume } from 'src/lib/static';
-
+import Button from "../button";
 
 
 const About = () => (
@@ -16,11 +16,23 @@ const About = () => (
                             </Link>
                         </div>
                         <SubTitle id="hello" text={<span>My name is <Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" className="text-dark-blue text-hover-clear-blue" target="_blank" rel="noopener noreferrer">John Keyes</Link></span>}>
-                                <h3>
-                                    I build web and mobile applications that help fulfill any need. 
-                                    I build applications with immersive user experiences and performance efficient applications.
-                                </h3>
-                                    <DownloadIcon className="bg-dark-blue bg-hover-clear-blue button-glow-blue flex-center flex-start-md" href={resume}><span className="space-infront">Download Resume</span></DownloadIcon>
+                            <h3 className="text-center text-start-md">
+                                I build web and mobile applications that help fulfill any need. 
+                                I build applications with immersive user experiences and performance efficient applications.
+                            </h3>
+                            <div className="flex flex-center flex-start-md">
+                                <DownloadIcon className="bg-dark-blue bg-hover-clear-blue button-glow-blue" href={resume}>Download Resume</DownloadIcon>
+                                {/*<Button className="bg-purple bg-hover-light-purple button-glow-purple space-infront">
+                                    <Link href="/resume" className="text-white">
+                                        <span className="fa-solid fa-eye"/>
+                                        <span className="space-infront">Preview Resume</span>
+                                    </Link>
+                                </Button>
+                                <Modal>
+                                    <Resume/>
+                                </Modal>
+                                */}
+                            </div>
                         </SubTitle>
                     </Card> 
 );

@@ -10,7 +10,7 @@ const DEFAULT_DESCRIPTION = "I build web and mobile applications that help fulfi
 	"Application Development", "App", "Developer", "Web", "Mobile", "Computer Science", "Bachelor of Science", "Computer", "Science"
 	"Portfolio", "Resume", "Work Samples", "Socials", "Contact"
 ];*/
-const KEYWORDS = "LyKey, Software,Development, Engineering, Software Engineering, Software Developer, Software Development, LyKeyTech, LyKey, Tech, Web Developer, Web Development, Mobile Development, Mobile Developer, Application, Application Development, App, Developer, Web, Mobile, Computer Science, Bachelor of Science, Computer, Science, Portfolio, Resume, Work Samples, Socials, Contact";
+const KEYWORDS = "LyKey, Software,Development, Engineering, Software Engineering, Software Developer, Software Development, LyKeyTech, LyKey, Tech, Web Developer, Web Development, Mobile Development, Mobile Developer, Application, Application Development, App, Developer, Web, Mobile, Computer Science, Bachelor of Science, Computer, Science, Portfolio, Resume, Work Samples, Socials, Contact, App Development, Web Development, Web Services, Web Development Services";
 
 const DefaultSEO = () => {
 	const router = useRouter();
@@ -96,11 +96,11 @@ const DefaultSEO = () => {
 			/>
 
 			<LogoJsonLd
-				logo="/images/logo.png"
+				logo={logo}
 				url="/"
 			/>
     	</>
   	)
 }
 
-export default DefaultSEO
+export default DefaultSEO;
