@@ -71,7 +71,7 @@ const Home: NextPage = () => {
                                 flexDesktopDirection="reverse"
                             >
                                 <p className="p">
-                                    SELENA is a mobile application is a platform for a curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointer text-white text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
+                                    I worked on a mobile application that contained the SELENA curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointer text-white text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
                                 </p>
                                 <p className="p">
                                     Collaborators: The SELENA Application Development Team
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
                                 className="card-purple"
                                 flexDesktopDirection="reverse"
                             >
-                                <p className="p">A generic REST-API template that has authentication, authorization, user, and user posession functionality. The next features are still under construction.</p>
+                                <p className="p">A REST-API template that has authentication, authorization, user, and user posession functionality. The next features are still under construction.</p>
                                     <p className="p tag-p">
                                         <Tag className="tag-purple" href="https://www.python.org/" text="Python"/>
                                         <Tag className="tag-purple space-infront" href="https://fastapi.tiangolo.com/" text="FastAPI"/>

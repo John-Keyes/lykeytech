@@ -10,10 +10,25 @@ const Socials = () => (
                             <h3>Socials</h3>
                             <div className="flex flex-row">
                                 <Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">
-                                    <span className="fa-brands fa-linkedin fa-2xl text-white text-hover-dark-blue"/>
+                                    <span className="fa-brands fa-linkedin fa-2xl text-white text-hover-clear-blue"/>
                                 </Link>
                                 <Link className="space-infront" href="https://github.com/John-Keyes" target="_blank" rel="noopener noreferrer">
-                                    <span className="fa-brands fa-github fa-2xl text-white text-hover-black"/>
+                                    <span className="fa-brands fa-github fa-2xl text-white text-hover-lighter-purple"/>
+                                </Link>
+                                <Link className="space-infront" href="https://www.upwork.com/freelancers/~018106e7e0817e9ad0" target="_blank" rel="noopener noreferrer">
+                                    <span className="fa-brands fa-upwork fa-2xl text-white text-hover-clear-blue"/>
+                                </Link>
+                                <Link className="space-infront" href="https://www.instagram.com/lykeytech" target="_blank" rel="noopener noreferrer">
+                                    <span className="fa-brands fa-instagram fa-2xl text-white text-hover-lighter-purple"/>
+                                </Link>
+                                <Link className="space-infront" href="https://www.facebook.com/profile.php?id=61575014991131" target="_blank" rel="noopener noreferrer">
+                                    <span className="fa-brands fa-facebook fa-2xl text-white text-hover-clear-blue"/>
+                                </Link>
+                                <Link className="space-infront" href="https://www.youtube.com/@LyKeyTech" target="_blank" rel="noopener noreferrer">
+                                    <span className="fa-brands fa-youtube fa-2xl text-white text-hover-lighter-purple"/>
+                                </Link>
+                                <Link className="space-infront" href="https://www.tiktok.com/@lykeytech" target="_blank" rel="noopener noreferrer">
+                                    <span className="fa-brands fa-tiktok fa-2xl text-white text-hover-clear-blue"/>
                                 </Link>
                             </div>
                             <div className="flex flex-column space-above">
