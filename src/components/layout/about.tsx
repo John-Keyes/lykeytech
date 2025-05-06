@@ -5,6 +5,7 @@ import Title from "./title";
 import Card from "../card";
 import { myPfp, resume } from 'src/lib/static';
 import Button from "../button";
+import PreviewResume from "../previewResume";
 
 
 const About = () => (
@@ -22,16 +23,7 @@ const About = () => (
                             </h3>
                             <div className="flex flex-center flex-start-md">
                                 <DownloadIcon className="bg-dark-blue bg-hover-clear-blue button-glow-blue" href={resume}>Download Resume</DownloadIcon>
-                                {/*<Button className="bg-purple bg-hover-light-purple button-glow-purple space-infront">
-                                    <Link href="/resume" className="text-white">
-                                        <span className="fa-solid fa-eye"/>
-                                        <span className="space-infront">Preview Resume</span>
-                                    </Link>
-                                </Button>
-                                <Modal>
-                                    <Resume/>
-                                </Modal>
-                                */}
+                                {/*<PreviewResume/>*/}
                             </div>
                         </SubTitle>
                     </Card> 

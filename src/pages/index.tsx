@@ -7,7 +7,7 @@ import Socials from 'src/components/layout/socials';
 import PopMenu from 'src/components/popMenu';
 import Tag from 'src/components/tag';
 import About from 'src/components/layout/about';
-import { starter1, starter2, starter3, starter4 } from 'src/lib/static';
+import { restApiCS, cmscritic, todoapp, resilience } from 'src/lib/static';
 import Sample from 'src/components/layout/sample';
 
 const Home: NextPage = () => {
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
                             <Sample 
                                 cardMedia={
                                     <Link href="https://cmscritic.com" target="_blank" rel="noopener noreferrer">
-                                        <img src={starter2} className="space-above border border-light-blue button-glow-blue" alt="CMSCritic" width="350" height="190"/>
+                                        <img src={cmscritic} className="space-above border border-light-blue button-glow-blue" alt="CMSCritic" width="350" height="190"/>
                                     </Link>
                                 } 
                                 sampleTitle={
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
                                             Collaborators: <Link href="https://www.linkedin.com/in/mattgarrepy/" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Matthew Garrepy</Link> and <Link href="https://luisgustavosc.com/" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Luis G. Sanchez</Link>.
                                         </p>
                                         <p className="p">
-                                            While working for <Link href="https://www.solodev.com" className="text-white text-hover-card-blue" target="_blank" rel="noopener noreferrer">Solodev</Link>, we made a news site.
+                                            At <Link href="https://www.solodev.com" className="text-white text-hover-card-blue" target="_blank" rel="noopener noreferrer">Solodev</Link>, I helped update the cmscritic website. This is a place where registered critics publish news articles on content strategies and technology in general.
                                         </p>
                                         <p className="p tag-p"> 
                                                         <Tag className="tag-blue" href="https://nextjs.org/" text="Next"/>
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
                             <Sample
                                 cardMedia={
                                     <Link href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
-                                        <img src={starter4} className="rounded-pfp space-above border border-light-purple button-glow-purple" alt="MySELENA" width="150" height="150"/>
+                                        <img src={resilience} className="rounded-pfp space-above border border-light-purple button-glow-purple" alt="MySELENA" width="150" height="150"/>
                                     </Link>
                                 }
                                 sampleTitle={
@@ -124,7 +124,7 @@ const Home: NextPage = () => {
                             <Sample
                                 cardMedia={
                                     <Link href="https://github.com/John-Keyes/lykey-rest-api" target="_blank" rel="noopener noreferrer">
-                                        <img className="space-above card-img-blur border border-light-purple button-glow-purple" src={starter1} alt="REST API" width="250" height="300"/>
+                                        <img className="space-above card-img-blur border border-light-purple button-glow-purple" src={restApiCS} alt="REST API" width="250" height="300"/>
                                     </Link>
                                 }
                                 sampleTitle={
@@ -154,18 +154,14 @@ const Home: NextPage = () => {
                             <Sample
                                 cardMedia={
                                     <Link href="https://github.com/John-Keyes/task-frontend" target="_blank" rel="noopener noreferrer">
-                                        <img src={starter3} className="space-above border border-light-blue button-glow-blue" alt="task" width="300" height="190"/>
+                                        <img src={todoapp} className="space-above border border-light-blue button-glow-blue" alt="task" width="300" height="190"/>
                                     </Link>
                                 }
-                                sampleTitle={
-                                    <h3> 
-                                        <Link href="https://github.com/John-Keyes/task-frontend" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">task-frontend</Link> & <Link href="https://github.com/John-Keyes/task-backend" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">task-backend</Link>
-                                    </h3>
-                                }
+                                sampleTitle={<h3>TODO APP</h3>}
                                 className="card-blue"
                                 flexDesktopDirection="row"
                             >
-                                <p className="p">task-frontend and task-backend make up one full stack project. This project allows users to create, edit, and delete tasks.</p>
+                                <p className="p"><Link href="https://github.com/John-Keyes/task-frontend" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-frontend"</Link> & <Link href="https://github.com/John-Keyes/task-backend" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-backend"</Link> are repositories that make up a small full stack TODO Application.</p>
                                     <p className="p tag-p">
                                         <Tag className="tag-blue" href="https://nextjs.org/" text="Next"/>
                                         <Tag className="tag-blue space-infront" href="https://www.prisma.io/" text="Prisma"/>
@@ -195,7 +191,7 @@ const Home: NextPage = () => {
                                     aptitude to absorb new systems quickly and cogently.John is a fantastic resource for any digital organization looking to scale a project quickly 
                                     with precision. He is diligent, dedicated, and detail-oriented &mdash; and, most importantly, 
                                     collaborates well with other team members."
-                                className="space-above card-purple"
+                                className="space-above card-purple width-half"
                             />
                             <Endorsement
                                 person="Luis G. Sanchez"
@@ -205,7 +201,7 @@ const Home: NextPage = () => {
                                         app rebuild, he rapidly understood our methodologies and delivered high-quality code that perfectly 
                                         matched our prototypes. His thoroughness, commitment, and attention to detail make him a valuable 
                                         asset to any team."
-                                className="space-above card-blue"
+                                className="space-above card-blue width-half"
                             />
                         </div>
                     </SubTitle>

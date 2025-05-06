@@ -1,11 +1,10 @@
 import React from 'react';
-import { NextPage } from 'next';
 import Link from 'next/link';
 
-const Resume: NextPage = () => {
+const Resume = () => {
     return (
     <div id="resume-root">
-	<div id="resume-side-bar">
+    <div id="resume-side-bar">
         <div className="resume-side-bar-section">
             <div className="resume-side-bar-section-title-container">
                 <h2 className="resume-side-bar-section-title text-white">Contact Me</h2>
@@ -13,8 +12,8 @@ const Resume: NextPage = () => {
             <div>
                 <ul>
                     <li><p className="resume-p">Orlando, Florida</p></li>
-                    <li><p className="resume-p">Call: <a href="tel:+14073983915" className="text-white" target="_blank" rel="noopener noreferrer">+1 407-398-3915</a></p></li>
-                    <li><p className="resume-p">Email: <a href="mailto:john.keyes@lykeytech.com" className="text-white" target="_blank" rel="noopener noreferrer">john.keyes@lykeytech.com</a></p></li>
+                    <li><p className="resume-p">Call: <Link href="tel:+14073983915" className="text-white" target="_blank" rel="noopener noreferrer">+1 407-398-3915</Link></p></li>
+                    <li><p className="resume-p">Email: <Link href="mailto:john.keyes@lykeytech.com" className="text-white" target="_blank" rel="noopener noreferrer">john.keyes@lykeytech.com</Link></p></li>
                 </ul>
             </div>
         </div>
@@ -24,10 +23,10 @@ const Resume: NextPage = () => {
             </div>
             <div>
                 <ul>
-                <li><p className="resume-p"><a href="https://www.lykeytech.com" className="text-white" target="_blank" rel="noopener noreferrer">Website</a></p></li>
-                    <li><p className="resume-p"><a href="https://github.com/John-Keyes" className="text-white" target="_blank" rel="noopener noreferrer">Github</a></p></li>
-                    <li><p className="resume-p"><a href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" className="text-white" target="_blank" rel="noopener noreferrer">LinkedIn</a></p></li>
-                    <li><p className="resume-p"><a href="https://cmscritic.com/" className="text-white" target="_blank" rel="noopener noreferrer">Work example in a team</a></p></li>
+                <li><p className="resume-p"><Link href="https://www.lykeytech.com" className="text-white" target="_blank" rel="noopener noreferrer">Website</Link></p></li>
+                    <li><p className="resume-p"><Link href="https://github.com/John-Keyes" className="text-white" target="_blank" rel="noopener noreferrer">Github</Link></p></li>
+                    <li><p className="resume-p"><Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" className="text-white" target="_blank" rel="noopener noreferrer">LinkedIn</Link></p></li>
+                    <li><p className="resume-p"><Link href="https://cmscritic.com/" className="text-white" target="_blank" rel="noopener noreferrer">Work example in a team</Link></p></li>
                 </ul>
             </div>
         </div>
@@ -70,8 +69,8 @@ const Resume: NextPage = () => {
                 </ul>
             </div>
         </div>
-	</div>
-	<div id="resume-body">
+    </div>
+    <div id="resume-body">
         <div className="resume-body-section">
             <div className="resume-body-section-title-container">
                 <h1 className="resume-title">John Keyes</h1>
@@ -82,7 +81,7 @@ const Resume: NextPage = () => {
                 </p>
             </div>
         </div>
-		<div className="resume-body-section">
+        <div className="resume-body-section">
             <div className="resume-body-section-title-container">
                 <h2 className="resume-body-section-title">Work Experience</h2>
             </div>
@@ -118,7 +117,7 @@ const Resume: NextPage = () => {
                 </div>
                 <div className="resume-body-section-body-item">
                     <div className="resume-body-section-body-item-title-container">
-                        <h3><a href="https://www.solodev.com/" className="text-white" target="_blank" rel="noopener noreferrer">Solodev</a></h3>
+                        <h3><Link href="https://www.solodev.com/" className="text-white" target="_blank" rel="noopener noreferrer">Solodev</Link></h3>
                         <p className="resume-p">Address: 800 N Magnolia Ave #1400, Orlando, FL 32803</p>
                         <p className="resume-p"><Link href="tel:+18008597656" target="_blank" rel="noopener noreferrer" className="text-white">800-859-7656</Link></p>
                     </div>
@@ -224,15 +223,9 @@ const Resume: NextPage = () => {
             </div>
         </div>
         
-	</div>
+    </div>
 </div>
 );
 };
 
-Resume.getInitialProps = async () => {
-    return {
-        pageTitle: "Resume",
-        pageDescription: "John Keyes Resume | LyKeyTech"
-    }
-}
 export default Resume;
