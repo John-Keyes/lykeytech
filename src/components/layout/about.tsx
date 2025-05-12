@@ -16,7 +16,7 @@ const About = () => (
                                 <img src={myPfp} alt="John Keyes" className="rounded-pfp border border-light-blue button-glow-blue" width="150" height="150"/>
                             </Link>
                         </div>
-                        <SubTitle id="hello" text={<span className="text-center text-start-md">My name is <Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" className="text-dark-blue text-hover-clear-blue" target="_blank" rel="noopener noreferrer">John Keyes</Link></span>}>
+                        <SubTitle id="hello" text={<>My name is <Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" className="text-dark-blue text-hover-clear-blue" target="_blank" rel="noopener noreferrer">John Keyes</Link></>}>
                             <h3 className="text-center text-start-md">
                                 I build web and mobile applications that help fulfill any need. 
                                 I build applications with immersive user experiences and performance efficient applications.

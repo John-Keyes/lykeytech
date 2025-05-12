@@ -13,7 +13,7 @@ const SubTitle = (props : SubTitlePropsType) => {
     return (
         <>
             <h2 {...props} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className={`flex cursor-pointer  ${className || ""}`}>
-                <span id={`${id}-text`} className="sub-title text-hover-inherit">{text}</span>
+                <span id={`${id}-text`} className="sub-title text-hover-inherit text-align-inherit">{text}</span>
             </h2>
             {children && (
                 <section id={`${id}-section-body`} className={sectionclassname || ""}>

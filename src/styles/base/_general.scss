@@ -123,9 +123,7 @@ $colors: (
         }
     }
     &-inherit {
-        color: inherit;
-    }
-    &-inherit-align {
+        color: inherit !important;
         text-align: inherit !important;
     }
     @each $key, $value in $colors {
