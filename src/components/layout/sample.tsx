@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import Card, { CardPropsType } from '../card';
 
 interface SamplePropsType extends CardPropsType {
@@ -7,18 +7,23 @@ interface SamplePropsType extends CardPropsType {
     flexDesktopDirection: "row" | "reverse";
 }
 
-const Sample = (props: SamplePropsType) => (
+const Sample = (props: SamplePropsType) => {
+
+    const textAlign : "text-end" | "text-start" = props.flexDesktopDirection == "row" ? "text-end" : "text-start";
+    return (
     <>
-        <Card className={`flex flex-center fit-width sample-desktop sample-flex-${props.flexDesktopDirection || "row"} ${props.className}`}>
+        <Card className={`sample-desktop flex-center fit-width sample-${props.flexDesktopDirection} ${props.className}`}>
             <span className="sample-padding">
-            {props.cardMedia}
+                {props.cardMedia}
             </span>
-            <div className="space-above flex flex-column text-end width-half sample-padding">
-                {props.sampleTitle}
-                {props.children}
+            <div className={`space-above flex flex-column text-end width-half sample-padding`}>
+                <span className={textAlign}>
+                    {props.sampleTitle}
+                    {props.children}
+                </span>
             </div>
         </Card>
-        <Card className={`flex flex-center fit-width sample-mobile ${props.className}`}>
+        <Card className={`sample-mobile flex-center fit-width ${props.className}`}>
             <div className="space-above flex flex-column text-center fit-width sample-padding">
                 {props.sampleTitle}
                 {props.cardMedia}
@@ -26,6 +31,7 @@ const Sample = (props: SamplePropsType) => (
             </div>
         </Card>
     </>
-);
+    );
+};
 
 export default Sample;

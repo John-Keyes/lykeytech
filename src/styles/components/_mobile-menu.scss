@@ -3,7 +3,6 @@
     z-index: 3;
     top: 0;
     right: 0;
-    //width: 1
     transition: left 1s ease-in-out;
     border: 3px solid theme-color("light-purple");
 }
@@ -23,14 +22,12 @@
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
-    //&-link {
-        justify-content: space-between;
-        align-items: center;
-        transition: color 0.3s linear;
-        &:hover {
-            color: theme-color("lighter-purple");
-        }
-    //}
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s linear;
+    &:hover {
+        color: theme-color("lighter-purple");
+    }
 }
 
 #mobile-menu-list {

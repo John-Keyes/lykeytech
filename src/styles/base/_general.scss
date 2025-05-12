@@ -103,7 +103,7 @@ $colors: (
         }
     }
     &-center {
-        text-align:center;
+        text-align: center;
         @each $key, $value in $device-mins {
             &-#{$key} {
                 @media screen and (min-width: $value) {
@@ -124,6 +124,9 @@ $colors: (
     }
     &-inherit {
         color: inherit;
+    }
+    &-inherit-align {
+        text-align: inherit !important;
     }
     @each $key, $value in $colors {
         &-#{$key} {

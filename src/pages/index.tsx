@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NextPage } from 'next';
 import Link from 'next/link';
 import SubTitle from 'src/components/layout/subTitle';
@@ -9,8 +9,16 @@ import Tag from 'src/components/tag';
 import About from 'src/components/layout/about';
 import { restApiCS, cmscritic, todoapp, resilience } from 'src/lib/static';
 import Sample from 'src/components/layout/sample';
+import Loading from 'src/components/layout/loading';
 
 const Home: NextPage = () => {
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+    useEffect(() => {
+        setIsLoading(false);
+    }, []);
+    if(isLoading) {
+        return <Loading/>;
+    }
     return (
             <div id="home">
                 <div className="content-container content-container-padding flex flex-row">

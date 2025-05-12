@@ -1,13 +1,12 @@
 import React, { ComponentProps } from 'react';
-interface LoadingPropsType extends ComponentProps<"div"> { 
-    Redirection?: () => void,
-}
-const Loading = (props: LoadingPropsType) => {
-    const {Redirection} = props;
-    if(Redirection) {
-        Redirection();
-    }
-    return <div {...props} className="flex flex-center loading"/>;
-}
+
+const Loading = (props: ComponentProps<"div">) => (
+    <div {...props} className="flex flex-center fit-width loading">
+        <span className="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"/>
+        <span className="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"/>
+        <span className="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"/>
+        <span className="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"/>
+    </div>
+)
 
 export default Loading;
