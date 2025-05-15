@@ -1,5 +1,4 @@
 import React, { ComponentProps, ReactNode, useState } from 'react';
-import { WriteClipBoard } from 'src/lib/browser';
 
 interface SubTitlePropsType extends ComponentProps<"h2"> { 
     children?: ReactNode, 
@@ -12,7 +11,7 @@ const SubTitle = (props : SubTitlePropsType) => {
     const {id, children, text, className, sectionclassname} = props;
     return (
         <>
-            <h2 {...props} onClick={() => WriteClipBoard(`${window.location.href}/#${id}`)} className={`flex cursor-pointer  ${className || ""}`}>
+            <h2 {...props} className={`flex cursor-pointer  ${className || ""}`}>
                 <span id={`${id}-text`} className="sub-title text-hover-inherit text-align-inherit">{text}</span>
             </h2>
             {children && (

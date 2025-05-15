@@ -3,9 +3,9 @@
     &-blue {
         color: theme-color("light-blue");
         border: 2px solid theme-color("light-blue");
-        background-color: theme-color("text");
+        background-color: theme-color("dark-gray");
         &:hover {
-            color: theme-color("white");
+            color: white;
             border: 2px solid theme-color("clear-blue");
             background-color: theme-color("clear-blue");
             box-shadow: 0 0px 10px theme-color("clear-blue");
@@ -15,9 +15,9 @@
     &-purple {
         color: theme-color("light-purple");
         border: 2px solid theme-color("light-purple");
-        background-color: theme-color("text");
+        background-color: theme-color("dark-purple");
         &:hover {
-            color: theme-color("white");
+            color: white;
             border: 2px solid theme-color("lighter-purple");
             background-color: theme-color("lighter-purple");
             box-shadow: 0 0px 10px theme-color("lighter-purple");

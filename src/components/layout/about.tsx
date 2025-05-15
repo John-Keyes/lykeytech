@@ -10,8 +10,8 @@ import PreviewResume from "../previewResume";
 
 const About = () => (
     <Card className="flex flex-column card-purple">
-                        <div className="flex flex-center flex-column flex-row-md">
-                            <Title id="about" text="Hello!" className="fit-width text-white text-center text-start-md "/>
+                        <div className="flex flex-center flex-column flex-row-md flex-between">
+                            <Title id="about" text="Hello!" className="fit-widthtext-center text-start-md "/>
                             <Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">
                                 <img src={myPfp} alt="John Keyes" className="rounded-pfp border border-light-blue button-glow-blue" width="150" height="150"/>
                             </Link>

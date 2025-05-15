@@ -7,6 +7,6 @@ const Loading = (props: ComponentProps<"div">) => (
         <span className="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"/>
         <span className="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"/>
     </div>
-)
+);
 
 export default Loading;

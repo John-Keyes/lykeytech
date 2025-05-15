@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import { DefaultSeo, LogoJsonLd } from 'next-seo';
-import { logo } from 'src/lib/static';
+import { logoPng } from 'src/lib/static';
 
-const THUMBNAIL = logo;
+const THUMBNAIL = logoPng;
 const DEFAULT_TITLE = "LyKeyTech – Building Better Applications";
 const DEFAULT_DESCRIPTION = "I build web and mobile applications that help fulfill any need. I build applications with immersive user experiences and performance efficient applications.";
 /*const KEYWORDS= ["LyKey", "Software,Development", "Engineering", "Software Engineering", "Software Developer", "Software Development", 
@@ -96,7 +96,7 @@ const DefaultSEO = () => {
 			/>
 
 			<LogoJsonLd
-				logo={logo}
+				logo={logoPng}
 				url="/"
 			/>
     	</>

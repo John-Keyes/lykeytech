@@ -15,7 +15,7 @@ const PopMenu = ({children, className, ariaLabel, trigger} : PopMenuCommonProps)
             <div className="pop-menu-trigger" onMouseEnter={() => setBodyDisplay("flex")}>
                 {trigger}
             </div>
-            <div className="pop-menu-body bg-text" style={{display: bodyDisplay}}>
+            <div className="pop-menu-body bg-dark-gray" style={{display: bodyDisplay}}>
                 {children}
             </div>
         </div>

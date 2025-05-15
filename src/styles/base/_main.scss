@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     background-color: theme-color("dark-purple");
-    color: theme-color("white");
+    color: white;
     font-family: Inter;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -52,6 +52,7 @@ body {
   }
   a, .a {
     text-decoration: none;
+    color: white;
     font-weight: 700;
     cursor: pointer;
   }
@@ -101,6 +102,7 @@ body {
 }
 
 h1, h2, h3 {
+  color: white;
   justify-content: start;
   @media screen and (max-width: device-max("sm")) {
     justify-content: center;
@@ -154,4 +156,8 @@ h4 {
   &-scroll {
     overflow: scroll;
   }
+}
+
+span {
+  color: white;
 }

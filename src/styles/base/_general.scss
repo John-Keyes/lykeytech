@@ -65,6 +65,9 @@ $device-maxes: (
         justify-content: start;
         align-items: center;
     }
+    &-between {
+        justify-content: space-between;
+    }
 }
 
 .block {
@@ -74,17 +77,12 @@ $device-maxes: (
 $colors: (
     "dark-blue": #5E718C,
     "light-blue": #8CA6A2,
-    "blue": #1E6F9F,
-    "white": #FFF,
-    "dark-gray": #222,
     "dark-purple": #0c0711,
     "purple": #482b66,
     "light-purple": #9457d4,
     "lighter-purple": #c590fc,
     "clear-blue": #4EA8DE,
-    "dark-red":#630000,
-    "black": #000000,
-    "text": #0D0D0D
+    "dark-gray": #0D0D0D
 );
 
 @function theme-color($color) {

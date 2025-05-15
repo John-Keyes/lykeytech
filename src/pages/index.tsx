@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                                 } 
                                 sampleTitle={
                                     <h3>
-                                        <Link href="https://cmscritic.com" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://cmscritic.com" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">
                                             CMSCritic
                                         </Link>
                                     </h3>
@@ -45,10 +45,10 @@ const Home: NextPage = () => {
                                 flexDesktopDirection="row"
                             >
                                 <p className="p">
-                                            Collaborators: <Link href="https://www.linkedin.com/in/mattgarrepy/" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Matthew Garrepy</Link> and <Link href="https://luisgustavosc.com/" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Luis G. Sanchez</Link>.
+                                            Collaborators: <Link href="https://www.linkedin.com/in/mattgarrepy/" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Matthew Garrepy</Link> and <Link href="https://luisgustavosc.com/" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Luis G. Sanchez</Link>.
                                         </p>
                                         <p className="p">
-                                            At <Link href="https://www.solodev.com" className="text-white text-hover-card-blue" target="_blank" rel="noopener noreferrer">Solodev</Link>, I helped update the cmscritic website. This is a place where registered critics publish news articles on content strategies and technology in general.
+                                            At <Link href="https://www.solodev.com" className="text-hover-card-blue" target="_blank" rel="noopener noreferrer">Solodev</Link>, I helped update the cmscritic website. This is a place where registered critics publish news articles on content strategies and technology in general.
                                         </p>
                                         <p className="p tag-p"> 
                                                         <Tag className="tag-blue" href="https://nextjs.org/" text="Next"/>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                                 }
                                 sampleTitle={
                                     <h3>
-                                        <Link className="text-white text-hover-lighter-purple" href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
+                                        <Link className="text-hover-lighter-purple" href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
                                             MySELENA Application
                                         </Link>
                                     </h3>
@@ -79,13 +79,13 @@ const Home: NextPage = () => {
                                 flexDesktopDirection="reverse"
                             >
                                 <p className="p">
-                                    I worked on a mobile application that contained the SELENA curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointer text-white text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
+                                    I worked on a mobile application that contained the SELENA curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointertext-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
                                 </p>
                                 <p className="p">
                                     Collaborators: The SELENA Application Development Team
                                 </p>
                                 <p className="p">
-                                    Available on <Link href="https://apps.apple.com/us/app/my-selena/id1504764818" className="cursor-pointer text-white text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">App Store</Link> and <Link href="https://play.google.com/store/apps/details?id=org.mylearningtools.app&hl=en_US&pli=1" className="cursor-pointer text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Google Play</Link>.
+                                    Available on <Link href="https://apps.apple.com/us/app/my-selena/id1504764818" className="cursor-pointertext-hover-lighter-purple" target="_blank" rel="noopener noreferrer">App Store</Link> and <Link href="https://play.google.com/store/apps/details?id=org.mylearningtools.app&hl=en_US&pli=1" className="cursor-pointertext-hover-clear-blue" target="_blank" rel="noopener noreferrer">Google Play</Link>.
                                 </p>
                                 <p className="p tag-p">
                                     <Tag className="tag-purple" href="https://reactnative.dev/" text="React Native"/>
@@ -100,13 +100,13 @@ const Home: NextPage = () => {
                                 cardMedia={
                                     <PopMenu trigger={<iframe className="space-above border border-light-blue button-glow-blue" width="300" height="190" src="https://www.youtube.com/embed/Jrz03x38rs8" />}>                               
                                         <Link href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
-                                            <span className="fa-solid fa-up-right-from-square text-white text-hover-clear-blue"/>
+                                            <span className="fa-solid fa-up-right-from-squaretext-hover-clear-blue"/>
                                         </Link>
                                     </PopMenu>
                                 }
                                 sampleTitle={
                                     <h3>
-                                        <Link className="text-white text-hover-clear-blue" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
+                                        <Link className="text-hover-clear-blue" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
                                             USICK.com
                                         </Link>
                                     </h3>
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
                                 }
                                 sampleTitle={
                                     <h3>
-                                        <Link className="text-white text-hover-lighter-purple" href="https://github.com/John-Keyes/lykey-rest-api" target="_blank" rel="noopener noreferrer">
+                                        <Link className="text-hover-lighter-purple" href="https://github.com/John-Keyes/lykey-rest-api" target="_blank" rel="noopener noreferrer">
                                             REST-API
                                         </Link>
                                     </h3>
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
                                 className="card-blue"
                                 flexDesktopDirection="row"
                             >
-                                <p className="p"><Link href="https://github.com/John-Keyes/task-frontend" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-frontend"</Link> & <Link href="https://github.com/John-Keyes/task-backend" className="text-white text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-backend"</Link> are repositories that make up a small full stack TODO Application.</p>
+                                <p className="p"><Link href="https://github.com/John-Keyes/task-frontend" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-frontend"</Link> & <Link href="https://github.com/John-Keyes/task-backend" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-backend"</Link> are repositories that make up a small full stack TODO Application.</p>
                                     <p className="p tag-p">
                                         <Tag className="tag-blue" href="https://nextjs.org/" text="Next"/>
                                         <Tag className="tag-blue space-infront" href="https://www.prisma.io/" text="Prisma"/>
@@ -187,7 +187,7 @@ const Home: NextPage = () => {
             </div>
             <div className="home-section-padding">
                 <div className="flex flex-column content-container">
-                    <SubTitle id="endorsements" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" className="text-white" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
+                    <SubTitle id="endorsements" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" className="" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
                         <div className="flex flex-row card-divider">
                             <Endorsement
                                 person="Matthew Garrepy"

@@ -13,7 +13,7 @@ interface EndorsementProps extends ComponentProps<"div"> {
 const Endorsement = (props: EndorsementProps) => (
     
                     <Card className={props.className || ""}>
-                        <h3><Link href={props.personLink} className={`text-white text-hover-${props.hoverColor}`} target="_blank" rel="noopener noreferrer">{props.person}</Link></h3>
+                        <h3><Link href={props.personLink} className={`text-hover-${props.hoverColor}`} target="_blank" rel="noopener noreferrer">{props.person}</Link></h3>
                         <p className="p">&quot;{props.text}&quot;</p>
                     </Card>
             
