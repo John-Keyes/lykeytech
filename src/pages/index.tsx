@@ -188,7 +188,7 @@ const Home: NextPage = () => {
             <div className="home-section-padding">
                 <div className="flex flex-column content-container">
                     <SubTitle id="endorsements" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" className="" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
-                        <div className="flex flex-row card-divider">
+                        <div className="flex card-divider flex-column flex-row-md">
                             <Endorsement
                                 person="Matthew Garrepy"
                                 personLink="https://www.linkedin.com/in/mattgarrepy/"
@@ -199,7 +199,7 @@ const Home: NextPage = () => {
                                     aptitude to absorb new systems quickly and cogently.John is a fantastic resource for any digital organization looking to scale a project quickly 
                                     with precision. He is diligent, dedicated, and detail-oriented &mdash; and, most importantly, 
                                     collaborates well with other team members."
-                                className="space-above card-purple width-half"
+                                className="space-above card-purple"
                             />
                             <Endorsement
                                 person="Luis G. Sanchez"
@@ -209,7 +209,7 @@ const Home: NextPage = () => {
                                         app rebuild, he rapidly understood our methodologies and delivered high-quality code that perfectly 
                                         matched our prototypes. His thoroughness, commitment, and attention to detail make him a valuable 
                                         asset to any team."
-                                className="space-above card-blue width-half"
+                                className="space-above card-blue"
                             />
                         </div>
                     </SubTitle>

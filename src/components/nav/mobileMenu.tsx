@@ -13,7 +13,7 @@ const MobileMenu = ({menuOpen, setMenuOpen}: MobileMenuType) => {
     return (
         <div ref={mobileMenuRef} id="mobile-menu-container" className="flex-column bg-dark-purple" style={{display: menuOpen ? "flex": "none"}}>
             <div id="mobile-menu-top" className="flex flex-row flex-center">
-                <span onClick={() => setMenuOpen(false)} className="fa-solidcursor-pointer fa-chevron-left"/>
+                <span onClick={() => setMenuOpen(false)} className="fa-solid cursor-pointer fa-chevron-left"/>
                 <h2 className="">Menu</h2>
             </div>
             <div id="mobile-menu-list" className="flex flex-column flex-center">
@@ -31,7 +31,7 @@ const MobileMenu = ({menuOpen, setMenuOpen}: MobileMenuType) => {
                     </Link>
                     <Link href="#socials" onClick={() => setMenuOpen(false)} className="mobile-menu-list-item flex flex-row cursor-pointer">
                         <h3>Socials</h3>
-                        <span className="fa-solid fa-handshake"/>
+                        <span className="fa-solid fa-user-group"/>
                     </Link>
                     <Button className="bg-purple bg-hover-light-purple button-glow-purple"><Link href="mailto:john.keyes@lykeytech.com" className="">Contact Me</Link></Button>
             </div>

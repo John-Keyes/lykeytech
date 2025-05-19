@@ -128,14 +128,14 @@ $colors: (
         &-#{$key} {
             color: $value;
             &-transparent {
-                color: rgba($value, 0);
+                color: rgba($value, 0) !important;
             }
         }
         &-hover-#{$key} {
             &:hover {
                 color: $value;
                 &-transparent {
-                    color: rgba($value, 0);
+                    color: rgba($value, 0) !important;
                 }
             }
         }
@@ -147,17 +147,17 @@ $colors: (
         &-#{$key} {
             background-color: $value;
             &-transparent {
-                background-color: rgba($value, 0);
+                background-color: rgba($value, 0) !important;
             }
         }
         &-hover-#{$key} {
             &:hover {
                 background-color: $value;
                 &-transparent {
-                    background-color: rgba($value, 0);
+                    background-color: rgba($value, 0) !important;
                 }
                 &-glow {
-                    box-shadow: 0 0px 10px $value;
+                    box-shadow: 0 0px 10px $value !important;
                 }
             }
         }

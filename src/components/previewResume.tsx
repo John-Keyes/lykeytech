@@ -15,6 +15,7 @@ const PreviewResume = () => {
         <Modal
           isOpen={modalOpen}
           onRequestClose={() => setModalOpen(false)}
+      
           contentLabel="John Keyes Resume"
         >
           <Resume/>
