@@ -17,7 +17,7 @@ const MobileMenu = ({menuOpen, setMenuOpen}: MobileMenuType) => {
                 <h2 className="">Menu</h2>
             </div>
             <div id="mobile-menu-list" className="flex flex-column flex-center">
-                    <Link href="#about" onClick={() => setMenuOpen(false)} className="mobile-menu-list-item flex flex-rowcursor-pointer">
+                    <Link href="#about" onClick={() => setMenuOpen(false)} className="mobile-menu-list-item flex flex-row cursor-pointer">
                         <h3>About</h3> 
                         <span className="fa-solid fa-address-card"/>
                     </Link>

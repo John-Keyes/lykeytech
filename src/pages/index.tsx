@@ -79,13 +79,13 @@ const Home: NextPage = () => {
                                 flexDesktopDirection="reverse"
                             >
                                 <p className="p">
-                                    I worked on a mobile application that contained the SELENA curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointertext-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
+                                    I worked on a mobile application that contained the SELENA curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointer text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
                                 </p>
                                 <p className="p">
                                     Collaborators: The SELENA Application Development Team
                                 </p>
                                 <p className="p">
-                                    Available on <Link href="https://apps.apple.com/us/app/my-selena/id1504764818" className="cursor-pointertext-hover-lighter-purple" target="_blank" rel="noopener noreferrer">App Store</Link> and <Link href="https://play.google.com/store/apps/details?id=org.mylearningtools.app&hl=en_US&pli=1" className="cursor-pointertext-hover-clear-blue" target="_blank" rel="noopener noreferrer">Google Play</Link>.
+                                    Available on <Link href="https://apps.apple.com/us/app/my-selena/id1504764818" className="cursor-pointer text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">App Store</Link> and <Link href="https://play.google.com/store/apps/details?id=org.mylearningtools.app&hl=en_US&pli=1" className="cursor-pointer text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Google Play</Link>.
                                 </p>
                                 <p className="p tag-p">
                                     <Tag className="tag-purple" href="https://reactnative.dev/" text="React Native"/>

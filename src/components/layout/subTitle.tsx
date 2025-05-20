@@ -11,7 +11,7 @@ const SubTitle = (props : SubTitlePropsType) => {
     const {id, children, text, className, sectionclassname} = props;
     return (
         <>
-            <h2 {...props} className={`flex cursor-pointer  ${className || ""}`}>
+            <h2 {...props} className={`flex cursor-pointer ${className || ""}`}>
                 <span id={`${id}-text`} className="sub-title text-hover-inherit text-align-inherit">{text}</span>
             </h2>
             {children && (
