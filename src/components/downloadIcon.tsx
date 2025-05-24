@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { ReactNode, useRef } from 'react';
-import Button from '../button';
+import Button from './button';
 import { Url } from 'next/dist/shared/lib/router/router';
 
 interface DownloadIconType {

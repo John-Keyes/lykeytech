@@ -1,11 +1,9 @@
 import Link from "next/link";
-import DownloadIcon from "../download/downloadIcon";
+import DownloadIcon from "../downloadIcon";
 import SubTitle from "./subTitle";
 import Title from "./title";
 import Card from "../card";
 import { myPfp, resume } from 'src/lib/static';
-import Button from "../button";
-import PreviewResume from "../previewResume";
 
 
 const About = () => (
@@ -23,7 +21,6 @@ const About = () => (
                             </h3>
                             <div className="flex flex-center flex-start-md">
                                 <DownloadIcon className="bg-dark-blue bg-hover-clear-blue button-glow-blue" href={resume}>Download Resume</DownloadIcon>
-                                {/*<PreviewResume/>*/}
                             </div>
                         </SubTitle>
                     </Card> 

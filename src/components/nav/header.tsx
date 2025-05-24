@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import Link from 'next/link';
 import MobileMenu from './mobileMenu';
-import { logoPng } from 'src/lib/static';
+import { logoGif } from 'src/lib/static';
 
 const Header = () => {
     const topNavRoot = useRef<HTMLDivElement>(null);
@@ -10,9 +10,11 @@ const Header = () => {
     return (
             <div ref={topNavRoot} id="top-nav-root" className="flex fit-width bg-dark-purple">
                 <nav id="top-nav" className="flex fit-width content-container">
-                    <Link id="header-logo-container" href="/">
-                        <img alt="Logo" src={logoPng} width="80" height="80"/>
-                    </Link>
+                    <div id="header-logo-container">
+                        <Link id="header-logo-link" href="/">
+                            <img alt="Logo" src={logoGif} width="55" height="50"/>
+                        </Link>
+                    </div>
                     <div id="mobile-menu-container-visibility">
                         <span className="fa-solid fa-bars fa-xl cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}/>
                         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>

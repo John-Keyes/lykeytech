@@ -1,12 +1,14 @@
 import Link from "next/link";
 import SubTitle from "./subTitle";
 import Button from "../button";
+import { qrCode } from "src/lib/static";
 
 const Socials = () => (
                         <SubTitle id="socials" className="" sectionclassname="flex flex-column flex-center space-below" text="Contact">
                             <Button className="bg-purple bg-hover-light-purple button-glow-purple">
                                 <Link href="mailto:john.keyes@lykeytech.com" className="">Send Message</Link>
                             </Button>
+                            <img className="space-above card-img-blur border border-light-purple button-glow-purple" src={qrCode} alt="Website QR Code" width="150" height="150"/>
                             <h3>Socials</h3>
                             <div className="flex flex-row">
                                 <Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">

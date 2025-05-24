@@ -17,6 +17,10 @@
     }
 }
 
+#header-logo-container {
+    border: 2px solid white;
+}
+
 #mobile-menu-container-visibility {
     display: flex;
     @media screen and (min-width: device-min("lg")) {
