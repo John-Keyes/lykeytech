@@ -51,7 +51,8 @@ const Home: NextPage = () => {
                                             At <Link href="https://www.solodev.com" className="text-hover-card-blue" target="_blank" rel="noopener noreferrer">Solodev</Link>, I helped update the cmscritic website. This is a place where registered critics publish news articles on content strategies and technology in general.
                                         </p>
                                         <p className="p tag-p"> 
-                                                        <Tag className="tag-blue" href="https://nextjs.org/" text="Next"/>
+                                                        <Tag className="tag-blue" href="https://react.dev/" text="React"/> 
+                                                        <Tag className="tag-blue space-infront" href="https://nextjs.org/" text="Next"/>
                                                         <Tag className="tag-blue space-infront" href="https://sequelize.org/" text="Sequelize"/>
                                                         <Tag className="tag-blue space-infront" href="https://nodejs.org/" text="Node"/>
                                                         <Tag className="tag-blue space-infront" href="https://aws.amazon.com/cloudformation/" text="AWS Cloudformation"/>
@@ -154,9 +155,8 @@ const Home: NextPage = () => {
                                         <Tag className="tag-purple space-infront" href="https://www.mysql.com/"  text="MySQL"/>
                                         <Tag className="tag-purple space-infront" href="https://redis.io/"  text="Redis"/>
                                         <Tag className="tag-purple space-infront" href="https://alembic.sqlalchemy.org/"  text="Alembic"/>
-                                        <Tag className="tag-purple space-infront" href="https://sass-lang.com/"  text="SCSS"/>
                                         <Tag className="tag-purple space-infront" href="https://docs.python.org/3/library/venv.html"  text="VENV"/>
-                                        <Tag className="tag-purple space-infront" href="https://swagger.io/tools/swagger-ui/"  text="Swagger"/>                               
+                                        <Tag className="tag-purple space-infront" href="https://swagger.io/tools/swagger-ui/"  text="Swagger"/>                             
                                     </p>
                             </Sample>
                             <Sample
@@ -171,7 +171,8 @@ const Home: NextPage = () => {
                             >
                                 <p className="p"><Link href="https://github.com/John-Keyes/task-frontend" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-frontend"</Link> & <Link href="https://github.com/John-Keyes/task-backend" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-backend"</Link> are repositories that make up a small full stack TODO Application.</p>
                                     <p className="p tag-p">
-                                        <Tag className="tag-blue" href="https://nextjs.org/" text="Next"/>
+                                        <Tag className="tag-blue" href="https://react.dev/" text="React"/>
+                                        <Tag className="tag-blue space-infront" href="https://nextjs.org/" text="Next"/>
                                         <Tag className="tag-blue space-infront" href="https://www.prisma.io/" text="Prisma"/>
                                         <Tag className="tag-blue space-infront" href="https://nodejs.org/" text="Node"/>
                                         <Tag className="tag-blue space-infront" href="https://expressjs.com/" text="Express"/>
