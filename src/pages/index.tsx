@@ -7,7 +7,7 @@ import Socials from 'src/components/layout/socials';
 import PopMenu from 'src/components/popMenu';
 import Tag from 'src/components/tag';
 import About from 'src/components/layout/about';
-import { restApiCS, cmscritic, todoapp, resilience } from 'src/lib/static';
+import { restApiCS, cmscritic, todoapp, resilience } from 'src/lib/helpers/static';
 import Sample from 'src/components/layout/sample';
 import Loading from 'src/components/layout/loading';
 

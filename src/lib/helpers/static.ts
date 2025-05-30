@@ -1,4 +1,3 @@
-
 export const resume = "/docs/john-keyes_resume.docx";
 export const myPfp = "/images/john-keyes-pfp.png";
 export const logoPng = "/images/logo.png";

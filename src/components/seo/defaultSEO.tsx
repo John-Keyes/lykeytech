@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { DefaultSeo, LogoJsonLd } from 'next-seo';
-import { logoPng, logoGif } from 'src/lib/static';
+import { logoPng, logoGif } from 'src/lib/helpers/static';
 
 const THUMBNAIL = logoGif;
 const DEFAULT_TITLE = "LyKeyTech – Building Better Applications";

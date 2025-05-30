@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import Link from 'next/link';
 import MobileMenu from './mobileMenu';
-import { logoGif } from 'src/lib/static';
+import { logoGif } from 'src/lib/helpers/static';
 
 const Header = () => {
     const topNavRoot = useRef<HTMLDivElement>(null);

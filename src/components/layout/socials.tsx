@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SubTitle from "./subTitle";
 import Button from "../button";
-import { qrCode } from "src/lib/static";
+import { qrCode } from "src/lib/helpers/static";
 
 const Socials = () => (
                         <SubTitle id="socials" className="" sectionclassname="flex flex-column flex-center space-below" text="Contact">

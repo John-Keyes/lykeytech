@@ -3,7 +3,7 @@ import DownloadIcon from "../downloadIcon";
 import SubTitle from "./subTitle";
 import Title from "./title";
 import Card from "../card";
-import { myPfp, resume } from 'src/lib/static';
+import { myPfp, resume } from 'src/lib/helpers/static';
 
 
 const About = () => (

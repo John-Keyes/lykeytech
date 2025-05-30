@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from 'react';
 
-type PopMenuCommonProps = {
+type PopMenuPropType = {
     children: ReactNode,
     className?: string,
     ariaLabel?: string,
@@ -8,7 +8,7 @@ type PopMenuCommonProps = {
 }
 
 
-const PopMenu = ({children, className, ariaLabel, trigger} : PopMenuCommonProps) => {
+const PopMenu = ({children, className, ariaLabel, trigger} : PopMenuPropType) => {
     const [bodyDisplay, setBodyDisplay] = useState("none");
     return (
         <div aria-label={ariaLabel} className={`pop-menu-container ${className}`} onMouseLeave={() => setBodyDisplay("none")}>

@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction, useRef } from 'react';
 import Link from 'next/link';
-import {logoPng} from 'src/lib/static';
+import {logoPng} from 'src/lib/helpers/static';
 import Button from '../button';
 
 interface MobileMenuType {
