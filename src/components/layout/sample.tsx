@@ -12,7 +12,7 @@ const Sample = (props: SamplePropsType) => {
     const textAlign : "text-end" | "text-start" = props.flexDesktopDirection == "row" ? "text-end" : "text-start";
     return (
     <>
-        <Card className={`sample-desktop flex-center fit-width sample-${props.flexDesktopDirection} ${props.className}`}>
+        <Card className={`sample-desktop flex-center fit-width sample-${props.flexDesktopDirection} ${props.className}`} {...props}>
             <span className="sample-padding">
                 {props.cardMedia}
             </span>
@@ -23,7 +23,7 @@ const Sample = (props: SamplePropsType) => {
                 </span>
             </div>
         </Card>
-        <Card className={`sample-mobile flex-center fit-width ${props.className}`}>
+        <Card className={`sample-mobile flex-center fit-width ${props.className}`} {...props}>
             <div className="space-above flex flex-column text-center fit-width sample-padding">
                 {props.sampleTitle}
                 {props.cardMedia}

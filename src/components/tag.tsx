@@ -9,8 +9,8 @@ interface TagProps extends ComponentProps<"a"> {
 }
 
 const Tag = (props: TagProps) => (
-    <Button className={`tag rounded-md transition-fast ${props.className}`}>
-        <span className="text-inherit">&#183; <Link className="text-inherit" target="_blank" rel="noopener noreferrer" href={props.href}>{props.text}</Link> &#183;</span>
+    <Button id={`${props.id}-button`} className={`tag rounded-md transition-fast ${props.className}`}>
+        <span className="text-inherit">&#183; <Link className="text-inherit" target="_blank" rel="noopener noreferrer" {...props}>{props.text}</Link> &#183;</span>
     </Button>
 );
 

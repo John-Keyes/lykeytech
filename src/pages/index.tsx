@@ -7,7 +7,7 @@ import Socials from 'src/components/layout/socials';
 import PopMenu from 'src/components/popMenu';
 import Tag from 'src/components/tag';
 import About from 'src/components/layout/about';
-import { restApiCS, cmscritic, todoapp, resilience } from 'src/lib/helpers/static';
+import { codeCS, cmscritic, todoapp, resilience } from 'src/lib/helpers/static';
 import Sample from 'src/components/layout/sample';
 import Loading from 'src/components/layout/loading';
 
@@ -21,12 +21,12 @@ const Home: NextPage = () => {
     }
     return (
             <div id="home">
-                <div className="content-container content-container-padding flex flex-row">
+                <div id="about-container" aria-label="About Container" className="content-container content-container-padding flex flex-row">
                     <About/>
                 </div>
-            <div className="home-section-padding">
-                <div className="flex flex-column content-container">
-                <SubTitle id="samples" text="Samples">
+            <div id="Samples-divider" aria-label="Work Samples Divider" className="home-section-padding">
+                <div id="Samples-container" aria-label="Work Samples Container" className="flex flex-column content-container">
+                    <SubTitle id="samples" aria-Label="Work Samples" text="Samples">
                         <div className="flex flex-column flex-center space-above">
                             <Sample 
                                 cardMedia={
@@ -64,6 +64,7 @@ const Home: NextPage = () => {
                                 </p>
                             </Sample>
                             <Sample
+                                
                                 cardMedia={
                                     <Link href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
                                         <img src={resilience} className="rounded-pfp space-above border border-light-purple button-glow-purple" alt="MySELENA" width="150" height="150"/>
@@ -79,118 +80,116 @@ const Home: NextPage = () => {
                                 className="card-purple"
                                 flexDesktopDirection="reverse"
                             >
-                                <p className="p">
+                                <p id="selena-sample-description" aria-label="SELENA Sample Description" className="p">
                                     I worked on a mobile application that contained the SELENA curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointer text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
                                 </p>
-                                <p className="p">
+                                <p id="selena-sample-collaborators" aria-label="SELENA Sample Collaborators" className="p">
                                     Collaborators: The SELENA Application Development Team
                                 </p>
-                                <p className="p">
+                                <p id="selena-sample-links" aria-label="SELENA Sample Links" className="p">
                                     Available on <Link href="https://apps.apple.com/us/app/my-selena/id1504764818" className="cursor-pointer text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">App Store</Link> and <Link href="https://play.google.com/store/apps/details?id=org.mylearningtools.app&hl=en_US&pli=1" className="cursor-pointer text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Google Play</Link>.
                                 </p>
-                                <p className="p tag-p">
-                                    <Tag className="tag-purple" href="https://reactnative.dev/" text="React Native"/>
-                                    <Tag className="tag-purple space-infront" href="https://expo.dev/" text="Expo"/>
-                                    <Tag className="tag-purple space-infront" href="https://nodejs.org/" text="Node"/>
-                                    <Tag className="tag-purple space-infront" href="https://www.mysql.com/" text="MySQL"/>
-                                    <Tag className="tag-purple space-infront" href="https://developer.android.com/studio" text="Android Studio"/>
-                                    <Tag className="tag-purple space-infront" href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/lambda-creating-project-in-visual-studio.html" text="AWS Lambda"/>
+                                <p id="selena-sample-tags" aria-label="SELENA Sample Tags" className="p tag-p">
+                                    <Tag id="selena-react-native" aria-label="SELENA React Native Tag" className="tag-purple" href="https://reactnative.dev/" text="React Native"/>
+                                    <Tag id="selena-expo" aria-label="SELENA Expo Tag" className="tag-purple space-infront" href="https://expo.dev/" text="Expo"/>
+                                    <Tag id="selena-node" aria-label="SELENA Node Tag" className="tag-purple space-infront" href="https://nodejs.org/" text="Node"/>
+                                    <Tag id="selena-mysql" aria-label="SELENA MySQL Tag" className="tag-purple space-infront" href="https://www.mysql.com/" text="MySQL"/>
+                                    <Tag id="selena-android-studio" aria-label="SELENA Android Studio Tag" className="tag-purple space-infront" href="https://developer.android.com/studio" text="Android Studio"/>
+                                    <Tag id="selena-aws-lambda" aria-label="SELENA AWS Lambda Tag" className="tag-purple space-infront" href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/lambda-creating-project-in-visual-studio.html" text="AWS Lambda"/>
                                 </p>
                             </Sample>
                             <Sample
                                 cardMedia={
-                                    <PopMenu trigger={<iframe className="space-above border border-light-blue button-glow-blue" width="300" height="190" src="https://www.youtube.com/embed/Jrz03x38rs8" />}>                               
+                                    <PopMenu id="usick-card-media-popmenu" aria-label="USICK Sample Card Media PopMenu" trigger={<iframe className="space-above border border-light-blue button-glow-blue" width="300" height="190" src="https://www.youtube.com/embed/Jrz03x38rs8" />}>                               
                                         <Link href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
                                             <span className="fa-solid fa-up-right-from-squaretext-hover-clear-blue"/>
                                         </Link>
                                     </PopMenu>
                                 }
                                 sampleTitle={
-                                    <h3>
-                                        <Link className="text-hover-clear-blue" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
+                                    <h3 id="usick-sample-title" aria-label="USICK Sample Title">
+                                        <Link id="usick-sample-title-link" aria-label="USICK Sample Title Link" className="text-hover-clear-blue" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
                                             USICK.com
                                         </Link>
                                     </h3>
                                 }
                                 className="card-blue"
                                 flexDesktopDirection="row"
+                                id="usick-sample" 
+                                aria-label="USICK Sample"
                             >
-                                <p className="p">
+                                <p id="usick-sample-description" aria-label="USICK Sample Description" className="p">
                                     USICK.com is a resource where a person that is feeling unwell can enter the symptoms they are experiencing into a form. We use the APIMedic's symptom-checker API to retreive a list of possible medical issues based on those symptoms. We also utilized the Geolocation API and Google Map's "Place API" to display the address of each medical center within a 10 mile radius of the user's location.
                                 </p>
-                                <p className="p">
+                                <p id="usick-sample-collaborators" aria-label="USICK Sample Collaborators" className="p">
                                     Collaborators: Software Engineering classmates
                                 </p>
-                                <p className="p tag-p">
-                                    <Tag className="tag-blue" href="https://svelte.dev/" text="Svelte"/>
-                                    <Tag className="tag-blue space-infront" href="https://learn.microsoft.com/en-us/dotnet/csharp/" text="C#"/>
-                                    <Tag className="tag-blue space-infront" href="https://dotnet.microsoft.com/en-us/" text="Dotnet"/>
-                                    <Tag className="tag-blue space-infront" href="https://www.mysql.com/" text="MySQL"/>
-                                    <Tag className="tag-blue space-infront" href="https://www.docker.com/" text="Docker"/>
-                                    <Tag className="tag-blue space-infront" href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/lambda-creating-project-in-visual-studio.html" text="AWS Lambda"/>
+                                <p id="usick-sample-tags" aria-label="USICK Sample Tags" className="p tag-p">
+                                    <Tag id="usick-svelte" aria-label="USICK Svelte Tag" className="tag-blue" href="https://svelte.dev/" text="Svelte"/>
+                                    <Tag id="usick-c-sharp" aria-label="USICK C-sharp Tag" className="tag-blue space-infront" href="https://learn.microsoft.com/en-us/dotnet/csharp/" text="C#"/>
+                                    <Tag id="usick-dotnet" aria-label="USICK DotNet Tag" className="tag-blue space-infront" href="https://dotnet.microsoft.com/en-us/" text="Dotnet"/>
+                                    <Tag id="usick-mysql" aria-label="USICK MySQL Tag" className="tag-blue space-infront" href="https://www.mysql.com/" text="MySQL"/>
+                                    <Tag id="usick-docker" aria-label="USICK Docker Tag" className="tag-blue space-infront" href="https://www.docker.com/" text="Docker"/>
+                                    <Tag id="usick-aws-lambda" aria-label="USICK AWS Lambda Tag" className="tag-blue space-infront" href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/lambda-creating-project-in-visual-studio.html" text="AWS Lambda"/>
                                 </p>
                             </Sample>
                             <Sample
                                 cardMedia={
-                                    <Link href="https://github.com/John-Keyes/lykey-rest-api" target="_blank" rel="noopener noreferrer">
-                                        <img className="space-above card-img-blur border border-light-purple button-glow-purple" src={restApiCS} alt="REST API" width="250" height="300"/>
+                                    <Link href="https://github.com/John-Keyes/task-frontend" target="_blank" rel="noopener noreferrer" id="todo-app-card-media-link" aria-label="Todo app card media link">
+                                        <img id="todo-app-card-media" aria-label="Todo app card media" src={todoapp} className="space-above border border-light-purple button-glow-purple" alt="task todo" width="300" height="190"/>
                                     </Link>
                                 }
-                                sampleTitle={
-                                    <h3>
-                                        <Link className="text-hover-lighter-purple" href="https://github.com/John-Keyes/lykey-rest-api" target="_blank" rel="noopener noreferrer">
-                                            REST-API
-                                        </Link>
-                                    </h3>
-                                }
+                                sampleTitle={<h3 id="todo-app-sample-title" aria-label="Todo app sample title">TODO APP</h3>}
                                 className="card-purple"
                                 flexDesktopDirection="reverse"
+                                id="todo-app-sample" 
+                                aria-label="Todo App Sample"
                             >
-                                <p className="p">A REST-API template that has authentication, authorization, user, and user posession functionality. The next features are still under construction.</p>
-                                    <p className="p tag-p">
-                                        <Tag className="tag-purple" href="https://www.python.org/" text="Python"/>
-                                        <Tag className="tag-purple space-infront" href="https://fastapi.tiangolo.com/" text="FastAPI"/>
-                                        <Tag className="tag-purple space-infront" href="https://github.com/astral-sh/uv" text="UV"/>
-                                        <Tag className="tag-purple space-infront" href="https://www.sqlalchemy.org/"  text="SQLAlchemy"/>
-                                        <Tag className="tag-purple space-infront" href="https://www.mysql.com/"  text="MySQL"/>
-                                        <Tag className="tag-purple space-infront" href="https://redis.io/"  text="Redis"/>
-                                        <Tag className="tag-purple space-infront" href="https://alembic.sqlalchemy.org/"  text="Alembic"/>
-                                        <Tag className="tag-purple space-infront" href="https://docs.python.org/3/library/venv.html"  text="VENV"/>
-                                        <Tag className="tag-purple space-infront" href="https://swagger.io/tools/swagger-ui/"  text="Swagger"/>                             
+                                <p id="todo-app-sample-description" aria-label="TODO Sample Description" className="p"><Link href="https://github.com/John-Keyes/task-frontend" className="text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">"task-frontend"</Link> & <Link href="https://github.com/John-Keyes/task-backend" className="text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">"task-backend"</Link> are repositories that make up a small full stack TODO Application.</p>
+                                    <p id="todo-app-sample-tags" aria-label="TODO App Sample Tags" className="p tag-p">
+                                        <Tag id="todo-app-react" aria-label="Todo app React tag" className="tag-purple" href="https://react.dev/" text="React"/>
+                                        <Tag id="todo-app-next" aria-label="Todo app Next tag" className="tag-purple space-infront" href="https://nextjs.org/" text="Next"/>
+                                        <Tag id="todo-app-prisma" aria-label="Todo app Prisma tag" className="tag-purple space-infront" href="https://www.prisma.io/" text="Prisma"/>
+                                        <Tag id="todo-app-node" aria-label="Todo app Node tag" className="tag-purple space-infront" href="https://nodejs.org/" text="Node"/>
+                                        <Tag id="todo-app-express" aria-label="Todo app Express tag" className="tag-purple space-infront" href="https://expressjs.com/" text="Express"/>
+                                        <Tag id="todo-app-docker" aria-label="Todo app Docker tag" className="tag-purple space-infront" href="https://www.docker.com/" text="Docker"/>
+                                        <Tag id="todo-app-scss" aria-label="Todo app SCSS tag" className="tag-purple space-infront" href="https://sass-lang.com/" text="SCSS"/>
+                                        <Tag id="todo-app-mysql" aria-label="Todo app MySQL tag" className="tag-purple space-infront" href="https://www.mysql.com/" text="MySQL"/>
+                                        <Tag id="todo-app-typescript" aria-label="Todo app TypeScript tag" className="tag-purple space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>
                                     </p>
                             </Sample>
                             <Sample
                                 cardMedia={
-                                    <Link href="https://github.com/John-Keyes/task-frontend" target="_blank" rel="noopener noreferrer">
-                                        <img src={todoapp} className="space-above border border-light-blue button-glow-blue" alt="task" width="300" height="190"/>
-                                    </Link>
+                                        <img id="keysnaps-card-media" aria-label="KeySnaps card media" className="space-above card-img-blur border border-light-blue button-glow-blue" src={codeCS} alt="KeySnaps Code" width="250" height="300"/>
                                 }
-                                sampleTitle={<h3>TODO APP</h3>}
+                                sampleTitle={
+                                    <h3 id="keysnaps-sample-title" aria-label="KeySnaps Sample Title">KeySnaps</h3>
+                                }
                                 className="card-blue"
                                 flexDesktopDirection="row"
+                                id="keysnaps-sample" 
+                                aria-label="KeySnaps Sample"
                             >
-                                <p className="p"><Link href="https://github.com/John-Keyes/task-frontend" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-frontend"</Link> & <Link href="https://github.com/John-Keyes/task-backend" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">"task-backend"</Link> are repositories that make up a small full stack TODO Application.</p>
-                                    <p className="p tag-p">
-                                        <Tag className="tag-blue" href="https://react.dev/" text="React"/>
-                                        <Tag className="tag-blue space-infront" href="https://nextjs.org/" text="Next"/>
-                                        <Tag className="tag-blue space-infront" href="https://www.prisma.io/" text="Prisma"/>
-                                        <Tag className="tag-blue space-infront" href="https://nodejs.org/" text="Node"/>
-                                        <Tag className="tag-blue space-infront" href="https://expressjs.com/" text="Express"/>
-                                        <Tag className="tag-blue space-infront" href="https://www.docker.com/" text="Docker"/>
-                                        <Tag className="tag-blue space-infront" href="https://sass-lang.com/" text="SCSS"/>
-                                        <Tag className="tag-blue space-infront" href="https://www.mysql.com/" text="MySQL"/>
-                                        <Tag className="tag-blue space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>
+                                <p className="p" id="keysnaps-description" aria-label="KeySnaps Description">Coming soon</p>
+                                    <p id="keysnaps-sample-tags" aria-label="KeySnaps Sample Tags" className="p tag-p">
+                                        <Tag id="keysnaps-svelte" aria-label="KeySnaps Svelte tag" className="tag-blue" href="https://svelte.dev/" text="Svelte"/>
+                                        <Tag id="keysnaps-tauri" aria-label="KeySnaps Tauri tag" className="tag-blue space-infront" href="https://v2.tauri.app/" text="Tauri"/>
+                                        <Tag id="keysnaps-scss" aria-label="KeySnaps SCSS tag" className="tag-blue space-infront" href="https://sass-lang.com/" text="SCSS"/>
+                                        <Tag id="keysnaps-cypress" aria-label="KeySnaps Cypress tag" className="tag-blue space-infront" href="https://www.cypress.io/ " text="Cypress"/>        
+                                        <Tag id="keysnaps-typescript" aria-label="KeySnaps TypeScript tag" className="tag-purple space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>                   
                                     </p>
                             </Sample>
                         </div>
                     </SubTitle>
                 </div>
             </div>
-            <div className="home-section-padding">
-                <div className="flex flex-column content-container">
-                    <SubTitle id="endorsements" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" className="" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
+            <div id="endorsments-divider" aria-label="Endorsments Divider" className="home-section-padding">
+                <div id="endorsments-container" aria-label="Endorsments Container" className="flex flex-column content-container">
+                    <SubTitle id="endorsements" aria-label="Endorsments" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" className="" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
                         <div className="flex card-divider flex-column flex-row-md">
                             <Endorsement
+                                id="endorsement-matthew-garrepy"
+                                aria-label="Endorsment from Matthew Garrepy"
                                 person="Matthew Garrepy"
                                 personLink="https://www.linkedin.com/in/mattgarrepy/"
                                 hoverColor="lighter-purple"
@@ -203,6 +202,8 @@ const Home: NextPage = () => {
                                 className="space-above card-purple"
                             />
                             <Endorsement
+                                id="endorsement-luis-g-sanchez"
+                                aria-label="Endorsment from Luis G. Sanchez"
                                 person="Luis G. Sanchez"
                                 personLink="https://luisgustavosc.com/"
                                 hoverColor="clear-blue"
@@ -216,8 +217,8 @@ const Home: NextPage = () => {
                     </SubTitle>
                     </div>
                 </div>
-                <div className="home-section-padding">
-                    <div className="content-container overflow-hidden flex flex-center flex-column">
+                <div id="socials-divider" aria-label="Socials Divider" className="home-section-padding">
+                    <div id="socials-container" aria-label="Socials Container" className="content-container overflow-hidden flex flex-center flex-column">
                         <Socials/>
                     </div>
                 </div>
