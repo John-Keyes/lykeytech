@@ -11,7 +11,7 @@ const PageNotFound = () => {
         return <Loading/>;
     }
     return (
-        <div className="flex flex-center content-container">
+        <div id="page-error-container" aria-label="Page Error Container" className="flex flex-center content-container">
             <PageError statusCode={404}/>
         </div>
     );

@@ -1,16 +1,15 @@
 import Link from 'next/link';
-import React, { ComponentProps, ReactNode, useState } from 'react';
-import Button from './button';
+import Button, { ButtonPropsType } from './button';
 
-interface TagProps extends ComponentProps<"a"> {
+interface TagProps extends ButtonPropsType {
     href: string,
     text: string, 
     className?: string
 }
 
 const Tag = (props: TagProps) => (
-    <Button id={`${props.id}-button`} className={`tag rounded-md transition-fast ${props.className}`}>
-        <span className="text-inherit">&#183; <Link className="text-inherit" target="_blank" rel="noopener noreferrer" {...props}>{props.text}</Link> &#183;</span>
+    <Button className={`tag rounded-md transition-fast ${props.className}`} {...props} id={`${props.id}-button`} aria-label={`${props["aria-label"]}-button`}>
+        <span className="text-inherit">&#183; <Link id={`${props.id}-link`} aria-label={`${props["aria-label"]}-link`} className="text-inherit" target="_blank" rel="noopener noreferrer" href={props.href}>{props.text}</Link> &#183;</span>
     </Button>
 );
 

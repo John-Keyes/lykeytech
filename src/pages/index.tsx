@@ -24,61 +24,64 @@ const Home: NextPage = () => {
                 <div id="about-container" aria-label="About Container" className="content-container content-container-padding flex flex-row">
                     <About/>
                 </div>
-            <div id="Samples-divider" aria-label="Work Samples Divider" className="home-section-padding">
-                <div id="Samples-container" aria-label="Work Samples Container" className="flex flex-column content-container">
+            <div id="samples-divider" aria-label="Work Samples Divider" className="home-section-padding">
+                <div id="samples-container" aria-label="Work Samples Container" className="flex flex-column content-container">
                     <SubTitle id="samples" aria-Label="Work Samples" text="Samples">
                         <div className="flex flex-column flex-center space-above">
                             <Sample 
                                 cardMedia={
-                                    <Link href="https://cmscritic.com" target="_blank" rel="noopener noreferrer">
-                                        <img src={cmscritic} className="space-above border border-light-blue button-glow-blue" alt="CMSCritic" width="350" height="190"/>
+                                    <Link id="cmscritic-card-media-link" aria-label="CMSCritic Sample Card Media Link" href="https://cmscritic.com" target="_blank" rel="noopener noreferrer">
+                                        <img id="cmscritic-card-media-image" aria-label="CMSCritic Sample Card Media Image" src={cmscritic} className="space-above border border-light-blue button-glow-blue" alt="CMSCritic Media Website" width="350" height="190"/>
                                     </Link>
                                 } 
                                 sampleTitle={
-                                    <h3>
-                                        <Link href="https://cmscritic.com" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">
+                                    <h3 id="cmscritic-sample-title" aria-label="CMSCritic Sample Title">
+                                        <Link id="cmscritic-sample-title-link" aria-label="CMSCritic Sample Title Link" href="https://cmscritic.com" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">
                                             CMSCritic
                                         </Link>
                                     </h3>
                                 }
                                 className="card-blue"
                                 flexDesktopDirection="row"
+                                id="cmscritic-sample" 
+                                aria-label="CMSCritic Sample"
                             >
-                                <p className="p">
+                                <p id="cmscritic-sample-collaborators" aria-label="CMSCritic Sample Collaborators" className="p">
                                             Collaborators: <Link href="https://www.linkedin.com/in/mattgarrepy/" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Matthew Garrepy</Link> and <Link href="https://luisgustavosc.com/" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Luis G. Sanchez</Link>.
                                         </p>
-                                        <p className="p">
-                                            At <Link href="https://www.solodev.com" className="text-hover-card-blue" target="_blank" rel="noopener noreferrer">Solodev</Link>, I helped update the cmscritic website. This is a place where registered critics publish news articles on content strategies and technology in general.
+                                        <p id="cmscritic-sample-description" aria-label="CMSCritic Sample Description" className="p">
+                                            At <Link id="cmscritic-sample-description-link" aria-label="CMSCritic Sample Description Link" href="https://www.solodev.com" title="Link to solodev website" className="text-hover-card-blue" target="_blank" rel="noopener noreferrer">Solodev</Link>, I helped update the cmscritic website. This is a place where registered critics publish news articles on content strategies and technology in general.
                                         </p>
-                                        <p className="p tag-p"> 
-                                                        <Tag className="tag-blue" href="https://react.dev/" text="React"/> 
-                                                        <Tag className="tag-blue space-infront" href="https://nextjs.org/" text="Next"/>
-                                                        <Tag className="tag-blue space-infront" href="https://sequelize.org/" text="Sequelize"/>
-                                                        <Tag className="tag-blue space-infront" href="https://nodejs.org/" text="Node"/>
-                                                        <Tag className="tag-blue space-infront" href="https://aws.amazon.com/cloudformation/" text="AWS Cloudformation"/>
-                                                        <Tag className="tag-blue space-infront" href="https://aws.amazon.com/s3/" text="AWS S3"/>
-                                                        <Tag className="tag-blue space-infront" href="https://www.docker.com/" text="Docker"/>
-                                                        <Tag className="tag-blue space-infront" href="https://redis.io/" text="Redis"/>
-                                                        <Tag className="tag-blue space-infront" href="https://sass-lang.com/" text="SCSS"/>
-                                                        <Tag className="tag-blue space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>
+                                        <p id="cmscritic-sample-skills" aria-label="CMSCritic Sample Skills" className="p tag-p"> 
+                                                        <Tag id="cmscritic-react" aria-label="CMSCritic React Skill" className="tag-blue" href="https://react.dev/" text="React"/> 
+                                                        <Tag id="cmscritic-next" aria-label="CMSCritic Next Skill" className="tag-blue space-infront" href="https://nextjs.org/" text="Next"/>
+                                                        <Tag id="cmscritic-sequelize" aria-label="CMSCritic Sequelize Skill" className="tag-blue space-infront" href="https://sequelize.org/" text="Sequelize"/>
+                                                        <Tag id="cmscritic-node" aria-label="CMSCritic Node Skill" className="tag-blue space-infront" href="https://nodejs.org/" text="Node"/>
+                                                        <Tag id="cmscritic-aws-cloudformation" aria-label="CMSCritic AWS Cloudformation v" className="tag-blue space-infront" href="https://aws.amazon.com/cloudformation/" text="AWS Cloudformation"/>
+                                                        <Tag id="cmscritic-aws-s3" aria-label="CMScritic AWS S3 Skill" className="tag-blue space-infront" href="https://aws.amazon.com/s3/" text="AWS S3"/>
+                                                        <Tag id="cmscritic-docker" aria-label="CMSCritic Docker Skill" className="tag-blue space-infront" href="https://www.docker.com/" text="Docker"/>
+                                                        <Tag id="cmscritic-redis" aria-label="CMSCritic Redis Skill" className="tag-blue space-infront" href="https://redis.io/" text="Redis"/>
+                                                        <Tag id="cmscritic-scss" aria-label="CMSCritic SCSS Skill" className="tag-blue space-infront" href="https://sass-lang.com/" text="SCSS"/>
+                                                        <Tag id="cmscritic-typescript" aria-label="CMSCritic TypeScript Skill" className="tag-blue space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>
                                 </p>
                             </Sample>
                             <Sample
-                                
                                 cardMedia={
-                                    <Link href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
-                                        <img src={resilience} className="rounded-pfp space-above border border-light-purple button-glow-purple" alt="MySELENA" width="150" height="150"/>
+                                    <Link id="selena-card-media-link" aria-label="SELENA Card Media Link" href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
+                                        <img id="selena-card-media-image" aria-label="SELENA Card Media Image" src={resilience} className="rounded-pfp space-above border border-light-purple button-glow-purple" alt="Resilience logo" width="150" height="150"/>
                                     </Link>
                                 }
                                 sampleTitle={
-                                    <h3>
-                                        <Link className="text-hover-lighter-purple" href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
+                                    <h3 id="selena-sample-title" aria-label="SELENA Sample Title">
+                                        <Link id="selena-sample-title-link" aria-label="SELENA Sample Title Link" className="text-hover-lighter-purple" href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
                                             MySELENA Application
                                         </Link>
                                     </h3>
                                 }
                                 className="card-purple"
                                 flexDesktopDirection="reverse"
+                                id="selena-sample" 
+                                aria-label="SELENA Sample"
                             >
                                 <p id="selena-sample-description" aria-label="SELENA Sample Description" className="p">
                                     I worked on a mobile application that contained the SELENA curriculum for instructors to educate K-12 students on their emotions. These lessons are also on their <Link href="https://mylearningtools.org/" className="cursor-pointer text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">website</Link>.
@@ -89,20 +92,20 @@ const Home: NextPage = () => {
                                 <p id="selena-sample-links" aria-label="SELENA Sample Links" className="p">
                                     Available on <Link href="https://apps.apple.com/us/app/my-selena/id1504764818" className="cursor-pointer text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">App Store</Link> and <Link href="https://play.google.com/store/apps/details?id=org.mylearningtools.app&hl=en_US&pli=1" className="cursor-pointer text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Google Play</Link>.
                                 </p>
-                                <p id="selena-sample-tags" aria-label="SELENA Sample Tags" className="p tag-p">
-                                    <Tag id="selena-react-native" aria-label="SELENA React Native Tag" className="tag-purple" href="https://reactnative.dev/" text="React Native"/>
-                                    <Tag id="selena-expo" aria-label="SELENA Expo Tag" className="tag-purple space-infront" href="https://expo.dev/" text="Expo"/>
-                                    <Tag id="selena-node" aria-label="SELENA Node Tag" className="tag-purple space-infront" href="https://nodejs.org/" text="Node"/>
-                                    <Tag id="selena-mysql" aria-label="SELENA MySQL Tag" className="tag-purple space-infront" href="https://www.mysql.com/" text="MySQL"/>
-                                    <Tag id="selena-android-studio" aria-label="SELENA Android Studio Tag" className="tag-purple space-infront" href="https://developer.android.com/studio" text="Android Studio"/>
-                                    <Tag id="selena-aws-lambda" aria-label="SELENA AWS Lambda Tag" className="tag-purple space-infront" href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/lambda-creating-project-in-visual-studio.html" text="AWS Lambda"/>
+                                <p id="selena-sample-skills" aria-label="SELENA Sample Skills" className="p tag-p">
+                                    <Tag id="selena-react-native" aria-label="SELENA React Native Skill" className="tag-purple" href="https://reactnative.dev/" text="React Native"/>
+                                    <Tag id="selena-expo" aria-label="SELENA Expo Skill" className="tag-purple space-infront" href="https://expo.dev/" text="Expo"/>
+                                    <Tag id="selena-node" aria-label="SELENA Node Skill" className="tag-purple space-infront" href="https://nodejs.org/" text="Node"/>
+                                    <Tag id="selena-mysql" aria-label="SELENA MySQL Skill" className="tag-purple space-infront" href="https://www.mysql.com/" text="MySQL"/>
+                                    <Tag id="selena-android-studio" aria-label="SELENA Android Studio Skill" className="tag-purple space-infront" href="https://developer.android.com/studio" text="Android Studio"/>
+                                    <Tag id="selena-aws-lambda" aria-label="SELENA AWS Lambda Skill" className="tag-purple space-infront" href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/lambda-creating-project-in-visual-studio.html" text="AWS Lambda"/>
                                 </p>
                             </Sample>
                             <Sample
                                 cardMedia={
                                     <PopMenu id="usick-card-media-popmenu" aria-label="USICK Sample Card Media PopMenu" trigger={<iframe className="space-above border border-light-blue button-glow-blue" width="300" height="190" src="https://www.youtube.com/embed/Jrz03x38rs8" />}>                               
                                         <Link href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
-                                            <span className="fa-solid fa-up-right-from-squaretext-hover-clear-blue"/>
+                                            <span className="fa-solid fa-up-right-from-square text-hover-clear-blue"/>
                                         </Link>
                                     </PopMenu>
                                 }
@@ -124,13 +127,13 @@ const Home: NextPage = () => {
                                 <p id="usick-sample-collaborators" aria-label="USICK Sample Collaborators" className="p">
                                     Collaborators: Software Engineering classmates
                                 </p>
-                                <p id="usick-sample-tags" aria-label="USICK Sample Tags" className="p tag-p">
-                                    <Tag id="usick-svelte" aria-label="USICK Svelte Tag" className="tag-blue" href="https://svelte.dev/" text="Svelte"/>
-                                    <Tag id="usick-c-sharp" aria-label="USICK C-sharp Tag" className="tag-blue space-infront" href="https://learn.microsoft.com/en-us/dotnet/csharp/" text="C#"/>
-                                    <Tag id="usick-dotnet" aria-label="USICK DotNet Tag" className="tag-blue space-infront" href="https://dotnet.microsoft.com/en-us/" text="Dotnet"/>
-                                    <Tag id="usick-mysql" aria-label="USICK MySQL Tag" className="tag-blue space-infront" href="https://www.mysql.com/" text="MySQL"/>
-                                    <Tag id="usick-docker" aria-label="USICK Docker Tag" className="tag-blue space-infront" href="https://www.docker.com/" text="Docker"/>
-                                    <Tag id="usick-aws-lambda" aria-label="USICK AWS Lambda Tag" className="tag-blue space-infront" href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/lambda-creating-project-in-visual-studio.html" text="AWS Lambda"/>
+                                <p id="usick-sample-skills" aria-label="USICK Sample Skills" className="p tag-p">
+                                    <Tag id="usick-svelte" aria-label="USICK Svelte Skill" className="tag-blue" href="https://svelte.dev/" text="Svelte"/>
+                                    <Tag id="usick-c-sharp" aria-label="USICK C-sharp Skill" className="tag-blue space-infront" href="https://learn.microsoft.com/en-us/dotnet/csharp/" text="C#"/>
+                                    <Tag id="usick-dotnet" aria-label="USICK DotNet Skill" className="tag-blue space-infront" href="https://dotnet.microsoft.com/en-us/" text="Dotnet"/>
+                                    <Tag id="usick-mysql" aria-label="USICK MySQL Skill" className="tag-blue space-infront" href="https://www.mysql.com/" text="MySQL"/>
+                                    <Tag id="usick-docker" aria-label="USICK Docker Skill" className="tag-blue space-infront" href="https://www.docker.com/" text="Docker"/>
+                                    <Tag id="usick-aws-lambda" aria-label="USICK AWS Lambda Skill" className="tag-blue space-infront" href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/lambda-creating-project-in-visual-studio.html" text="AWS Lambda"/>
                                 </p>
                             </Sample>
                             <Sample
@@ -146,16 +149,16 @@ const Home: NextPage = () => {
                                 aria-label="Todo App Sample"
                             >
                                 <p id="todo-app-sample-description" aria-label="TODO Sample Description" className="p"><Link href="https://github.com/John-Keyes/task-frontend" className="text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">"task-frontend"</Link> & <Link href="https://github.com/John-Keyes/task-backend" className="text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">"task-backend"</Link> are repositories that make up a small full stack TODO Application.</p>
-                                    <p id="todo-app-sample-tags" aria-label="TODO App Sample Tags" className="p tag-p">
-                                        <Tag id="todo-app-react" aria-label="Todo app React tag" className="tag-purple" href="https://react.dev/" text="React"/>
-                                        <Tag id="todo-app-next" aria-label="Todo app Next tag" className="tag-purple space-infront" href="https://nextjs.org/" text="Next"/>
-                                        <Tag id="todo-app-prisma" aria-label="Todo app Prisma tag" className="tag-purple space-infront" href="https://www.prisma.io/" text="Prisma"/>
-                                        <Tag id="todo-app-node" aria-label="Todo app Node tag" className="tag-purple space-infront" href="https://nodejs.org/" text="Node"/>
-                                        <Tag id="todo-app-express" aria-label="Todo app Express tag" className="tag-purple space-infront" href="https://expressjs.com/" text="Express"/>
-                                        <Tag id="todo-app-docker" aria-label="Todo app Docker tag" className="tag-purple space-infront" href="https://www.docker.com/" text="Docker"/>
-                                        <Tag id="todo-app-scss" aria-label="Todo app SCSS tag" className="tag-purple space-infront" href="https://sass-lang.com/" text="SCSS"/>
-                                        <Tag id="todo-app-mysql" aria-label="Todo app MySQL tag" className="tag-purple space-infront" href="https://www.mysql.com/" text="MySQL"/>
-                                        <Tag id="todo-app-typescript" aria-label="Todo app TypeScript tag" className="tag-purple space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>
+                                    <p id="todo-app-sample-skills" aria-label="TODO App Sample Skills" className="p tag-p">
+                                        <Tag id="todo-app-react" aria-label="Todo app React Skill" className="tag-purple" href="https://react.dev/" text="React"/>
+                                        <Tag id="todo-app-next" aria-label="Todo app Next Skill" className="tag-purple space-infront" href="https://nextjs.org/" text="Next"/>
+                                        <Tag id="todo-app-prisma" aria-label="Todo app Prisma Skill" className="tag-purple space-infront" href="https://www.prisma.io/" text="Prisma"/>
+                                        <Tag id="todo-app-node" aria-label="Todo app Node Skill" className="tag-purple space-infront" href="https://nodejs.org/" text="Node"/>
+                                        <Tag id="todo-app-express" aria-label="Todo app Express Skill" className="tag-purple space-infront" href="https://expressjs.com/" text="Express"/>
+                                        <Tag id="todo-app-docker" aria-label="Todo app Docker Skill" className="tag-purple space-infront" href="https://www.docker.com/" text="Docker"/>
+                                        <Tag id="todo-app-scss" aria-label="Todo app SCSS Skill" className="tag-purple space-infront" href="https://sass-lang.com/" text="SCSS"/>
+                                        <Tag id="todo-app-mysql" aria-label="Todo app MySQL Skill" className="tag-purple space-infront" href="https://www.mysql.com/" text="MySQL"/>
+                                        <Tag id="todo-app-typescript" aria-label="Todo app TypeScript Skill" className="tag-purple space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>
                                     </p>
                             </Sample>
                             <Sample
@@ -171,21 +174,21 @@ const Home: NextPage = () => {
                                 aria-label="KeySnaps Sample"
                             >
                                 <p className="p" id="keysnaps-description" aria-label="KeySnaps Description">Coming soon</p>
-                                    <p id="keysnaps-sample-tags" aria-label="KeySnaps Sample Tags" className="p tag-p">
-                                        <Tag id="keysnaps-svelte" aria-label="KeySnaps Svelte tag" className="tag-blue" href="https://svelte.dev/" text="Svelte"/>
-                                        <Tag id="keysnaps-tauri" aria-label="KeySnaps Tauri tag" className="tag-blue space-infront" href="https://v2.tauri.app/" text="Tauri"/>
-                                        <Tag id="keysnaps-scss" aria-label="KeySnaps SCSS tag" className="tag-blue space-infront" href="https://sass-lang.com/" text="SCSS"/>
-                                        <Tag id="keysnaps-cypress" aria-label="KeySnaps Cypress tag" className="tag-blue space-infront" href="https://www.cypress.io/ " text="Cypress"/>        
-                                        <Tag id="keysnaps-typescript" aria-label="KeySnaps TypeScript tag" className="tag-purple space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>                   
+                                    <p id="keysnaps-sample-skills" aria-label="KeySnaps Sample Skills" className="p tag-p">
+                                        <Tag id="keysnaps-svelte" aria-label="KeySnaps Svelte Skill" className="tag-blue" href="https://svelte.dev/" text="Svelte"/>
+                                        <Tag id="keysnaps-tauri" aria-label="KeySnaps Tauri Skill" className="tag-blue space-infront" href="https://v2.tauri.app/" text="Tauri"/>
+                                        <Tag id="keysnaps-scss" aria-label="KeySnaps SCSS Skill" className="tag-blue space-infront" href="https://sass-lang.com/" text="SCSS"/>
+                                        <Tag id="keysnaps-cypress" aria-label="KeySnaps Cypress Skill" className="tag-blue space-infront" href="https://www.cypress.io/ " text="Cypress"/>        
+                                        <Tag id="keysnaps-typescript" aria-label="KeySnaps TypeScript Skill" className="tag-blue space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>                   
                                     </p>
                             </Sample>
                         </div>
                     </SubTitle>
                 </div>
             </div>
-            <div id="endorsments-divider" aria-label="Endorsments Divider" className="home-section-padding">
-                <div id="endorsments-container" aria-label="Endorsments Container" className="flex flex-column content-container">
-                    <SubTitle id="endorsements" aria-label="Endorsments" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" className="" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
+            <div id="endorsements-divider" aria-label="Endorsements Divider" className="home-section-padding">
+                <div id="endorsements-container" aria-label="Endorsements Container" className="flex flex-column content-container">
+                    <SubTitle id="endorsements" aria-label="Endorsements" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
                         <div className="flex card-divider flex-column flex-row-md">
                             <Endorsement
                                 id="endorsement-matthew-garrepy"

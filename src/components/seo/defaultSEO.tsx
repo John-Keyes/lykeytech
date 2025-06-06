@@ -1,15 +1,10 @@
 import { useRouter } from 'next/router';
 import { DefaultSeo, LogoJsonLd } from 'next-seo';
-import { logoPng, logoGif } from 'src/lib/helpers/static';
+import { logoPng, logoGif, cmscritic, myPfp, qrCode, resilience, todoapp } from 'src/lib/helpers/static';
 
 const THUMBNAIL = logoGif;
 const DEFAULT_TITLE = "LyKeyTech – Building Better Applications";
 const DEFAULT_DESCRIPTION = "I build web and mobile applications that help fulfill any need. I build applications with immersive user experiences and performance efficient applications.";
-/*const KEYWORDS= ["LyKey", "Software,Development", "Engineering", "Software Engineering", "Software Developer", "Software Development", 
-	"LyKeyTech", "LyKey", "Tech", "Web Developer", "Web Development", "Mobile Development", "Mobile Developer", "Application", 
-	"Application Development", "App", "Developer", "Web", "Mobile", "Computer Science", "Bachelor of Science", "Computer", "Science"
-	"Portfolio", "Resume", "Work Samples", "Socials", "Contact"
-];*/
 const KEYWORDS = "LyKey, Software,Development, Engineering, Software Engineering, Software Developer, Software Development, LyKeyTech, LyKey, Tech, Web Developer, Web Development, Mobile Development, Mobile Developer, Application, Application Development, App, Developer, Web, Mobile, Computer Science, Bachelor of Science, Computer, Science, Portfolio, Resume, Work Samples, Socials, Contact, App Development, Web Development, Web Services, Web Development Services";
 
 const DefaultSEO = () => {
@@ -26,13 +21,41 @@ const DefaultSEO = () => {
 					url: "/" + router.asPath,
 					type: "website",
 					locale: "en_US",
-					siteName: "SFS1",
+					siteName: "lykeytech",
 					images: [
 						{
 							url: THUMBNAIL,
 							alt: "Thumbnail"
+						},
+						{
+							url: cmscritic,
+							alt: "CMSCritic Media Website",
+						},
+						{
+							url: logoPng,
+							alt: "Logo PNG",
+						},
+						{
+							url: logoGif,
+							alt: "Logo GIF",
+						},
+						{
+							url: myPfp,
+							alt: "Profile picture",
+						},
+						{
+							url: qrCode,
+							alt: "Website QR Code",
+						},
+						{
+							url: resilience,
+							alt: "Resilience logo",
+						},
+						{
+							url: todoapp,
+							alt: "task todo",
 						}
-					],
+					]
 				}}
 				twitter={{
 					cardType: "summary_large_image",
@@ -97,7 +120,11 @@ const DefaultSEO = () => {
 
 			<LogoJsonLd
 				logo={logoPng}
-				url="/"
+				name="lykeytech"
+				url="http://lykeytech.com"
+				id="http://lykeytech.com"
+				type="website"
+				headline="Lykeytech Apps"
 			/>
     	</>
   	)

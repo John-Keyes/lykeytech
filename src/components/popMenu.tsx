@@ -4,20 +4,20 @@ type PopMenuPropType = {
     id: string,
     children: ReactNode,
     className?: string,
-    ariaLabel?: string,
+    "aria-label"?: string,
     trigger: ReactNode
 }
 
 
-const PopMenu = ({id, children, className, ariaLabel, trigger} : PopMenuPropType) => {
+const PopMenu = (props: PopMenuPropType) => {
     const [bodyDisplay, setBodyDisplay] = useState("none");
     return (
-        <div aria-label={ariaLabel} className={`pop-menu-container ${className}`} onMouseLeave={() => setBodyDisplay("none")} id={id}>
-            <div id={`${id}-trigger`} aria-label={`${id} Trigger`} className="pop-menu-trigger" onMouseEnter={() => setBodyDisplay("flex")}>
-                {trigger}
+        <div id={props.id} aria-label={props["aria-label"]} role="tooltip" className={`pop-menu-container ${props.className}`} onMouseLeave={() => setBodyDisplay("none")}>
+            <div id={`${props.id}-trigger`} role="tooltip" aria-label={`${props["aria-label"]} Trigger`} className="pop-menu-trigger" onMouseEnter={() => setBodyDisplay("flex")}>
+                {props.trigger}
             </div>
-            <div id={`${id}-body`} aria-label={`${id} Body`}className="pop-menu-body bg-dark-gray" style={{display: bodyDisplay}}>
-                {children}
+            <div id={`${props.id}-body`} aria-label={`${props["aria-label"]} Body`} className="pop-menu-body bg-dark-gray" style={{display: bodyDisplay}}>
+                {props.children}
             </div>
         </div>
     );

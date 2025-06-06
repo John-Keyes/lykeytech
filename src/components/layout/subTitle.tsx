@@ -8,15 +8,14 @@ interface SubTitlePropsType extends ComponentProps<"h2"> {
 }
 
 const SubTitle = (props : SubTitlePropsType) => {
-    const {id, children, text, className, sectionclassname} = props;
     return (
         <>
-            <h2 {...props} className={`flex cursor-pointer ${className || ""}`}>
-                <span id={`${id}-text`} className="sub-title text-hover-inherit text-align-inherit">{text}</span>
+            <h2 {...props} className={`flex cursor-pointer ${props.className || ""}`}>
+                <span id={`${props.id}-text`} className="sub-title text-hover-inherit text-align-inherit">{props.text}</span>
             </h2>
-            {children && (
-                <section id={`${id}-section-body`} className={sectionclassname || ""}>
-                    {children}
+            {props.children && (
+                <section id={`${props.id}-section-body`} aria-label={`${props["aria-label"]}-section-body`} className={props.sectionclassname || ""}>
+                    {props.children}
                 </section>
             )}
         </>

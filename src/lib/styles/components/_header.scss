@@ -11,7 +11,6 @@
 
 .route-container {
     gap: 0.75rem;
-    //padding-right: 0.75rem;
     @media screen and (max-width: device-max("md")) {
         display: none;
     }
@@ -28,14 +27,7 @@
     }
 }
 
-.dropdown-route {
-    margin-left: 0.5rem;
-    &-icon {
-        margin-top: 7px;
-    }
-}
-
-#top-nav-root {
+#header-root {
     position: fixed;
     z-index: 5;
     top: 0;
@@ -43,25 +35,10 @@
     height: 80px;
 }
 
-#top-nav {
+#header-nav {
     justify-content: space-between;
-    //position: relative;
     overflow: hidden;
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-.header-popmenu {
-    display: none;
-    @media screen and (min-width: device-min("lg")) {
-        display: flex;
-    }
-}
-
-#header-mobile-link {
-    display: none;
-    @media screen and (max-width: device-max("md")) {
-        display: auto;
-    }
 }

@@ -1,11 +1,11 @@
 import {ComponentProps} from 'react';
 
 
-interface ButtonProps extends ComponentProps<"button"> {
+export interface ButtonPropsType extends ComponentProps<"button"> {
     className?: string;
 }
 
-const Button = ({children, className, ...props}: ButtonProps) => (
+const Button = ({children, className, ...props}: ButtonPropsType) => (
     <button className={`button transition-fast cursor-pointer bg-transparent rounded-sm ${className}`} {...props}>{children}</button>
 );
 

@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo'
 const PageSEO = ({title, description, thumbnail} : {title?: string, description?: string, thumbnail?: string}) => {
 	return (
 		<NextSeo
-			title={title ? `${title} | SFS1` : undefined}
+			title={title ? `${title} | lykeytech` : undefined}
 			description={description}
 			openGraph={{
 				title,
@@ -12,7 +12,7 @@ const PageSEO = ({title, description, thumbnail} : {title?: string, description?
 					{
 						url: thumbnail,
 						alt: "Thumbnail",
-					},
+					}
 				] : undefined,
 			}}
 		/>
