@@ -16,7 +16,7 @@ const Sample = (props: SamplePropsType) => {
             <span className="sample-padding">
                 {props.cardMedia}
             </span>
-            <div className={`space-above flex flex-column text-end width-half sample-padding`}>
+            <div className="space-above flex flex-column text-end width-half sample-padding">
                 <span className={textAlign}>
                     {props.sampleTitle}
                     {props.children}

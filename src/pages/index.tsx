@@ -163,7 +163,9 @@ const Home: NextPage = () => {
                             </Sample>
                             <Sample
                                 cardMedia={
+                                    <div id="keysnaps-card-media-container" aria-label="KeySnaps card media container">
                                         <img id="keysnaps-card-media" aria-label="KeySnaps card media" className="space-above card-img-blur border border-light-blue button-glow-blue" src={codeCS} alt="KeySnaps Code" width="250" height="300"/>
+                                    </div>
                                 }
                                 sampleTitle={
                                     <h3 id="keysnaps-sample-title" aria-label="KeySnaps Sample Title">KeySnaps</h3>

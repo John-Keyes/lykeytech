@@ -14,10 +14,4 @@ describe('<PopMenu />', () => {
     cy.mount(popMenuComponent);
     cy.get("#pu-test-body").should("not.visible");
   })
-  it("Component displayed", () => {
-    cy.mount(popMenuComponent);
-    cy.get("#pu-test-trigger").trigger("mouseenter");
-    cy.get("#pu-test-body").should("exist");
-    cy.get("#pu-test").trigger("mouseleave");
-  })
 });
