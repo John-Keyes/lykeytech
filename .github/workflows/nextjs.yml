@@ -2,7 +2,7 @@
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
-name: Deploy Next.js site to Pages
+name: Deploy lykeytech to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -31,6 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
       - name: Detect package manager
         id: detect-package-manager
         run: |
