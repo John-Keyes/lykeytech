@@ -30,13 +30,13 @@ const Home: NextPage = () => {
                         <div className="flex flex-column flex-center space-above">
                             <Sample 
                                 cardMedia={
-                                    <Link id="cmscritic-card-media-link" aria-label="CMSCritic Sample Card Media Link" href="https://cmscritic.com" target="_blank" rel="noopener noreferrer">
+                                    <Link id="cmscritic-card-media-link" aria-label="CMSCritic Sample Card Media Link" title="CMSCritic Sample Card Media Link" href="https://cmscritic.com" target="_blank" rel="noopener noreferrer">
                                         <img id="cmscritic-card-media-image" aria-label="CMSCritic Sample Card Media Image" src={cmscritic} className="space-above border border-light-blue button-glow-blue" alt="CMSCritic Media Website" width="350" height="190"/>
                                     </Link>
                                 } 
                                 sampleTitle={
                                     <h3 id="cmscritic-sample-title" aria-label="CMSCritic Sample Title">
-                                        <Link id="cmscritic-sample-title-link" aria-label="CMSCritic Sample Title Link" href="https://cmscritic.com" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">
+                                        <Link id="cmscritic-sample-title-link" aria-label="CMSCritic Sample Title Link" title="CMSCritic Sample Title Link" href="https://cmscritic.com" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">
                                             CMSCritic
                                         </Link>
                                     </h3>
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
                                 aria-label="CMSCritic Sample"
                             >
                                 <p id="cmscritic-sample-collaborators" aria-label="CMSCritic Sample Collaborators" className="p">
-                                            Collaborators: <Link href="https://www.linkedin.com/in/mattgarrepy/" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Matthew Garrepy</Link> and <Link href="https://luisgustavosc.com/" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Luis G. Sanchez</Link>.
+                                            Collaborators: <Link href="https://www.linkedin.com/in/mattgarrepy/" title="Matt Gareppy Link" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Matthew Garrepy</Link> and <Link href="https://luisgustavosc.com/" title="Luis Gustavo Link" className="text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Luis G. Sanchez</Link>.
                                         </p>
                                         <p id="cmscritic-sample-description" aria-label="CMSCritic Sample Description" className="p">
                                             At <Link id="cmscritic-sample-description-link" aria-label="CMSCritic Sample Description Link" href="https://www.solodev.com" title="Link to solodev website" className="text-hover-card-blue" target="_blank" rel="noopener noreferrer">Solodev</Link>, I helped update the cmscritic website. This is a place where registered critics publish news articles on content strategies and technology in general.
@@ -67,13 +67,13 @@ const Home: NextPage = () => {
                             </Sample>
                             <Sample
                                 cardMedia={
-                                    <Link id="selena-card-media-link" aria-label="SELENA Card Media Link" href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
+                                    <Link id="selena-card-media-link" aria-label="SELENA Card Media Link" title="SELENA Card Media Link" href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
                                         <img id="selena-card-media-image" aria-label="SELENA Card Media Image" src={resilience} className="rounded-pfp space-above border border-light-purple button-glow-purple" alt="Resilience logo" width="150" height="150"/>
                                     </Link>
                                 }
                                 sampleTitle={
                                     <h3 id="selena-sample-title" aria-label="SELENA Sample Title">
-                                        <Link id="selena-sample-title-link" aria-label="SELENA Sample Title Link" className="text-hover-lighter-purple" href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
+                                        <Link id="selena-sample-title-link" aria-label="SELENA Sample Title Link" title="SELENA Sample Title Link" className="text-hover-lighter-purple" href="https://mylearningtools.org/" target="_blank" rel="noopener noreferrer">
                                             MySELENA Application
                                         </Link>
                                     </h3>
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
                                     Collaborators: The SELENA Application Development Team
                                 </p>
                                 <p id="selena-sample-links" aria-label="SELENA Sample Links" className="p">
-                                    Available on <Link href="https://apps.apple.com/us/app/my-selena/id1504764818" className="cursor-pointer text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">App Store</Link> and <Link href="https://play.google.com/store/apps/details?id=org.mylearningtools.app&hl=en_US&pli=1" className="cursor-pointer text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Google Play</Link>.
+                                    Available on <Link id="selena-sample-app-store-link" aria-label="Selena Sample App Store Link" title="Selena Sample App Store Link" href="https://apps.apple.com/us/app/my-selena/id1504764818" className="cursor-pointer text-hover-lighter-purple" target="_blank" rel="noopener noreferrer">App Store</Link> and <Link id="selena-sample-google-play-link" aria-label="Selena Sample Google Play Link" title="Selena Sample Google Play Link" href="https://play.google.com/store/apps/details?id=org.mylearningtools.app&hl=en_US&pli=1" className="cursor-pointer text-hover-clear-blue" target="_blank" rel="noopener noreferrer">Google Play</Link>.
                                 </p>
                                 <p id="selena-sample-skills" aria-label="SELENA Sample Skills" className="p tag-p">
                                     <Tag id="selena-react-native" aria-label="SELENA React Native Skill" className="tag-purple" href="https://reactnative.dev/" text="React Native"/>
@@ -104,14 +104,14 @@ const Home: NextPage = () => {
                             <Sample
                                 cardMedia={
                                     <PopMenu id="usick-card-media-popmenu" aria-label="USICK Sample Card Media PopMenu" trigger={<iframe className="space-above border border-light-blue button-glow-blue" width="300" height="190" src="https://www.youtube.com/embed/Jrz03x38rs8" />}>                               
-                                        <Link href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
+                                        <Link title="USICK Card Media Link" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
                                             <span className="fa-solid fa-up-right-from-square text-hover-clear-blue"/>
                                         </Link>
                                     </PopMenu>
                                 }
                                 sampleTitle={
                                     <h3 id="usick-sample-title" aria-label="USICK Sample Title">
-                                        <Link id="usick-sample-title-link" aria-label="USICK Sample Title Link" className="text-hover-clear-blue" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
+                                        <Link id="usick-sample-title-link" aria-label="USICK Sample Title Link" title="USICK Sample Title Link" className="text-hover-clear-blue" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
                                             USICK.com
                                         </Link>
                                     </h3>
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
                             </Sample>
                             <Sample
                                 cardMedia={
-                                    <Link href="https://github.com/John-Keyes/task-frontend" target="_blank" rel="noopener noreferrer" id="todo-app-card-media-link" aria-label="Todo app card media link">
+                                    <Link href="https://github.com/John-Keyes/task-frontend" target="_blank" rel="noopener noreferrer" id="todo-app-card-media-link" aria-label="Todo app card media link" title="Todo app card media link">
                                         <img id="todo-app-card-media" aria-label="Todo app card media" src={todoapp} className="space-above border border-light-purple button-glow-purple" alt="task todo" width="300" height="190"/>
                                     </Link>
                                 }
@@ -190,7 +190,7 @@ const Home: NextPage = () => {
             </div>
             <div id="endorsements-divider" aria-label="Endorsements Divider" className="home-section-padding">
                 <div id="endorsements-container" aria-label="Endorsements Container" className="flex flex-column content-container">
-                    <SubTitle id="endorsements" aria-label="Endorsements" text={<Link href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
+                    <SubTitle id="endorsements" aria-label="Endorsements" text={<Link id="endorsements-title-link" aria-label="Endorsements Title Link" title="Endorsements Title Link" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/#recommendations" target="_blank" rel="noopener noreferrer">Endorsements Received</Link>}>
                         <div className="flex card-divider flex-column flex-row-md">
                             <Endorsement
                                 id="endorsement-matthew-garrepy"

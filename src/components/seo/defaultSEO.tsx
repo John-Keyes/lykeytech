@@ -121,8 +121,8 @@ const DefaultSEO = () => {
 			<LogoJsonLd
 				logo={logoPng}
 				name="lykeytech"
-				url="http://lykeytech.com"
-				id="http://lykeytech.com"
+				url="https://lykeytech.com"
+				id="https://lykeytech.com"
 				type="website"
 				headline="Lykeytech Apps"
 			/>
