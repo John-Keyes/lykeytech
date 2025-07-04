@@ -11,7 +11,6 @@
       border-color: $value;
     }
   }
-  
   &-bottom {
     border-bottom-style: solid;
     @for $i from 1 through 9 {

@@ -1,28 +1,23 @@
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 $fa-font: 'Font Awesome 5 Free';
-
 $device-mins: (
     "sm": 600px,
     "md": 768px,
     "lg": 992px,
     "xl": 1200px
 );
-
 $device-maxes: (
     "xs": 600px,
     "sm": 768px,
     "md": 992px,
     "lg": 1200px
 );
-
 @function device-min($sizeKey) {
     @return map-get($device-mins, $sizeKey);
 }
-
 @function device-max($sizeKey) {
     @return map-get($device-maxes, $sizeKey);
 }
-
 .flex {
     display: flex;
     &-row {
@@ -69,11 +64,9 @@ $device-maxes: (
         justify-content: space-between;
     }
 }
-
 .block {
     display: block;
 }
-
 $colors: (
     "dark-blue": #5E718C,
     "light-blue": #8CA6A2,
@@ -84,14 +77,12 @@ $colors: (
     "clear-blue": #4EA8DE,
     "dark-gray": #0D0D0D
 );
-
 @function theme-color($color) {
     @return map-get($colors, $color);
 }
-
 .text {
     &-start {
-        text-align: start;
+        text-align: start !important;
         @each $key, $value in $device-mins {
             &-#{$key} {
                 @media screen and (min-width: $value) {
@@ -101,7 +92,7 @@ $colors: (
         }
     }
     &-center {
-        text-align: center;
+        text-align: center !important;
         @each $key, $value in $device-mins {
             &-#{$key} {
                 @media screen and (min-width: $value) {
@@ -111,7 +102,7 @@ $colors: (
         }
     }
     &-end {
-        text-align: end;
+        text-align: end !important;
         @each $key, $value in $device-mins {
             &-#{$key} {
                 @media screen and (min-width: $value) {
@@ -141,7 +132,6 @@ $colors: (
         }
     }
 }
-
 .bg {
     @each $key, $value in $colors {
         &-#{$key} {
@@ -163,13 +153,11 @@ $colors: (
         }
     }
 }
-
 .fs {
     &-inherit {
         font-size: inherit;
     }
 }
-
 .space {
     &-infront {
         margin-left: 1rem;

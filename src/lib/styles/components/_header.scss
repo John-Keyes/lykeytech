@@ -7,17 +7,12 @@
     &:hover {
         color: theme-color("lighter-purple");
     }
-}
-
-.route-container {
-    gap: 0.75rem;
-    @media screen and (max-width: device-max("md")) {
-        display: none;
+    &-container {
+        gap: 0.75rem;
+        @media screen and (max-width: device-max("md")) {
+            display: none;
+        }
     }
-}
-
-#header-logo-container {
-    border: 2px solid white;
 }
 
 #mobile-menu-container-visibility {
@@ -27,18 +22,22 @@
     }
 }
 
-#header-root {
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    height: 80px;
-}
-
-#header-nav {
-    justify-content: space-between;
-    overflow: hidden;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+#header {
+    &-root {
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        height: 80px;
+    }
+    &-nav {
+        justify-content: space-between;
+        overflow: hidden;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    &-logo-container {
+        border: 2px solid white;
+    }
 }
