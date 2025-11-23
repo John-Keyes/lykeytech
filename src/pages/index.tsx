@@ -178,7 +178,7 @@ const Home: NextPage = () => {
                                 <p className="p" id="keysnaps-description" aria-label="KeySnaps Description">Coming soon</p>
                                     <p id="keysnaps-sample-skills" aria-label="KeySnaps Sample Skills" className="p tag-p">
                                         <Tag id="keysnaps-svelte" aria-label="KeySnaps Svelte Skill" className="tag-blue" href="https://svelte.dev/" text="Svelte"/>
-                                        <Tag id="keysnaps-tauri" aria-label="KeySnaps Tauri Skill" className="tag-blue space-infront" href="https://v2.tauri.app/" text="Tauri"/>
+                                        <Tag id="keysnaps-electron-vite" aria-label="KeySnaps Electron Vite Skill" className="tag-blue space-infront" href="https://electron-vite.org/guide/" text="Electron-Vite"/>
                                         <Tag id="keysnaps-scss" aria-label="KeySnaps SCSS Skill" className="tag-blue space-infront" href="https://sass-lang.com/" text="SCSS"/>
                                         <Tag id="keysnaps-cypress" aria-label="KeySnaps Cypress Skill" className="tag-blue space-infront" href="https://www.cypress.io/ " text="Cypress"/>        
                                         <Tag id="keysnaps-typescript" aria-label="KeySnaps TypeScript Skill" className="tag-blue space-infront" href="https://www.typescriptlang.org/" text="TypeScript"/>                   
