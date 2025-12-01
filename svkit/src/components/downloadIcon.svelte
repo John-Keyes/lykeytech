@@ -1,8 +1,5 @@
 <script lang="ts">
-    import Link from 'next/link';
-    import React, { ReactNode, useRef } from 'react';
     import Button, { ButtonPropsType } from './button';
-    import { Url } from 'next/dist/shared/lib/router/router';
 
     interface DownloadIconPropsType extends ButtonPropsType {
         href?: Url, 
@@ -10,7 +7,7 @@
         trigger: Snippet,
         body: Snippet
     }
-    const props: DownloadIconPropsType = $props();
+    let props: DownloadIconPropsType = $props();
     const downloadLink = useRef<HTMLAnchorElement>(null);
     const HandleButtonClick = () => {
         downloadLink?.current?.click();
@@ -22,5 +19,5 @@
                             {@render props.children()}
                         </span>
                     </Button>
-                    <Link ref={downloadLink} href={props.href || "#"} style={{display: "none"}} download/>
+                    <a ref={downloadLink} href={props.href || "#"} style={{display: "none"}} download></a>
                 

@@ -9,6 +9,8 @@
     import { codeCS, cmscritic, todoapp, resilience } from 'src/lib/helpers/static';
     import Sample from 'src/components/layout/sample';
     import Loading from 'src/components/layout/loading';*/
+    export let data;
+    
 </script>
 
 <h1>Welcome to SvelteKit</h1>
