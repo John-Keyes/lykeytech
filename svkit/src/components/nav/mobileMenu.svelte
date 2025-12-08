@@ -1,33 +1,34 @@
 <script lang="ts">
     import {logoPng} from 'src/lib/helpers/static';
-    import Button from '../button';
+    import Button from '../button.svelte';
 
     interface MobileMenuType {
         menuOpen: boolean,
-        setMenuOpen: Dispatch<SetStateAction<boolean>>
     }
-    const mobileMenuRef = useRef<HTMLDivElement>(null);
+    const mobileMenuRef = document.getElementById("mobile-menu-container");
+    let props: MobileMenuType = $props();
+    
 </script>
 
-        <div ref={mobileMenuRef} id="mobile-menu-container" class="flex-column bg-dark-purple" style={{display: menuOpen ? "flex": "none"}}>
+        <div id="mobile-menu-container" class="flex-column bg-dark-purple" style="display: {props.menuOpen ? 'flex' : 'none'}">
             <div id="mobile-menu-top-container" aria-label="Mobile Menu Top Container" class="flex flex-row flex-center">
-                <span id="mobile-menu-top-back-arrow" aria-label="Mobile Menu Top Back Arrow" onClick={() => setMenuOpen(false)} class="fa-solid cursor-pointer fa-chevron-left"></span>
+                <span id="mobile-menu-top-back-arrow" aria-label="Mobile Menu Top Back Arrow" role="button" tabindex="1" onclick={() => props.menuOpen = false} class="fa-solid cursor-pointer fa-chevron-left"></span>
                 <h2 id="mobile-menu-top-title" aria-label="Mobile Menu Top Title">Menu</h2>
             </div>
             <div id="mobile-menu-list" aria-label="Mobile Menu List" class="flex flex-column flex-center">
-                    <a id="mobile-menu-list-item-0" aria-label="Mobile Menu List Item 0" title="Mobile Menu List Item 0" href="#about" onClick={() => setMenuOpen(false)} class="mobile-menu-list-item flex flex-row cursor-pointer">
+                    <a id="mobile-menu-list-item-0" aria-label="Mobile Menu List Item 0" title="Mobile Menu List Item 0" href="#about" onclick={() => props.menuOpen = false} class="mobile-menu-list-item flex flex-row cursor-pointer">
                         <h3 id="mobile-menu-list-item-0-label" aria-label="Mobile Menu List Item 0 Label">About</h3> 
                         <span id="mobile-menu-list-item-0-icon" aria-label="Mobile Menu List Item 0 Icon" class="fa-solid fa-address-card"></span>
                     </a>
-                    <a id="mobile-menu-list-item-1" aria-label="Mobile Menu List Item 1" title="Mobile Menu List Item 1" href="#samples" onClick={() => setMenuOpen(false)} class="mobile-menu-list-item flex flex-row cursor-pointer">
+                    <a id="mobile-menu-list-item-1" aria-label="Mobile Menu List Item 1" title="Mobile Menu List Item 1" href="#samples" onclick={() => props.menuOpen = false} class="mobile-menu-list-item flex flex-row cursor-pointer">
                         <h3 id="mobile-menu-list-item-1-label" aria-label="Mobile Menu List Item 1 Label">Samples</h3>
                         <span id="mobile-menu-list-item-1-icon" aria-label="Mobile Menu List Item 1 Icon" class="fa-solid fa-code"></span>
                     </a>
-                    <a id="mobile-menu-list-item-2" aria-label="Mobile Menu List Item 2" title="Mobile Menu List Item 2" href="#endorsements" onClick={() => setMenuOpen(false)} class="mobile-menu-list-item flex flex-row cursor-pointer">
+                    <a id="mobile-menu-list-item-2" aria-label="Mobile Menu List Item 2" title="Mobile Menu List Item 2" href="#endorsements" onclick={() => props.menuOpen = false} class="mobile-menu-list-item flex flex-row cursor-pointer">
                         <h3 id="mobile-menu-list-item-2-label" aria-label="Mobile Menu List Item 2 Label">Endorsements</h3>
                         <span id="mobile-menu-list-item-2-icon" aria-label="Mobile Menu List Item 2 Icon" class="fa-solid fa-handshake"></span>
                     </a>
-                    <a id="mobile-menu-list-item-3" aria-label="Mobile Menu List Item 3" title="Mobile Menu List Item 3" href="#socials" onClick={() => setMenuOpen(false)} class="mobile-menu-list-item flex flex-row cursor-pointer">
+                    <a id="mobile-menu-list-item-3" aria-label="Mobile Menu List Item 3" title="Mobile Menu List Item 3" href="#socials" onclick={() => props.menuOpen = false} class="mobile-menu-list-item flex flex-row cursor-pointer">
                         <h3 id="mobile-menu-list-item-3-label" aria-label="Mobile Menu List Item 3 Label">Socials</h3>
                         <span id="mobile-menu-list-item-3-icon" aria-label="Mobile Menu List Item 3 Icon" class="fa-solid fa-user-group"></span>
                     </a>
@@ -49,6 +50,7 @@
         right: 0;
         transition: left 1s ease-in-out;
         border: 3px solid theme-color("light-purple");
+        display: none;
     }
     &-top-container {
         font-size: 16px;

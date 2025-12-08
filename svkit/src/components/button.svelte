@@ -1,16 +1,19 @@
 <script lang="ts">
   import type { HTMLButtonAttributes } from 'svelte/elements';
-  interface ButtonTypeProps extends HTMLButtonAttributes {
+  export interface ButtonPropsType extends HTMLButtonAttributes {
+    id: string;
+    "aria-label": string;
     className?: string;
   }
-  const props: ButtonTypeProps = $props();
+  let props: ButtonPropsType = $props();
+
 </script>
 
 <button
   class={`button ${props.className} ${props.disabled && 'button-disabled button-disabled-effects'}`}
   {...props}
 >
-  {@render props.children()}
+  {@render props.children?.()}
 </button>
 
 <style lang="scss">

@@ -1,13 +1,14 @@
 <script lang="ts">
-    import Card from '../card';
-    interface EndorsementProps extends ComponentProps<"div"> {
+    import { HTMLAttributes } from 'svelte/elements';
+    import Card from '../card.svelte';
+    interface EndorsementPropsType extends HTMLAttributes<HTMLDivElement> {
         person: string;
         personLink: string;
         text: string;
         hoverColor: string;
         className?: string;
     }
-    let props: ButtonTypeProps = $props();
+    let props: EndorsementPropsType = $props();
 </script>
 
     

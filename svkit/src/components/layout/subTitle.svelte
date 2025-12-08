@@ -1,7 +1,8 @@
 <script lang="ts">
-
-    interface SubTitlePropsType extends ComponentProps<"h2"> { 
-        text: string | Snippet, 
+    import type { HTMLAttributes } from 'svelte/elements';
+    import type { Snippet } from 'svelte';
+    interface SubTitlePropsType extends HTMLAttributes<HTMLHeadingElement> { 
+        text: Snippet, 
         className?: string,
         sectionclassname?: string,
         body: Snippet,

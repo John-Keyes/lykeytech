@@ -1,0 +1,171 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+$fa-font: 'Font Awesome 5 Free';
+$device-mins: (
+    "sm": 600px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px
+);
+$device-maxes: (
+    "xs": 600px,
+    "sm": 768px,
+    "md": 992px,
+    "lg": 1200px
+);
+@function device-min($sizeKey) {
+    @return map-get($device-mins, $sizeKey);
+}
+@function device-max($sizeKey) {
+    @return map-get($device-maxes, $sizeKey);
+}
+.flex {
+    display: flex;
+    &-row {
+        flex-direction: row;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    flex-direction: row !important;
+                }
+            }
+        }
+    }
+    &-column {
+        flex-direction: column;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    flex-direction: column !important;
+                }
+            }
+        }
+    }
+    &-start {
+        align-items: start;
+        justify-content: start;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    align-items: center;
+                    justify-content: start !important;
+                }
+            }
+        }
+    }
+    &-center {
+        justify-content: center;
+        align-items: center;
+    }
+    &-center-start {
+        justify-content: start;
+        align-items: center;
+    }
+    &-between {
+        justify-content: space-between;
+    }
+}
+.block {
+    display: block;
+}
+$colors: (
+    "dark-blue": #5E718C,
+    "light-blue": #8CA6A2,
+    "dark-purple": #0c0711,
+    "purple": #482b66,
+    "light-purple": #9457d4,
+    "lighter-purple": #c590fc,
+    "clear-blue": #4EA8DE,
+    "dark-gray": #0D0D0D
+);
+@function theme-color($color) {
+    @return map-get($colors, $color);
+}
+.text {
+    &-start {
+        text-align: start !important;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    text-align: start !important;
+                }
+            }
+        }
+    }
+    &-center {
+        text-align: center !important;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    text-align: center !important; 
+                }
+            }
+        }
+    }
+    &-end {
+        text-align: end !important;
+        @each $key, $value in $device-mins {
+            &-#{$key} {
+                @media screen and (min-width: $value) {
+                    text-align: end !important;
+                }
+            }
+        }
+    }
+    &-inherit {
+        color: inherit !important;
+        text-align: inherit !important;
+    }
+    @each $key, $value in $colors {
+        &-#{$key} {
+            color: $value;
+            &-transparent {
+                color: rgba($value, 0) !important;
+            }
+        }
+        &-hover-#{$key} {
+            &:hover {
+                color: $value;
+                &-transparent {
+                    color: rgba($value, 0) !important;
+                }
+            }
+        }
+    }
+}
+.bg {
+    @each $key, $value in $colors {
+        &-#{$key} {
+            background-color: $value;
+            &-transparent {
+                background-color: rgba($value, 0) !important;
+            }
+        }
+        &-hover-#{$key} {
+            &:hover {
+                background-color: $value;
+                &-transparent {
+                    background-color: rgba($value, 0) !important;
+                }
+                &-glow {
+                    box-shadow: 0 0px 10px $value !important;
+                }
+            }
+        }
+    }
+}
+.fs {
+    &-inherit {
+        font-size: inherit;
+    }
+}
+.space {
+    &-infront {
+        margin-left: 1rem;
+    }
+    &-above {
+        margin-top: 1rem;
+    }
+    &-below {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
-  interface PopMenuPropsType {
+    import { HTMLAttributes } from 'svelte/elements';
+  interface PopMenuPropsType extends HTMLAttributes<HTMLDivElement> {
     id: string;
     className?: string;
     ariaLabel?: string;
@@ -10,13 +11,14 @@
   }
   let props: PopMenuPropsType = $props();
 
-  //let bodyDisplay: 'none' | 'flex' = 'none';
+  let bodyDisplay: 'none' | 'flex' = $state("flex");
+  //document.getElementById(`${props.id}-body`).style.display
 
   const OnMouseEnter = () => {
-    document.getElementById(`${props.id}-body`).style.display = "flex";
+    bodyDisplay = "flex";
   }
   const OnMouseLeave = () => {
-    document.getElementById(`${props.id}-body`).style.display = "none";
+    bodyDisplay = "none";
   }
   
 </script>
@@ -31,7 +33,7 @@
   <div id={`${props.id}-trigger`} role="tooltip" class="pop-menu-trigger" onmouseenter={OnMouseEnter}>
     {@render props.trigger()}
   </div>
-  <div id={`${props.id}-body`} class="pop-menu-body bg-darker-bg">
+  <div id={`${props.id}-body`} class="pop-menu-body bg-darker-bg" style="display: {bodyDisplay};">
     {@render props.body()}
   </div>
 </div>

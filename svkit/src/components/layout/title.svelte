@@ -1,16 +1,18 @@
-<style lang="ts">
-    //import type { HTMLH1Element } from 'svelte/elements';
-    interface TitlePropsType extends ComponentProps<"h1"> { 
-        text: string | Snippet;
+<script lang="ts">
+    import type { HTMLAttributes } from 'svelte/elements';
+    import type { Snippet } from 'svelte';
+
+    interface TitlePropsType extends HTMLAttributes<HTMLHeadingElement> { 
+        text: Snippet;
         className?: string;
     }
 
     let props: TitlePropsType = $props();
-</style>
+</script>
 
-        <h1 {...props} className={`flex cursor-pointer ${props.className}`} >
-            <span id={`${props.id}-text`} className="title">{@render props.text()}</span>
-        </h1>
+<h1 {...props} class={`flex cursor-pointer ${props.className}`} >
+    <span id={`${props.id}-text`} class="title">{@render props.text()}</span>
+</h1>
 
 <style lang="scss">
     .title {

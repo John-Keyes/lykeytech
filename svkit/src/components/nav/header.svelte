@@ -1,28 +1,27 @@
 <script lang="ts">
-    import Link from 'next/link';
-    import MobileMenu from './mobileMenu';
+    import MobileMenu from './mobileMenu.svelte';
     import { logoGif } from 'src/lib/helpers/static';
 
-    let topNavRoot = useRef<HTMLDivElement>(null);
+    let topNavRoot = document.getElementById("header-root");
     let menuOpen:boolean = $state(false);
 </script>
     
-            <div ref={topNavRoot} id="header-root" aria-label="Header Root" class="flex fit-width bg-dark-purple">
+            <div id="header-root" aria-label="Header Root" class="flex fit-width bg-dark-purple">
                 <nav id="header-nav" aria-label="Header Navigation" class="flex fit-width content-container">
                     <div id="header-logo-container" aria-label="Header Logo Container">
-                        <Link id="header-logo-link" aria-label="Header Logo Link" title="Header Logo Link" href="/">
+                        <a id="header-logo-link" aria-label="Header Logo Link" title="Header Logo Link" href="/">
                             <img alt="Logo Gif" src={logoGif} width="55" height="50"/>
-                        </Link>
+                        </a>
                     </div>
                     <div id="mobile-menu-container-visibility" aria-label="Mobile Menu Container Visibility">
-                        <span class="fa-solid fa-bars fa-xl cursor-pointer" onClick={() => menuOpen = !menuOpen}></span>
+                        <span class="fa-solid fa-bars fa-xl cursor-pointer" role="button" tabindex="1" onclick={() => menuOpen = !menuOpen}></span>
                         <MobileMenu menuOpen={menuOpen}/>
                     </div>
                     <div id="header-route-container" aria-label="Header Route Container" class="route-container flex">
-                        <Link id="header-route-about" aria-label="Header Route About" title="Header Route About" class="route" href="#about">About</Link>
-                        <Link id="header-route-samples" aria-label="Header Route Samples" title="Header Route Samples" class="route" href="#samples">Samples</Link>
-                        <Link id="header-route-endorsements" aria-label="Header Route Endorsements" title="Header Route Endorsements" class="route" href="#endorsements">Endorsements</Link>
-                        <Link id="header-route-socials" aria-label="Header Route Socials" title="Header Route Socials" class="route" href="#socials">Socials</Link>
+                        <a id="header-route-about" aria-label="Header Route About" title="Header Route About" class="route" href="#about">About</a>
+                        <a id="header-route-samples" aria-label="Header Route Samples" title="Header Route Samples" class="route" href="#samples">Samples</a>
+                        <a id="header-route-endorsements" aria-label="Header Route Endorsements" title="Header Route Endorsements" class="route" href="#endorsements">Endorsements</a>
+                        <a id="header-route-socials" aria-label="Header Route Socials" title="Header Route Socials" class="route" href="#socials">Socials</a>
                     </div>
                 </nav>
             </div>

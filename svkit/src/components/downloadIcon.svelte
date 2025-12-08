@@ -1,23 +1,22 @@
 <script lang="ts">
-    import Button, { ButtonPropsType } from './button';
+    import { Snippet } from 'svelte';
+    import Button, { ButtonPropsType } from './button.svelte';
 
     interface DownloadIconPropsType extends ButtonPropsType {
-        href?: Url, 
-        className?: string,
-        trigger: Snippet,
-        body: Snippet
+        href: string, 
+        className?: string
     }
     let props: DownloadIconPropsType = $props();
-    const downloadLink = useRef<HTMLAnchorElement>(null);
+    const downloadLink = document.getElementById(`${props.id}-link`);
     const HandleButtonClick = () => {
-        downloadLink?.current?.click();
+        downloadLink?.click();
     }
 </script>
-                    <Button onClick={HandleButtonClick} className={props.className || ""} {...props}>
+                    <Button onclick={HandleButtonClick} className={props.className || ""} {...props}>
                         <span class="fa-solid fa-download"></span>
                         <span class="space-infront">
-                            {@render props.children()}
+                            {@render props.children?.()}
                         </span>
                     </Button>
-                    <a ref={downloadLink} href={props.href || "#"} style={{display: "none"}} download></a>
+                    <a id={`${props.id}-link`} aria-label={`${props["aria-label"]}-link`} href={props.href || "#"} style="display: none;" download></a>
                 

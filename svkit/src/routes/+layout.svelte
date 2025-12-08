@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+    import Header from 'src/components/nav/header.svelte';
     import Seo from '../components/seo.svelte';
 
 	let { children } = $props();
@@ -7,7 +7,10 @@
 
 <Seo/>
 
-{@render children?.()}
+<main class="fit-width fit-height">
+    <Header/>
+	{@render children?.()}
+</main>
 
 
 

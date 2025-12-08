@@ -1,15 +1,14 @@
 <script lang="ts">
-    import {ComponentProps} from 'react';
-
-    export interface CardPropsType extends ComponentProps<"div"> {
+    import type { HTMLAttributes } from 'svelte/elements';
+    export interface CardPropsType extends HTMLAttributes<HTMLDivElement> {
         className?: string;
     }
-    const props: CardPropsType = $props();
+    let props: CardPropsType = $props();
 </script>
 
 
-    <div class={`card ${className}`} {...props}>
-        {@render props.children()}
+    <div class={`card ${props.className}`} {...props}>
+        {@render props.children?.()}
     </div>
 
 <style lang="scss">

@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Card from './card';
-  import Button from './button';
+  import Card from './card.svelte';
+  import Button from './button.svelte';
 
   interface PageErrorTypeProps {
     statusCode?: number;
-    details?: string | undefined;
+    details?: string;
   }
 
   let props: PageErrorTypeProps = $props();
@@ -16,7 +16,7 @@
             {#if props.details}
               <h2 id="page-error-details" aria-label="Page Error Details">{props.details}</h2>
             {/if}
-            <Button id="page-error-back" aria-label="Page Error Back" onClick={() => history.back()} className="bg-purple bg-hover-light-purple button-glow-purple text-inherit">
+            <Button id="page-error-back" aria-label="Page Error Back" onclick={() => history.back()} className="bg-purple bg-hover-light-purple button-glow-purple text-inherit">
               <span class="button-text">Return</span>
             </Button>
         </Card>
