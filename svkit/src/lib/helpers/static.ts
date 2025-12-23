@@ -1,9 +1,0 @@
-export const resume = "/docs/john-keyes_resume.docx";
-export const myPfp = "/images/myPfp.png";
-export const logoPng = "/images/logo.png";
-export const logoGif = "/images/logo.gif";
-export const qrCode = "/images/qrcode.png";
-export const codeCS = "/images/codeCS.png";
-export const cmscritic = "/images/cmscritic.png";
-export const todoapp = "/images/todoapp.png";
-export const resilience = "/images/resilience.png";
