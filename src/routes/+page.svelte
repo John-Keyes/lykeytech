@@ -1,14 +1,14 @@
 <script lang="ts">
 
-    import SubTitle from 'src/components/layout/subTitle.svelte';
-    import Endorsement from 'src/components/layout/endorsement.svelte';
-    import Socials from 'src/components/layout/socials.svelte';
-    import PopMenu from 'src/components/popMenu.svelte';
-    import Tag from 'src/components/tag.svelte';
-    import About from 'src/components/layout/about.svelte';
-    import { codeCS, cmscritic, todoapp, resilience } from 'src/lib/helpers/static';
-    import Sample from 'src/components/layout/sample.svelte';
-    import Loading from 'src/components/layout/loading.svelte';
+    import SubTitle from '../components/layout/subTitle.svelte';
+    import Endorsement from '../components/layout/endorsement.svelte';
+    import Socials from '../components/layout/socials.svelte';
+    import PopMenu from '../components/popMenu.svelte';
+    import Tag from '../components/tag.svelte';
+    import About from '../components/layout/about.svelte';
+    import { codeCS, cmscritic, todoapp, resilience } from '../lib/helpers/static';
+    import Sample from '../components/layout/sample.svelte';
+    import Loading from '../components/layout/loading.svelte';
     
 </script>
 

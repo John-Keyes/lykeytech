@@ -1,16 +1,12 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { sveltePreprocess } from 'svelte-preprocess';
+//import { sveltePreprocess } from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://svelte.dev/dos/kit/integrations
 	// for more information about preprocessors
-	preprocess: sveltePreprocess({
-        scss: {
-            prependData: `@import './src/styles/app.scss';` // Path to your global SCSS file
-        }
-    }),
+	preprocess: [vitePreprocess()],
 
 	kit: {
 		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.

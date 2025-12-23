@@ -3,7 +3,7 @@
     import SubTitle from "./subTitle.svelte";
     import Title from "./title.svelte";
     import Card from "../card.svelte";
-    import { myPfp, resume } from 'src/lib/helpers/static';
+    import { myPfp, resume } from '../../lib/helpers/static';
 </script>
 
 

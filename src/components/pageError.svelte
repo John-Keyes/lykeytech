@@ -10,7 +10,6 @@
   let props: PageErrorTypeProps = $props();
 </script>
 
-
         <Card id="page-error" aria-label="Page Error" className="page-error flex flex-column flex-center border-top border-top-5 border-top-light-purple text-start">
             <h1 id="page-error-title" aria-label="Page Error Title">{props.statusCode ? `Error ${props.statusCode} occurred.` : "An error occurred."}</h1>
             {#if props.details}

@@ -1,7 +1,7 @@
 <script lang="ts">
     import SubTitle from "./subTitle.svelte";
     import Button from "../button.svelte";
-    import { qrCode } from "src/lib/helpers/static";
+    import { qrCode } from "../../lib/helpers/static";
 </script>
 
                         <SubTitle id="socials" aria-label="Socials" sectionclassname="flex flex-column flex-center space-below">

@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
-    import { HTMLAttributes } from 'svelte/elements';
+  import type { HTMLAttributes } from 'svelte/elements';
   interface PopMenuPropsType extends HTMLAttributes<HTMLDivElement> {
     id: string;
     className?: string;

@@ -1,6 +1,6 @@
 <script lang="ts">
-    import PageError from "src/components/pageError.svelte";
-    import Loading from "src/components/layout/loading.svelte";
+    import PageError from "../components/pageError.svelte";
+    import Loading from "..//components/layout/loading.svelte";
     import {page} from '$app/stores';
     //error.message = error?.message || "An unexpected error occurred.";
 </script>

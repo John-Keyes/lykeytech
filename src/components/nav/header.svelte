@@ -1,12 +1,12 @@
 <script lang="ts">
     import MobileMenu from './mobileMenu.svelte';
-    import { logoGif } from 'src/lib/helpers/static';
+    import { logoGif } from '../../lib/helpers/static';
 
-    let topNavRoot = document.getElementById("header-root");
+    let topNavRoot: HTMLDivElement;
     let menuOpen:boolean = $state(false);
 </script>
     
-            <div id="header-root" aria-label="Header Root" class="flex fit-width bg-dark-purple">
+            <div id="header-root" bind:this={topNavRoot} aria-label="Header Root" class="flex fit-width bg-dark-purple">
                 <nav id="header-nav" aria-label="Header Navigation" class="flex fit-width content-container">
                     <div id="header-logo-container" aria-label="Header Logo Container">
                         <a id="header-logo-link" aria-label="Header Logo Link" title="Header Logo Link" href="/">

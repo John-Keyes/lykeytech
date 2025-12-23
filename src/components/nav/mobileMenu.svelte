@@ -1,16 +1,16 @@
 <script lang="ts">
-    import {logoPng} from 'src/lib/helpers/static';
+    import {logoPng} from '../../lib/helpers/static';
     import Button from '../button.svelte';
+    import { onMount } from 'svelte';
 
     interface MobileMenuType {
         menuOpen: boolean,
     }
-    const mobileMenuRef = document.getElementById("mobile-menu-container");
+    let mobileMenuRef: HTMLDivElement;
     let props: MobileMenuType = $props();
-    
 </script>
 
-        <div id="mobile-menu-container" class="flex-column bg-dark-purple" style="display: {props.menuOpen ? 'flex' : 'none'}">
+        <div bind:this={mobileMenuRef} id="mobile-menu-container" class="flex-column bg-dark-purple" style="display: {props.menuOpen ? 'flex' : 'none'}">
             <div id="mobile-menu-top-container" aria-label="Mobile Menu Top Container" class="flex flex-row flex-center">
                 <span id="mobile-menu-top-back-arrow" aria-label="Mobile Menu Top Back Arrow" role="button" tabindex="1" onclick={() => props.menuOpen = false} class="fa-solid cursor-pointer fa-chevron-left"></span>
                 <h2 id="mobile-menu-top-title" aria-label="Mobile Menu Top Title">Menu</h2>

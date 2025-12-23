@@ -1,5 +1,5 @@
 <script lang="ts">
-import { logoPng, logoGif, cmscritic, myPfp, qrCode, resilience, todoapp, codeCS, resume } from 'src/lib/helpers/static';
+import { logoPng, logoGif, cmscritic, myPfp, qrCode, resilience, todoapp, codeCS, resume } from '../lib/helpers/static';
 
 interface SeoTypeProps {
     title?: string;
