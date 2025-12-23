@@ -15,7 +15,7 @@
 
         <Card className={`sample-desktop flex-center fit-width sample-${props.flexDesktopDirection} ${props.className}`} id={`${props.id}-desktop`} aria-label={`${props["aria-label"]}-desktop`}>
             <span class="sample-padding">
-                {props.cardMedia}
+                {@render props.cardMedia()}
             </span>
             <div class="space-above flex flex-column text-end width-half sample-padding">
                 <span class={textAlign}>
