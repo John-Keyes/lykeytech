@@ -1,5 +1,6 @@
 <script lang="ts">
-    let props: ButtonTypeProps = $props();
+    import type { HTMLAttributes } from 'svelte/elements';
+    let props: HTMLAttributes<HTMLDivElement> = $props();
 </script>
 
 

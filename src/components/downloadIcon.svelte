@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { Snippet } from 'svelte';
-    import Button, { ButtonPropsType } from './button.svelte';
+    //import { type Snippet } from 'svelte';
+    import Button, { type ButtonPropsType } from './button.svelte';
 
     interface DownloadIconPropsType extends ButtonPropsType {
         href: string, 

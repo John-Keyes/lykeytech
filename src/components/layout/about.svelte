@@ -15,7 +15,7 @@
                             {/snippet}
                             </Title>
                             <a id="about-title-link" aria-label="About Title Link" title="About Title Link" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">
-                                <img src={myPfp} alt="Profile Picture" class="rounded-pfp border border-light-blue button-glow-blue" width="150" height="150"/>
+                                <img src={myPfp} alt="Profile" class="rounded-pfp border border-light-blue button-glow-blue" width="150" height="150"/>
                             </a>
                         </div>
                         <SubTitle id="about-hello" aria-label="About Hello">
