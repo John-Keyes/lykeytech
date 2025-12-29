@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { Snippet } from 'svelte';
-    import Card, { CardPropsType } from '../card.svelte';
+    import { type Snippet } from 'svelte';
+    import Card, { type CardPropsType } from '../card.svelte';
 
     interface SamplePropsType extends CardPropsType {
         cardMedia: Snippet;

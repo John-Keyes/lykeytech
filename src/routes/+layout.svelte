@@ -13,6 +13,6 @@
 	{@render children?.()}
 </main>
 
-
-
-
+<style lang="scss">
+  @use '../lib/styles/_app.scss' as *;
+</style>

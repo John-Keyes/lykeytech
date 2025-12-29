@@ -1,22 +1,16 @@
-@import "@fortawesome/fontawesome-free/scss/fontawesome";
-@import "@fortawesome/fontawesome-free/scss/solid";
-@import "@fortawesome/fontawesome-free/scss/regular";
-@import "@fortawesome/fontawesome-free/scss/brands";
-@import "@fortawesome/fontawesome-free/scss/v4-shims";
+@use "base/general";
+@use "base/main";
 
-@import "base/general";
-@import "base/main";
+@use "components/border";
+@use "components/button";
+@use "components/card";
+@use "components/carousel";
+@use "components/endorsement";
+@use "components/header";
+@use "components/loading";
+@use "components/mobile-menu";
+@use "components/page-error";
+@use "components/sample";
+@use "components/tag";
 
-@import "components/border";
-@import "components/button";
-@import "components/card";
-@import "components/carousel";
-@import "components/endorsement";
-@import "components/header";
-@import "components/loading";
-@import "components/mobile-menu";
-@import "components/page-error";
-@import "components/sample";
-@import "components/tag";
-
-@import "pages/home";
+@use "pages/home";

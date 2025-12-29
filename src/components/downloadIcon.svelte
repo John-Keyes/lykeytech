@@ -7,7 +7,7 @@
         className?: string
     }
     let props: DownloadIconPropsType = $props();
-    const downloadLink = document.getElementById(`${props.id}-link`);
+    let downloadLink: HTMLAnchorElement | null = null;
     const HandleButtonClick = () => {
         downloadLink?.click();
     }
@@ -18,5 +18,5 @@
                             {@render props.children?.()}
                         </span>
                     </Button>
-                    <a id={`${props.id}-link`} aria-label={`${props["aria-label"]}-link`} href={props.href || "#"} style="display: none;" download></a>
+                    <a id={`${props.id}-link`} bind:this={downloadLink} aria-label={`${props["aria-label"]}-link`} href={props.href || "#"} style="display: none;" download></a>
                 
