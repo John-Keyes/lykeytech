@@ -1,7 +1,6 @@
 <script lang="ts">
     import {logoPng} from '../../lib/helpers/static';
     import Button from '../button.svelte';
-    import { onMount } from 'svelte';
 
     interface MobileMenuType {
         menuOpen: boolean,
@@ -43,26 +42,27 @@
 
 <style lang="scss">
     #mobile-menu {
-    &-container {
-        position: fixed;
-        z-index: 3;
-        top: 0;
-        right: 0;
-        transition: left 1s ease-in-out;
-        border: 3px solid theme-color("light-purple");
-        display: none;
-    }
-    &-top-container {
-        font-size: 16px;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-    &-list {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        &-item {
+        &-container {
+            position: fixed;
+            z-index: 3;
+            top: 0;
+            right: 0;
+            transition: left 1s ease-in-out;
+            border: 3px solid theme-color("light-purple");
+            display: none;
+        }
+        &-top-container {
+            font-size: 16px;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        &-list {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        .mobile-menu-list-item {
             width: 100%;
             padding-left: 2rem;
             padding-right: 2rem;
@@ -74,5 +74,4 @@
             }
         }
     }
-}
 </style>    

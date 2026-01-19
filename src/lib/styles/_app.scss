@@ -1,16 +1,9 @@
-@use "base/general";
-@use "base/main";
+@use "base" as *;
 
-@use "components/border";
-@use "components/button";
-@use "components/card";
-@use "components/carousel";
-@use "components/endorsement";
-@use "components/header";
-@use "components/loading";
-@use "components/mobile-menu";
-@use "components/page-error";
-@use "components/sample";
-@use "components/tag";
+@use "components" as *;
 
-@use "pages/home";
+@use "pages" as *;
+
+@forward "base";
+@forward "components";
+@forward "pages";

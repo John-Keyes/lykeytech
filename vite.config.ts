@@ -3,12 +3,14 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	preprocessorOptions: {
-        scss: {                                 
-            additionalData: `
-            @use '$lib/styles/app' as *;
-        	`,
-        },
-	}
+    css: {
+        preprocessorOptions: {
+            scss: {                                 
+                additionalData: `
+                @use '$lib/styles/app' as *;
+                `,
+            },
+        }
+    }
 	
 });
