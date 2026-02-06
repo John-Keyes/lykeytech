@@ -5,11 +5,11 @@
     color: white;
     transition: color 0.3s linear;
     &:hover {
-        color: theme-color("lighter-purple");
+        color: var(--lighter-purple);
     }
     &-container {
         gap: 0.75rem;
-        @media screen and (max-width: device-max("md")) {
+        @media screen and (max-width: var(--device-maxes-sm)) {
             display: none;
         }
     }
@@ -17,7 +17,7 @@
 
 #mobile-menu-container-visibility {
     display: flex;
-    @media screen and (min-width: device-min("lg")) {
+    @media screen and (min-width: var(--device-mins-lg)) {
         display: none;
     }
 }

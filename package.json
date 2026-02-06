@@ -9,7 +9,9 @@
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"scss:watch": "sass --watch src/lib/styles/:src/lib/styles/compile --no-source-map --style=compressed",
+		"scss:watch:migrate": "bash scss-watch.txt"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.1.0",

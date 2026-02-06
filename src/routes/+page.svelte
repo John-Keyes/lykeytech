@@ -250,6 +250,7 @@
 
     
 <style lang="scss">
+    //@use '../lib/styles/base/index' as *;
     #home {
         overflow: hidden;
         &::before {
@@ -257,7 +258,7 @@
             height: 100%;
             z-index: -1;
         }
-        @media screen and (max-width: device-max("md")) {
+        @media screen and (max-width: var(--device-maxes-sm)) {
             padding-left: 0.5rem;
             padding-right: 0.5rem;
         }

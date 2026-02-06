@@ -3,14 +3,14 @@
         display: none;
         flex-direction: column;
         justify-content: space-evenly;
-        @media screen and (max-width: device-max("sm")) {
+        @media screen and (max-width: var(--device-maxes-sm)) {
             display: flex;
         }
     }
     &-desktop {
         display: flex;
         justify-content: space-between;
-        @media screen and (max-width: device-max("sm")) {
+        @media screen and (max-width: var(--device-maxes-sm)) {
             display: none;
         }
     }

@@ -1,9 +1,0 @@
-@use "base" as *;
-
-@use "components" as *;
-
-@use "pages" as *;
-
-@forward "base";
-@forward "components";
-@forward "pages";

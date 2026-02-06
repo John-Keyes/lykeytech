@@ -7,10 +7,22 @@ export default defineConfig({
         preprocessorOptions: {
             scss: {                                 
                 additionalData: `
-                @use '$lib/styles/app' as *;
+                @use '$lib/styles/app.scss' as *;
                 `,
             },
         }
     }
 	
 });
+
+/*
+css: {
+        preprocessorOptions: {
+            scss: {                                 
+                additionalData: `
+                @use '$lib/styles/app.scss' as *;
+                `,
+            },
+        }
+    }
+*/

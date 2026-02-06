@@ -1,10 +1,40 @@
+@use "general" as *;
+
+:root {
+			/*--dark-blue: #5E718C;*/
+			--light-blue: #8CA6A2;
+			--dark-purple: #0c0711;
+			--purple: #482b66;
+			--light-purple: #9457d4;
+			--lighter-purple: #c590fc;
+			--clear-blue: #4EA8DE;
+			--dark-gray: #0D0D0D;
+
+			/*for tags*/
+			--light-purple-border: 2px solid #9457d4;
+			--lighter-purple-border: 2px solid #c590fc;
+			--light-blue-border: 2px solid #8CA6A2;
+			--clear-blue-border: 2px solid #4EA8DE;
+
+			--device-mins-sm: 600px;
+			--device-mins-md: 768px;
+			--device-mins-lg: 992px;
+			--device-mins-xl: 1200px;
+
+			--device-maxes-xs: var(--device-mins-sm);
+			--device-maxes-sm: var(--device-mins-md);
+			--device-maxes-md: var(--device-mins-lg);
+			--device-maxes-lg: var(--device-mins-xl);
+
+		}
+    
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background-color: theme-color("dark-purple");
+  background-color: var(--dark-purple);
   color: white;
   font-family: Inter;
   -webkit-font-smoothing: antialiased;
@@ -24,7 +54,7 @@ body {
     height: 100%;
     z-index: -1;
   }
-  @media screen and (max-width: device-max("lg")) {
+  @media screen and (max-width: var(--device-maxes-lg)) {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     width: 100%;
@@ -39,7 +69,7 @@ body {
 .p {
   font-size: 1rem;
   font-weight: 500;
-  @media screen and (max-width: device-max("md")) {
+  @media screen and (max-width: var(--device-maxes-sm)) {
     justify-content: center;
   }
 }
@@ -97,7 +127,7 @@ a, .a {
 h1, h2, h3 {
   color: white;
   justify-content: start;
-  @media screen and (max-width: device-max("sm")) {
+  @media screen and (max-width: var(--device-maxes-sm)) {
     justify-content: center;
     align-self: center;
   }
@@ -118,22 +148,22 @@ h4 {
 ::-webkit-scrollbar {
   width: 10px;
   &-track {
-    background-color: theme-color("dark-purple");
-    @media screen and (max-width: device-max("lg")) {
+    background-color: var(--dark-purple);
+    @media screen and (max-width: var(--device-maxes-lg)) {
       display: none;
     } 
   }
   &-thumb {
-    background-color: theme-color("lighter-purple"); 
+    background-color: var(--lighter-purple); 
     border-radius: 10px;
     &:hover {
-      background-color: theme-color("purple"); 
+      background-color: var(--purple); 
     }
-    @media screen and (max-width: device-max("lg")) {
+    @media screen and (max-width: var(--device-maxes-lg)) {
       display: none;
     }
   }
-  @media screen and (max-width: device-max("lg")) {
+  @media screen and (max-width: var(--device-maxes-lg)) {
     display: none;
   }
 }

@@ -23,7 +23,7 @@
 <style lang="scss">
     .endorsement {
         width: 100%;
-        @media screen and (min-width: device-max("md")) {
+        @media screen and (min-width: var(--device-maxes-sm)) {
             width: 50%;
         }
     }

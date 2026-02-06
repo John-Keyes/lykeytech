@@ -27,12 +27,12 @@
     &-glow {
       &-purple {
         &:hover {
-          box-shadow: 0 0px 10px theme-color("lighter-purple");
+          box-shadow: 0 0px 10px var(--lighter-purple);
         }
       }
       &-blue {
         &:hover {
-          box-shadow: 0 0px 10px theme-color("clear-blue");
+          box-shadow: 0 0px 10px var(--clear-blue);
         }
       }
     }

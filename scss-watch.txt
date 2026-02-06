@@ -1,0 +1,3 @@
+mkdir src/lib/styles/compiled
+mv src/lib/styles/compile/* src/lib/styles/compiled
+rm -rf src/lib/styles/compiled/compile
