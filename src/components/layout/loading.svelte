@@ -1,14 +1,16 @@
 <script lang="ts">
     import type { HTMLAttributes } from 'svelte/elements';
+    import Fa from 'svelte-fa';
+    import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
     let props: HTMLAttributes<HTMLDivElement> = $props();
 </script>
 
 
     <div {...props} id="loading-container" aria-label="Loading Container" class="flex flex-center fit-width loading">
-        <span id="loading-arrow-0" aria-label="Loading Arrow 0" class="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"></span>
-        <span id="loading-arrow-1" aria-label="Loading Arrow 1" class="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"></span>
-        <span id="loading-arrow-2" aria-label="Loading Arrow 2" class="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"></span>
-        <span id="loading-arrow-3" aria-label="Loading Arrow 3" class="fa-duotone fa-solid fa-chevron-right fa-beat-fade loading-arrow text-lighter-purple"></span>
+        <Fa icon={faChevronRight} id="loading-arrow-0" color="var(--lighter-purple)" size="5x" class="loading-arrow fa-beat-fade fa-duotone"/>
+        <Fa icon={faChevronRight} id="loading-arrow-1" color="var(--lighter-purple)" size="5x" class="loading-arrow fa-beat-fade fa-duotone"/>
+        <Fa icon={faChevronRight} id="loading-arrow-2" color="var(--lighter-purple)" size="5x" class="loading-arrow fa-beat-fade fa-duotone"/>
+        <Fa icon={faChevronRight} id="loading-arrow-3" color="var(--lighter-purple)" size="5x" class="loading-arrow fa-beat-fade fa-duotone"/>
     </div>
 
 

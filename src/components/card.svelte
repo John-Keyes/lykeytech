@@ -12,7 +12,7 @@
     </div>
 
 <style lang="scss">
-    .card {
+    /*.card {
         padding: 0.75rem;
         &-purple {
             border-top: 5px solid var(--light-purple);
@@ -30,5 +30,5 @@
         &-space-above {
             margin-top: 4rem;
         }
-    }
+    }*/
 </style>

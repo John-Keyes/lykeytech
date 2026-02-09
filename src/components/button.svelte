@@ -17,7 +17,7 @@
 </button>
 
 <style lang="scss">
-  .button {
+  /*.button {
     border: none;
     padding: 0.5rem;
     &-text {
@@ -36,5 +36,5 @@
         }
       }
     }
-  }
+  }*/
 </style>

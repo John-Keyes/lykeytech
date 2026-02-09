@@ -1,3 +1,4 @@
+timeout 10s sass --watch src/lib/styles/:src/lib/styles/compile --no-source-map --style=compressed
 mkdir src/lib/styles/compiled
 mv src/lib/styles/compile/* src/lib/styles/compiled
 rm -rf src/lib/styles/compiled/compile

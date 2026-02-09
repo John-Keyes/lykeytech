@@ -18,7 +18,7 @@
     </Button>
 
 <style lang="scss">
-.tag {
+/*.tag {
     padding: 0.5rem;
     &-blue {
         color: theme-color("light-blue");
@@ -45,6 +45,6 @@
     &-p {
         line-height: 50px;
     }
-}
+}*/
 
 </style>

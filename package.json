@@ -11,7 +11,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"scss:watch": "sass --watch src/lib/styles/:src/lib/styles/compile --no-source-map --style=compressed",
-		"scss:watch:migrate": "bash scss-watch.txt"
+		"scss:migrate": "bash scss-watch.txt"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.1.0",
@@ -25,6 +25,7 @@
 		"vite": "^7.1.7"
 	},
 	"dependencies": {
+		"@fortawesome/free-brands-svg-icons": "^7.1.0",
 		"@fortawesome/free-solid-svg-icons": "^7.1.0",
 		"svelte-fa": "^4.0.4"
 	}
