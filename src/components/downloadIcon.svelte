@@ -15,7 +15,6 @@
     }
 </script>
                     <Button onclick={HandleButtonClick} className={props.className || ""} {...props}>
-                        <span class="fa-solid fa-download"></span>
                         <Fa icon={faDownload} color="white"/>
                         <span class="space-infront">
                             {@render props.children?.()}

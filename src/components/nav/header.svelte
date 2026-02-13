@@ -1,6 +1,9 @@
 <script lang="ts">
     import MobileMenu from './mobileMenu.svelte';
     import { logoGif } from '../../lib/helpers/static';
+    import Fa from 'svelte-fa';
+    import { faBars } from '@fortawesome/free-solid-svg-icons';
+    import Button from '../button.svelte';
 
     let topNavRoot: HTMLDivElement;
     let menuOpen:boolean = $state(false);
@@ -14,7 +17,9 @@
                         </a>
                     </div>
                     <div id="mobile-menu-container-visibility" aria-label="Mobile Menu Container Visibility">
-                        <span class="fa-solid fa-bars fa-xl cursor-pointer" role="button" tabindex="1" onclick={() => menuOpen = !menuOpen}></span>
+                        <Button id="mobile-menu-button" aria-label="Mobile Menu Button" className="text-inherit border-none" onclick={() => menuOpen = !menuOpen}>
+                            <Fa icon={faBars} id="mobile-menu-button-icon" color="white" size="2x"/>
+                        </Button>
                         <MobileMenu menuOpen={menuOpen}/>
                     </div>
                     <div id="header-route-container" aria-label="Header Route Container" class="route-container flex">

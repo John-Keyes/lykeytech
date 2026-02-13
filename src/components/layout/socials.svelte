@@ -18,25 +18,25 @@
                                 <h3 id="socials-title" aria-label="Socials Title">Socials</h3>
                                 <div id="socials-links-container" aria-label="Socials Links Container" class="flex flex-row">
                                     <a id="socials-link-0" aria-label="Socials Links 0" title="Socials Links 0" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">
-                                        <Fa icon={faLinkedin} id="socials-link-icon-0" color="white" class="text-hover-clear-blue fa-2xl"/>
+                                        <Fa icon={faLinkedin} id="socials-link-icon-0" color="white" size="2x"/>
                                     </a>
                                     <a id="socials-link-1" aria-label="Socials Links 1" title="Socials Links 1" class="space-infront" href="https://github.com/John-Keyes" target="_blank" rel="noopener noreferrer">
-                                        <Fa icon={faGithub} id="socials-link-icon-1" color="white" class="text-hover-lighter-purple fa-2xl"/>
+                                        <Fa icon={faGithub} id="socials-link-icon-1" color="white" size="2x"/>
                                     </a>
                                     <a id="socials-link-2" aria-label="Socials Link 2" title="Socials Links 2" class="space-infront" href="https://www.upwork.com/freelancers/~018106e7e0817e9ad0" target="_blank" rel="noopener noreferrer">
-                                        <Fa icon={faUpwork} id="socials-link-icon-2" color="white" class="text-hover-clear-blue fa-2xl"/>
+                                        <Fa icon={faUpwork} id="socials-link-icon-2" color="white" size="2x"/>
                                     </a>
                                     <a id="socials-link-3" aria-label="Socials Link 3" title="Socials Links 3" class="space-infront" href="https://www.instagram.com/lykeytech" target="_blank" rel="noopener noreferrer">
-                                        <Fa icon={faInstagram} id="socials-link-icon-3" color="white" class="text-hover-lighter-purple fa-2xl"/>
+                                        <Fa icon={faInstagram} id="socials-link-icon-3" color="white" size="2x"/>
                                     </a>
                                     <a id="socials-link-4" aria-label="Socials Link 4" title="Socials Links 4" class="space-infront" href="https://www.facebook.com/profile.php?id=61575014991131" target="_blank" rel="noopener noreferrer">
-                                        <Fa icon={faFacebook} id="socials-link-icon-4" color="white" class="text-hover-clear-blue fa-2xl"/>
+                                        <Fa icon={faFacebook} id="socials-link-icon-4" color="white" size="2x"/>
                                     </a>
                                     <a id="socials-link-5" aria-label="Socials Link 5" title="Socials Links 5" class="space-infront" href="https://www.youtube.com/@LyKeyTech" target="_blank" rel="noopener noreferrer">
-                                        <Fa icon={faYoutube} id="socials-link-icon-5" color="white" class="text-hover-lighter-purple fa-2xl"/>
+                                        <Fa icon={faYoutube} id="socials-link-icon-5" color="white" size="2x"/>
                                     </a>
                                     <a id="socials-link-6" aria-label="Socials Link 6" title="Socials Links 6" class="space-infront" href="https://www.tiktok.com/@lykeytech" target="_blank" rel="noopener noreferrer">
-                                        <Fa icon={faTiktok} id="socials-link-icon-6" color="white" class="text-hover-clear-blue fa-2xl"/>
+                                        <Fa icon={faTiktok} id="socials-link-icon-6" color="white" size="2x"/>
                                     </a>
                                 </div>
                                 <p id="socials-label" aria-label="Socials Label" class="flex flex-column space-above">
@@ -49,3 +49,13 @@
                                 </p>
                             {/snippet}
                         </SubTitle>
+
+<style lang="scss">
+    .icon-wrapper {
+    color: white; /* Default color */
+    transition: color 0.3s ease;
+  }
+  .icon-wrapper:hover {
+    color: #FF5733; /* Hover color */
+  }
+</style>

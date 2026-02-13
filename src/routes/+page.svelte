@@ -9,6 +9,8 @@
     import { codeCS, cmscritic, todoapp, resilience } from '../lib/helpers/static';
     import Sample from '../components/layout/sample.svelte';
     import Loading from '../components/layout/loading.svelte';
+    import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+    import Fa from 'svelte-fa';
     
 </script>
 
@@ -114,7 +116,7 @@
                                         {/snippet}
                                         {#snippet body()}
                                             <a title="USICK Card Media Link" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
-                                                <span class="fa-solid fa-up-right-from-square text-hover-clear-blue"></span>
+                                                <Fa icon={faUpRightFromSquare} color="white"/>
                                             </a>
                                         {/snippet}
                                     </PopMenu>
