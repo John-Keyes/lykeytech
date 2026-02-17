@@ -1,5 +1,4 @@
 <script lang="ts">
-    //import { type Snippet } from 'svelte';
     import Button, { type ButtonPropsType } from './button.svelte';
     import Fa from 'svelte-fa';
     import { faDownload } from '@fortawesome/free-solid-svg-icons';

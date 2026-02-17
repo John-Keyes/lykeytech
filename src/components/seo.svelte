@@ -10,7 +10,7 @@ interface SeoTypeProps {
 let props: SeoTypeProps = $props();
 const title = props.title || "LyKeyTech – Building Better Applications";
 const description = props.description || "I build web and mobile applications that help fulfill any need. I build applications with immersive user experiences and performance efficient applications.";
-const keywords = props.keywords || "LyKey, Software,Development, Engineering, Software Engineering, Software Developer, Software Development, LyKeyTech, LyKey, Tech, Web Developer, Web Development, Mobile Development, Mobile Developer, Application, Application Development, App, Developer, Web, Mobile, Computer Science, Bachelor of Science, Computer, Science, Portfolio, Resume, Work Samples, Socials, Contact, App Development, Web Development, Web Services, Web Development Services";
+const keywords = props.keywords || "LyKey, Software, Development, Engineering, Software Engineering, Software Developer, Software Development, LyKeyTech, LyKey, Tech, Web Developer, Web Development, Mobile Development, Mobile Developer, Application, Application Development, App, Developer, Web, Mobile, Computer Science, Bachelor of Science, Computer, Science, Portfolio, Resume, Work Samples, Socials, Contact, App Development, Web Development, Web Services, Web Development Services";
 const thumbnail = props.thumbnail || logoGif;
 
 </script>

@@ -5,7 +5,7 @@
     let props: HTMLAttributes<HTMLDivElement> = $props();
 
         
-    const loadingArrow = "font-size: 5rem;"
+    const loadingArrow = "font-size: 5rem;";
 </script>
 
 
