@@ -67,15 +67,15 @@
         }
     }
 
-.mobile-menu-list-item {
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    transition: color 0.3s linear;
-    &:hover {
-        color: var(--lighter-purple);
+    .mobile-menu-list-item {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        transition: color 0.3s linear;
+        &:hover {
+            color: var(--lighter-purple);
+        }
     }
-}
 </style>    

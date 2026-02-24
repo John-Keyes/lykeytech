@@ -2,10 +2,10 @@
     import type { HTMLAttributes } from 'svelte/elements';
     import type { Snippet } from 'svelte';
     interface SubTitlePropsType extends HTMLAttributes<HTMLHeadingElement> { 
-        text: Snippet, 
-        className?: string,
-        sectionclassname?: string,
-        body: Snippet,
+        text: Snippet;
+        className?: string;
+        sectionclassname?: string;
+        body: Snippet;
     }
     let props: SubTitlePropsType = $props();
     

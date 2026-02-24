@@ -10,25 +10,3 @@
     <div class={`card ${props.className}`} {...props}>
         {@render props.children?.()}
     </div>
-
-<style lang="scss">
-    /*.card {
-        padding: 0.75rem;
-        &-purple {
-            border-top: 5px solid var(--light-purple);
-        }
-        &-blue {
-            border-top: 5px solid var(--light-blue);
-            background-color: var(--dark-gray);
-        }
-        &-img-blur {
-            filter: blur(2px);
-        }
-        &-divider {
-            gap: 1rem;
-        }
-        &-space-above {
-            margin-top: 4rem;
-        }
-    }*/
-</style>
