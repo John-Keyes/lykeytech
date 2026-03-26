@@ -112,7 +112,7 @@
                                 {#snippet cardMedia()}
                                     <PopMenu id="usick-card-media-popmenu" aria-label="USICK Sample Card Media PopMenu">        
                                         {#snippet trigger()}
-                                            <iframe class="space-above border border-light-blue button-glow-blue" width="300" height="190" src="https://www.youtube.com/embed/Jrz03x38rs8"></iframe>
+                                            <iframe title="USICK Sample Video" class="space-above border border-light-blue button-glow-blue" width="300" height="190" src="https://www.youtube.com/embed/Jrz03x38rs8"></iframe>
                                         {/snippet}
                                         {#snippet body()}
                                             <a title="USICK Card Media Link" href="https://www.youtube.com/watch?v=Jrz03x38rs8" target="_blank" rel="noopener noreferrer">
