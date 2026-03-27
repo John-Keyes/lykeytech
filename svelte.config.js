@@ -15,10 +15,12 @@ const config = {
 		adapter: adapter()
 	},
 	onwarn: (warning, handler) => {
-    if (warning.code === "css_unused_selector") return;
-    // Handle other warnings with the default handler
-    //handler(warning);
-  }
+		if (warning.code === "css_unused_selector") {
+			return;
+		}
+		// Handle other warnings with the default handler
+		//handler(warning);
+	}
 };
 
 export default config;

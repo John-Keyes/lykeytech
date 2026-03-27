@@ -1,7 +1,6 @@
 <script lang="ts">
     import Header from '../components/nav/header.svelte';
     import Seo from '../components/seo.svelte';
-    //import '../lib/styles/_app.scss';
 
 	let { children } = $props();
 </script>
@@ -12,7 +11,3 @@
     <Header/>
 	{@render children?.()}
 </main>
-
-<style lang="scss">
-    //@use '../lib/styles/_app.scss' as *;
-</style>
