@@ -20,4 +20,5 @@
                         </span>
                     </Button>
                     <a id={`${props.id}-link`} bind:this={downloadLink} aria-label={`${props["aria-label"]}-link`} href={props.href || "#"} style="display: none;" download></a>
+<style lang="scss"></style>
                 

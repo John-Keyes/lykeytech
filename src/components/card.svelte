@@ -10,3 +10,5 @@
     <div class={`card ${props.className}`} {...props}>
         {@render props.children?.()}
     </div>
+
+<style lang="scss"></style>

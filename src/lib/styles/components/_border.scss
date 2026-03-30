@@ -1,7 +1,20 @@
 @use "../base" as *;
 
 .border {
-  &-bottom {
+  border-style: solid;
+  @for $i from 1 through 9 {
+    &-#{$i} {
+      border-width: $i + px;
+    }
+  }
+  @each $key, $value in $colors {
+    &-#{$key} {
+      border-color: $value;
+    }
+  }
+}
+
+.border-bottom {
     border-bottom-style: solid;
     @for $i from 1 through 9 {
       &-#{$i} {
@@ -14,7 +27,7 @@
       }
     }
   }
-  &-top {
+  .border-top {
     border-top-style: solid;
     @for $i from 1 through 9 {
       &-#{$i} {
@@ -27,7 +40,7 @@
       }
     }
   }
-  &-left {
+  .border-left {
     border-left-style: solid;
     @for $i from 1 through 9 {
       &-#{$i} {
@@ -40,7 +53,7 @@
       }
     }
   }
-  &-right {
+  .border-right {
     border-right-style: solid;
     @for $i from 1 through 9 {
       &-#{$i} {
@@ -54,18 +67,6 @@
     }
   }
 
-  border-style: solid;
-  @for $i from 1 through 9 {
-    &-#{$i} {
-      border-width: $i + px;
-    }
-  }
-  @each $key, $value in $colors {
-    &-#{$key} {
-      border-color: $value;
-    }
-  }
-}
 .rounded {
   &-sm {
     border-radius: 0.75rem;
