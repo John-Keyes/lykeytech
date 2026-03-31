@@ -5,7 +5,7 @@
     import { faAddressCard, faChevronLeft, faCode, faHandshake, faUserGroup } from '@fortawesome/free-solid-svg-icons';
 
     interface MobileMenuType {
-        menuOpen: boolean,
+        menuOpen: boolean;
     }
     let mobileMenuRef: HTMLDivElement;
     let props: MobileMenuType = $props();

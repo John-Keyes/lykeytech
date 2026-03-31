@@ -18,7 +18,7 @@
                     </div>
                     <div id="mobile-menu-container-visibility" aria-label="Mobile Menu Container Visibility">
                         <Button id="mobile-menu-button" aria-label="Mobile Menu Button" className="text-inherit border-none" onclick={() => menuOpen = !menuOpen}>
-                            <Fa icon={faBars} id="mobile-menu-button-icon" color="white" size="2x"/>
+                            <Fa icon={faBars} id="mobile-menu-button-icon" color="bg" size="2x"/>
                         </Button>
                         <MobileMenu menuOpen={menuOpen}/>
                     </div>
@@ -49,8 +49,11 @@
         }
     }
 
-    #mobile-menu-container-visibility {
+    :global(#mobile-menu-container-visibility) {
         display: flex;
+        /*:global (@media screen and (min-width: var(--device-mins-lg))) {
+            display: none;
+        }*/
         @media screen and (min-width: var(--device-mins-lg)) {
             display: none;
         }
