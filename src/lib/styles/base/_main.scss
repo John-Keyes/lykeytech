@@ -54,7 +54,7 @@ body {
     height: 100%;
     z-index: -1;
   }
-  @media screen and (max-width: var(--device-maxes-lg)) {
+  @media screen and (max-width: device-max("lg")) {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     width: 100%;
@@ -69,7 +69,7 @@ body {
 .p {
   font-size: 1rem;
   font-weight: 500;
-  @media screen and (max-width: var(--device-maxes-sm)) {
+  @media screen and (max-width: device-max("sm")) {
     justify-content: center;
   }
 }
@@ -127,7 +127,7 @@ a, .a {
 h1, h2, h3 {
   color: white;
   justify-content: start;
-  @media screen and (max-width: var(--device-maxes-sm)) {
+  @media screen and (max-width: device-max("sm")) {
     justify-content: center;
     align-self: center;
   }
@@ -149,7 +149,7 @@ h4 {
   width: 10px;
   &-track {
     background-color: var(--dark-purple);
-    @media screen and (max-width: var(--device-maxes-lg)) {
+    @media screen and (max-width: device-max("lg")) {
       display: none;
     } 
   }
@@ -159,11 +159,11 @@ h4 {
     &:hover {
       background-color: var(--purple); 
     }
-    @media screen and (max-width: var(--device-maxes-lg)) {
+    @media screen and (max-width: device-max("lg")) {
       display: none;
     }
   }
-  @media screen and (max-width: var(--device-maxes-lg)) {
+  @media screen and (max-width: device-max("lg")) {
     display: none;
   }
 }

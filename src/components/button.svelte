@@ -15,3 +15,28 @@
 >
   {@render props.children?.()}
 </button>
+
+<style lang="scss">
+  :global {
+  .button {
+    border: none;
+    padding: 0.5rem;
+    &-text {
+      font-weight: bold;
+      color: inherit;
+    }
+    &-glow {
+      &-purple {
+        &:hover {
+          box-shadow: 0 0px 10px var(--lighter-purple);
+        }
+      }
+      &-blue {
+        &:hover {
+          box-shadow: 0 0px 10px var(--clear-blue);
+        }
+      }
+    }
+  }
+}
+</style>

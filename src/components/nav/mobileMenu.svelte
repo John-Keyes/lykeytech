@@ -45,6 +45,7 @@
         </div>
 
 <style lang="scss">
+:global {
     #mobile-menu {
         &-container {
             position: fixed;
@@ -78,4 +79,5 @@
             color: var(--lighter-purple);
         }
     }
+}
 </style>    

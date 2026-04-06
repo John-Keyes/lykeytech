@@ -33,19 +33,20 @@
         </Card>
 
 <style lang="scss">
+:global {
     .sample {
         &-mobile {
             display: none;
             flex-direction: column;
             justify-content: space-evenly;
-            @media screen and (max-width: var(--device-maxes-sm)) {
+            @media screen and (max-width: device-max("sm")) {
                 display: flex;
             }
         }
         &-desktop {
             display: flex;
             justify-content: space-between;
-            @media screen and (max-width: var(--device-maxes-sm)) {
+            @media screen and (max-width: device-max("sm")) {
                 display: none;
             }
         }
@@ -59,4 +60,5 @@
             padding: 0.5rem;
         }
     }
+}
 </style>

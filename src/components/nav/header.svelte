@@ -32,6 +32,7 @@
             </div>
 
 <style lang="scss">
+:global {
     .route {
         text-decoration: none; 
         font-weight: bold;
@@ -43,18 +44,15 @@
         }
         &-container {
             gap: 0.75rem;
-            @media screen and (max-width: var(--device-maxes-sm)) {
+            @media screen and (max-width: device-max("sm")) {
                 display: none;
             }
         }
     }
 
-    :global(#mobile-menu-container-visibility) {
+    #mobile-menu-container-visibility {
         display: flex;
-        /*:global (@media screen and (min-width: var(--device-mins-lg))) {
-            display: none;
-        }*/
-        @media screen and (min-width: var(--device-mins-lg)) {
+        @media screen and (min-width: device-min("lg")) {
             display: none;
         }
     }
@@ -78,4 +76,5 @@
             border: 2px solid white;
         }
     }
+}
 </style>
