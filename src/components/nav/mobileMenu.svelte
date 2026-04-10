@@ -7,31 +7,30 @@
     interface MobileMenuType {
         menuOpen: boolean;
     }
-    let mobileMenuRef: HTMLDivElement;
-    let props: MobileMenuType = $props();
+    let { menuOpen }: MobileMenuType = $props();
 </script>
 
-        <div bind:this={mobileMenuRef} id="mobile-menu-container" class="flex-column bg-dark-purple" style="display: {props.menuOpen ? 'flex' : 'none'}">
+        <div id="mobile-menu-container" class="flex-column bg-dark-purple" style={`display: ${menuOpen ? "flex" : "none"}`}>
             <div id="mobile-menu-top-container" aria-label="Mobile Menu Top Container" class="flex flex-row flex-center">
-                <Button id="mobile-menu-top-back-button" aria-label="Mobile Menu Top Back Button" className="bg-purple bg-hover-light-purple button-glow-purple text-inherit" onclick={() => props.menuOpen = false}>
-                    <Fa icon={faChevronLeft} id="mobile-menu-top-back-arrow" color="white" class="fa-solid fa-chevron-left"/>
+                <Button id="mobile-menu-top-back-button" aria-label="Mobile Menu Top Back Button" className="bg-purple bg-hover-light-purple button-glow-purple text-inherit rounded-sm cursor-pointer" onclick={() => menuOpen = false}>
+                    <Fa icon={faChevronLeft} id="mobile-menu-top-back-arrow" color="white"/>
                 </Button>
                 <h2 id="mobile-menu-top-title" aria-label="Mobile Menu Top Title">Menu</h2>
             </div>
             <div id="mobile-menu-list" aria-label="Mobile Menu List" class="flex flex-column flex-center">
-                    <a id="mobile-menu-list-item-0" aria-label="Mobile Menu List Item 0" title="Mobile Menu List Item 0" href="#about" onclick={() => props.menuOpen = false} class="mobile-menu-list-item flex flex-row cursor-pointer">
+                    <a id="mobile-menu-list-item-0" aria-label="Mobile Menu List Item 0" title="Mobile Menu List Item 0" href="#about" onclick={() => menuOpen = false} class="mobile-menu-list-item">
                         <h3 id="mobile-menu-list-item-0-label" aria-label="Mobile Menu List Item 0 Label">About</h3> 
                         <Fa icon={faAddressCard} id="mobile-menu-list-item-0-fa-icon" color="white"/>
                     </a>
-                    <a id="mobile-menu-list-item-1" aria-label="Mobile Menu List Item 1" title="Mobile Menu List Item 1" href="#samples" onclick={() => props.menuOpen = false} class="mobile-menu-list-item flex flex-row cursor-pointer">
+                    <a id="mobile-menu-list-item-1" aria-label="Mobile Menu List Item 1" title="Mobile Menu List Item 1" href="#samples" onclick={() => menuOpen = false} class="mobile-menu-list-item">
                         <h3 id="mobile-menu-list-item-1-label" aria-label="Mobile Menu List Item 1 Label">Samples</h3>
                         <Fa icon={faCode} id="mobile-menu-list-item-1-fa-icon" color="white"/>
                     </a>
-                    <a id="mobile-menu-list-item-2" aria-label="Mobile Menu List Item 2" title="Mobile Menu List Item 2" href="#endorsements" onclick={() => props.menuOpen = false} class="mobile-menu-list-item flex flex-row cursor-pointer">
+                    <a id="mobile-menu-list-item-2" aria-label="Mobile Menu List Item 2" title="Mobile Menu List Item 2" href="#endorsements" onclick={() => menuOpen = false} class="mobile-menu-list-item">
                         <h3 id="mobile-menu-list-item-2-label" aria-label="Mobile Menu List Item 2 Label">Endorsements</h3>
                         <Fa icon={faHandshake} id="mobile-menu-list-item-2-fa-icon" color="white"/>
                     </a>
-                    <a id="mobile-menu-list-item-3" aria-label="Mobile Menu List Item 3" title="Mobile Menu List Item 3" href="#socials" onclick={() => props.menuOpen = false} class="mobile-menu-list-item flex flex-row cursor-pointer">
+                    <a id="mobile-menu-list-item-3" aria-label="Mobile Menu List Item 3" title="Mobile Menu List Item 3" href="#socials" onclick={() => menuOpen = false} class="mobile-menu-list-item">
                         <h3 id="mobile-menu-list-item-3-label" aria-label="Mobile Menu List Item 3 Label">Socials</h3>
                         <Fa icon={faUserGroup} id="mobile-menu-list-item-3-fa-icon" color="white"/>
                     </a>
@@ -69,14 +68,24 @@
     }
 
     .mobile-menu-list-item {
+        display: flex;
+        flex-direction: row;
         width: 100%;
         padding-left: 2rem;
         padding-right: 2rem;
         justify-content: space-between;
         align-items: center;
         transition: color 0.3s linear;
-        &:hover {
-            color: var(--lighter-purple);
+        cursor: pointer;
+        &:active > * {
+            color: theme-color("lighter-purple");
+            fill: theme-color("lighter-purple");
+        }
+        & h3:hover{
+            color: theme-color("lighter-purple");
+        }
+        & svg g g path:hover {
+            fill: theme-color("lighter-purple");
         }
     }
 }

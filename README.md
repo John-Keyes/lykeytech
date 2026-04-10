@@ -1,15 +1,7 @@
 # LyKeyTech
 - This project is my published portfolio.
 - https://lykeytech.com/ 
-"moduleResolution": "node",
-"include": [
-    "**/*.svelte",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+
 ## sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).

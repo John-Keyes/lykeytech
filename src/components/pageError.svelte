@@ -15,7 +15,7 @@
             {#if props.details}
               <h2 id="page-error-details" aria-label="Page Error Details">{props.details || "An unexpected error occurred."}</h2>
             {/if}
-            <Button id="page-error-back" aria-label="Page Error Back" onclick={() => history.back()} className="bg-purple bg-hover-light-purple button-glow-purple text-inherit">
+            <Button id="page-error-back" aria-label="Page Error Back" onclick={() => history.back()} className="bg-purple bg-hover-light-purple button-glow-purple text-inherit rounded-sm cursor-pointer">
               <span class="button-text">Return</span>
             </Button>
         </Card>

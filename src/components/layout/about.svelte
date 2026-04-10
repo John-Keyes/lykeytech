@@ -23,9 +23,8 @@
                                 <span>My name is <a id="about-hello-text-link" aria-label="About Hello Text Link" title="About Hello Text Link" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" class="text-dark-blue text-hover-clear-blue" target="_blank" rel="noopener noreferrer">John Keyes</a></span>
                             {/snippet}
                             {#snippet body()}
-                                <h3 id="about-introduction" aria-label="About Introduction" class="text-center text-start-md">
-                                    I build web and mobile applications that help fulfill any need. 
-                                    I build applications with immersive user experiences and performance efficient applications.
+                                <h3 id="about-introduction" aria-label="About Introduction">
+                                    I build web and mobile applications with immersive user experiences and performance efficient solutions.
                                 </h3>
                                 <div class="flex flex-center flex-start-md">
                                     <div id="resume-download-container" aria-label="Resume Download Button Container" class="flex flex-row flex-center flex-start-md">
@@ -36,3 +35,13 @@
                         </SubTitle>
                     </Card> 
                     
+<style lang="scss">
+    :global {
+        #about-introduction {
+            text-align: center;
+            @media screen and (min-width: device-min("md")) {
+                text-align: start;
+            }
+        }
+    }
+</style>

@@ -18,11 +18,11 @@
                     </div>
                     <div id="mobile-menu-container-visibility" aria-label="Mobile Menu Container Visibility">
                         <Button id="mobile-menu-button" aria-label="Mobile Menu Button" className="text-inherit border-none" onclick={() => menuOpen = !menuOpen}>
-                            <Fa icon={faBars} id="mobile-menu-button-icon" color="bg" size="2x"/>
+                            <Fa icon={faBars} id="mobile-menu-button-icon" color="white" size="2x"/>
                         </Button>
                         <MobileMenu menuOpen={menuOpen}/>
                     </div>
-                    <div id="header-route-container" aria-label="Header Route Container" class="route-container flex">
+                    <div id="header-route-container" aria-label="Header Route Container" class="route-container">
                         <a id="header-route-about" aria-label="Header Route About" title="Header Route About" class="route" href="#about">About</a>
                         <a id="header-route-samples" aria-label="Header Route Samples" title="Header Route Samples" class="route" href="#samples">Samples</a>
                         <a id="header-route-endorsements" aria-label="Header Route Endorsements" title="Header Route Endorsements" class="route" href="#endorsements">Endorsements</a>
@@ -44,7 +44,8 @@
         }
         &-container {
             gap: 0.75rem;
-            @media screen and (max-width: device-max("sm")) {
+            display: flex;
+            @media screen and (max-width: device-max("md")) {
                 display: none;
             }
         }
@@ -75,6 +76,10 @@
         &-logo-container {
             border: 2px solid white;
         }
+    }
+
+    #mobile-menu-button {
+        background-color: inherit;
     }
 }
 </style>

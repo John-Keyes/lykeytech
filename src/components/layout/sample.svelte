@@ -13,7 +13,7 @@
     const textAlign : "text-end" | "text-start" = props.flexDesktopDirection == "row" ? "text-end" : "text-start";
 </script>
 
-        <Card className={`sample-desktop flex-center fit-width sample-${props.flexDesktopDirection} ${props.className}`} id={`${props.id}-desktop`} aria-label={`${props["aria-label"]}-desktop`}>
+        <Card className={`sample-desktop fit-width sample-${props.flexDesktopDirection} ${props.className}`} id={`${props.id}-desktop`} aria-label={`${props["aria-label"]}-desktop`}>
             <span class="sample-padding">
                 {@render props.cardMedia()}
             </span>
@@ -24,7 +24,7 @@
                 </span>
             </div>
         </Card>
-        <Card className={`sample-mobile flex-center fit-width ${props.className}`} id={`${props.id}-mobile`} aria-label={`${props["aria-label"]}-mobile`}>
+        <Card className={`sample-mobile fit-width ${props.className}`} id={`${props.id}-mobile`} aria-label={`${props["aria-label"]}-mobile`}>
             <div class="space-above flex flex-column text-center fit-width sample-padding">
                 {@render props.sampleTitle()}
                 {@render props.cardMedia()}
@@ -45,6 +45,7 @@
         }
         &-desktop {
             display: flex;
+            align-items: center;
             justify-content: space-between;
             @media screen and (max-width: device-max("sm")) {
                 display: none;

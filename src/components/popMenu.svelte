@@ -5,13 +5,13 @@
     id: string;
     className?: string;
     ariaLabel?: string;
-    trigger: Snippet;
-    body: Snippet;
+    popmenuTrigger: Snippet;
+    popmenuBody: Snippet;
     
   }
-  let props: PopMenuPropsType = $props();
+  let { id, className, "aria-label": ariaLabel, popmenuTrigger, popmenuBody }: PopMenuPropsType = $props();
 
-  let bodyDisplay: 'none' | 'flex' = $state("flex");
+  let bodyDisplay: 'none' | 'flex' = $state("none");
   //document.getElementById(`${props.id}-body`).style.display
 
   const OnMouseEnter = () => {
@@ -24,34 +24,29 @@
 </script>
 
 <div
-  id={props.id}
-  aria-label={props["aria-label"]}
+  id={id}
+  aria-label={ariaLabel}
   role="tooltip"
-  class={`pop-menu-container ${props.className}`}
+  class={`pop-menu-container ${className}`}
   onmouseleave={OnMouseLeave}
 >
-  <div id={`${props.id}-trigger`} role="tooltip" class="pop-menu-trigger" onmouseenter={OnMouseEnter}>
-    {@render props.trigger()}
+  <div id={`${id}-trigger`} role="tooltip" class="pop-menu-trigger" onmouseenter={OnMouseEnter}>
+    {@render popmenuTrigger()}
   </div>
-  <div id={`${props.id}-body`} class="pop-menu-body bg-darker-bg" style="display: {bodyDisplay};">
-    {@render props.body()}
+  <div id={`${id}-body`} class="pop-menu-body bg-darker-bg" style="display: {bodyDisplay};">
+    {@render popmenuBody()}
   </div>
 </div>
 
 <style lang="scss">
+:global {
   .pop-menu {
     &-body {
-      position: absolute;
-      top: 4rem;
-      z-index: 10;
-      padding: 0.5rem;
       box-shadow: 1px 1px 1px #000;
-      background-color: #111;
       display: flex;
       flex-direction: column;
     }
     &-trigger {
-      padding-left: 0.5rem;
       overflow: hidden;
     }
     &-container {
@@ -59,4 +54,5 @@
       margin: 0;
     }
   }
+}
 </style>
