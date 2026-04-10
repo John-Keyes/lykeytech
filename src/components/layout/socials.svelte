@@ -11,7 +11,7 @@
                                 Contact!
                             {/snippet}
                             {#snippet body()}
-                                <Button id="socials-message-button" aria-label="Socials Message Button" className="bg-purple bg-hover-light-purple button-glow-purple">
+                                <Button id="socials-message-button" aria-label="Socials Message Button" className="bg-purple bg-hover-light-purple button-glow-purple rounded-sm">
                                     <a id="socials-message-button-link" aria-label="Socials Message Button Link" title="Socials Message Button Link" href="mailto:john.keyes@lykeytech.com">Send Message</a>
                                 </Button>
                                 <img id="socials-qrcode" aria-label="Socials QRCode" class="space-above card-img-blur border border-light-purple button-glow-purple" src={qrCode} alt="Website QR Code" width="150" height="150"/>

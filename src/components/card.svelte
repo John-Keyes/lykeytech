@@ -16,11 +16,11 @@
     .card {
         padding: 0.75rem;
         &-purple {
-            border-top: 5px solid var(--light-purple);
+            border-top: 5px solid theme-color("light-purple");
         }
         &-blue {
-            border-top: 5px solid var(--light-blue);
-            background-color: var(--dark-gray);
+            border-top: 5px solid theme-color("light-blue");
+            background-color: theme-color("dark-gray");
         }
         &-img-blur {
             filter: blur(2px);

@@ -35,7 +35,7 @@
                         <h3 id="mobile-menu-list-item-3-label" aria-label="Mobile Menu List Item 3 Label">Socials</h3>
                         <Fa icon={faUserGroup} id="mobile-menu-list-item-3-fa-icon" color="white"/>
                     </a>
-                    <Button id="mobile-menu-list-item-contact" aria-label="Mobile Menu List Item Contact" title="Mobile Menu List Item Contact" className="bg-purple bg-hover-light-purple button-glow-purple">
+                    <Button id="mobile-menu-list-item-contact" aria-label="Mobile Menu List Item Contact" title="Mobile Menu List Item Contact" className="bg-purple bg-hover-light-purple button-glow-purple rounded-sm">
                         <a id="mobile-menu-list-item-contact-link" aria-label="Mobile Menu List Item Contact Link" href="mailto:john.keyes@lykeytech.com">Contact Me</a>
                     </Button>
             </div>

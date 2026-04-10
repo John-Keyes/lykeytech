@@ -12,7 +12,7 @@
 </script>
 
     
-                    <Card {...props} className={`endorsement ${props.class || ""}`}>
+                    <Card {...props} className={`endorsement ${props.className || ""}`}>
                         <h3 id={`${props.id}-author`} aria-label={`${props["aria-label"]}-author`}>
                             <a id={`${props.id}-author-link`} aria-label={`${props["aria-label"]} Author Link`} title={`${props["aria-label"]} Author Link`} href={props.personLink} class={`text-hover-${props.hoverColor}`} target="_blank" rel="noopener noreferrer">{props.person}</a>
                         </h3>
