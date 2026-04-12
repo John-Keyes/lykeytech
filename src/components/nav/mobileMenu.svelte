@@ -81,7 +81,7 @@
             color: theme-color("lighter-purple");
             fill: theme-color("lighter-purple");
         }
-        & h3:hover{
+        & h3:hover {
             color: theme-color("lighter-purple");
         }
         & svg g g path:hover {

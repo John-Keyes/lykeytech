@@ -49,13 +49,3 @@
                                 </p>
                             {/snippet}
                         </SubTitle>
-
-<style lang="scss">
-    .icon-wrapper {
-    color: white; /* Default color */
-    transition: color 0.3s ease;
-  }
-  .icon-wrapper:hover {
-    color: #FF5733; /* Hover color */
-  }
-</style>
