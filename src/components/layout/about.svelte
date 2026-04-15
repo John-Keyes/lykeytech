@@ -28,7 +28,7 @@
                                 </h3>
                                 <div class="flex flex-center flex-start-md">
                                     <div id="resume-download-container" aria-label="Resume Download Button Container" class="flex flex-row flex-center flex-start-md">
-                                        <DownloadIcon id="resume-download" aria-label="Resume Download Button" className="bg-dark-blue bg-hover-clear-blue button-glow-blue rounded-sm" href={resume}>Download Resume</DownloadIcon>
+                                        <DownloadIcon id="resume-download" aria-label="Resume Download Button" className="bg-dark-blue bg-hover-clear-blue button-glow-blue rounded-sm cursor-pointer" href={resume}>Download Resume</DownloadIcon>
                                     </div>
                                 </div>
                             {/snippet}

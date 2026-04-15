@@ -50,9 +50,12 @@ const thumbnail = props.thumbnail || logoGif;
     <link rel="shortcut-icon" href="/images/meta/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/meta/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/meta/favicon-32x32.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/images/meta/apple-touch-icon.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152 167x180 180x180" href="/images/meta/apple-touch-icon.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/images/meta/apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="/images/meta/apple-touch-icon-167x167-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/images/meta/apple-touch-icon-180x180-precomposed.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/meta/safari-pinned-tab.svg" color="#000000">
+    <!--link rel="mask-icon" href="/images/meta/safari-pinned-tab.svg" color="#000000"-->
     <script type="application/ld+json">
         {
             "@context":"https://schema.org",
@@ -65,7 +68,7 @@ const thumbnail = props.thumbnail || logoGif;
         }
     </script>
     <meta name="robots" content="index,follow">
-    <link rel="preload" href={cmscritic} as="image">
+    <!--link rel="preload" href={cmscritic} as="image">
     <link rel="preload" href={codeCS} as="image">
     <link rel="preload" href={logoGif} as="image">
     <link rel="preload" href={logoPng} as="image">
@@ -73,6 +76,6 @@ const thumbnail = props.thumbnail || logoGif;
     <link rel="preload" href={qrCode} as="image">
     <link rel="preload" href={resilience} as="image">
     <link rel="preload" href={todoapp} as="image">
-    <link rel="preload" href={resume}>
+    <link rel="preload" href={resume}-->
     <link data-next-font="size-adjust" rel="preconnect" href="/" crossorigin="anonymous">
 </svelte:head>

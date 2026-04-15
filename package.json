@@ -10,13 +10,14 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"scss:watch": "sass --watch src/lib/styles/:src/lib/styles/compile --no-source-map --style=compressed",
+		"scss:watch": "sass --watch src/lib/styles/:src/static/compiled --no-source-map --style=compressed",
 		"scss:migrate": "bash scss-watch.txt"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.43.2",
 		"@sveltejs/vite-plugin-svelte": "^6.2.0",
+		"@types/node": "^25.6.0",
 		"sass": "^1.93.2",
 		"svelte": "^5.39.5",
 		"svelte-check": "^4.3.2",

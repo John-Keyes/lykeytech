@@ -2,6 +2,9 @@
 - This project is my published portfolio.
 - https://lykeytech.com/ 
 
+
+https://convertico.com/favicon-for-apple/
+
 ## sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).

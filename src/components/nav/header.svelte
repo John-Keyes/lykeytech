@@ -5,8 +5,13 @@
     import { faBars } from '@fortawesome/free-solid-svg-icons';
     import Button from '../button.svelte';
 
+
     let topNavRoot: HTMLDivElement;
-    let menuOpen:boolean = $state(false);
+    let menuOpen: boolean = $state(false);
+
+    const OnMenuOpen = () => {
+        menuOpen = !menuOpen;
+    }
 </script>
     
             <div id="header-root" bind:this={topNavRoot} aria-label="Header Root" class="flex fit-width bg-dark-purple">
@@ -17,7 +22,7 @@
                         </a>
                     </div>
                     <div id="mobile-menu-container-visibility" aria-label="Mobile Menu Container Visibility">
-                        <Button id="mobile-menu-button" aria-label="Mobile Menu Button" className="text-inherit border-none" onclick={() => menuOpen = !menuOpen}>
+                        <Button id="mobile-menu-button" aria-label="Mobile Menu Button" className="text-inherit border-none cursor-pointer" onclick={OnMenuOpen}>
                             <Fa icon={faBars} id="mobile-menu-button-icon" color="white" size="2x"/>
                         </Button>
                         <MobileMenu menuOpen={menuOpen}/>

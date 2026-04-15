@@ -1,5 +1,6 @@
 # run npm run scss:watch first.
-mkdir src/lib/styles/compiled
-mv src/lib/styles/compile/* src/lib/styles/compiled
+mkdir src/static/compiled
+mv src/static/compiled/* src/lib/styles/compiled
+mv src/static src/static/compiled/app.css 
 rm -rf src/lib/styles/compiled/compiled
-rm -rf src/lib/styles/compile
+rm -rf src/lib/styles/compiled
