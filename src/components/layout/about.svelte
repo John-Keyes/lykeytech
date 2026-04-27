@@ -20,7 +20,7 @@
                         </div>
                         <SubTitle id="about-hello" aria-label="About Hello">
                             {#snippet text()}
-                                <span>My name is <a id="about-hello-text-link" aria-label="About Hello Text Link" title="About Hello Text Link" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" class="text-dark-blue text-hover-clear-blue" target="_blank" rel="noopener noreferrer">John Keyes</a></span>
+                                <span id="about-hello-text-link-span">My name is <a id="about-hello-text-link" aria-label="About Hello Text Link" title="About Hello Text Link" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" class="text-dark-blue text-hover-clear-blue" target="_blank" rel="noopener noreferrer">John Keyes</a></span>
                             {/snippet}
                             {#snippet body()}
                                 <h3 id="about-introduction" aria-label="About Introduction">
@@ -37,6 +37,14 @@
                     
 <style lang="scss">
     :global {
+        
+        #about-hello-text-link-span {
+            text-align: center;
+            @media screen and (min-width: device-min("md")) {
+                text-align: start;
+            }
+        }
+
         #about-introduction {
             text-align: center;
             @media screen and (min-width: device-min("md")) {

@@ -24,7 +24,7 @@
                 </span>
             </div>
         </Card>
-        <Card className={`sample-mobile fit-width ${props.className}`} id={`${props.id}-mobile`} aria-label={`${props["aria-label"]}-mobile`}>
+        <Card className={`sample-mobile ${props.className}`} id={`${props.id}-mobile`} aria-label={`${props["aria-label"]}-mobile`}>
             <div class="space-above flex flex-column text-center fit-width sample-padding">
                 {@render props.sampleTitle()}
                 {@render props.cardMedia()}
@@ -39,6 +39,7 @@
             display: none;
             flex-direction: column;
             justify-content: space-evenly;
+            width: 95%;
             @media screen and (max-width: device-max("sm")) {
                 display: flex;
             }

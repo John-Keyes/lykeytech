@@ -22,7 +22,7 @@
 
 <style lang="scss">
     :global(.endorsement) {
-        width: 100%;
+        width: 95%;
         @media screen and (min-width: device-min("lg")) {
             width: 50%;
         }

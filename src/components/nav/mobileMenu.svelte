@@ -21,7 +21,7 @@
 
         <div id="mobile-menu-container" class="flex-column bg-dark-purple flex">
             <div id="mobile-menu-top-container" aria-label="Mobile Menu Top Container" class="flex flex-row flex-center">
-                <Button id="mobile-menu-top-back-button" aria-label="Mobile Menu Top Back Button" className="bg-purple bg-hover-light-purple button-glow-purple text-inherit rounded-sm cursor-pointer" onclick={OnMenuClose}>
+                <Button id="mobile-menu-top-back-button" aria-label="Mobile Menu Top Back Button" className="bg-dark-purple border border-light-purple bg-hover-light-purple rounded-sm button-glow-purple text-inherit cursor-pointer" onclick={OnMenuClose}>
                     <Fa icon={faChevronLeft} id="mobile-menu-top-back-arrow" color="white"/>
                 </Button>
                 <h2 id="mobile-menu-top-title" aria-label="Mobile Menu Top Title">Menu</h2>
@@ -44,7 +44,7 @@
                         <Fa icon={faUserGroup} id="mobile-menu-list-item-3-fa-icon" color="white"/>
                     </a>
                     <Button id="mobile-menu-list-item-contact" aria-label="Mobile Menu List Item Contact" title="Mobile Menu List Item Contact" className="bg-purple bg-hover-light-purple button-glow-purple rounded-sm">
-                        <a id="mobile-menu-list-item-contact-link" aria-label="Mobile Menu List Item Contact Link" href="mailto:john.keyes@lykeytech.com">Contact Me</a>
+                        <a id="mobile-menu-list-item-contact-link" aria-label="Mobile Menu List Item Contact Link" href="mailto:johnschool432@gmail.com">Contact Me</a>
                     </Button>
             </div>
             <div id="mobile-menu-logo-container" aria-label="Mobile Menu Logo Container" class="flex flex-center">
