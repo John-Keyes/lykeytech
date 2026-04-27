@@ -10,12 +10,16 @@
     let { menuOpen }: MobileMenuType = $props();
 
     const OnMenuClose = () => {
-        menuOpen = false;
+        const mobileMenuContainer = document.getElementById("mobile-menu-container");
+        if(mobileMenuContainer) {
+            mobileMenuContainer.style.width = "0";
+            mobileMenuContainer.style.right = "-37px";
+            menuOpen = !menuOpen;
+        }
     }
-    //${menuOpen ? "mobile-menu-active" : ".mobile-menu-inactive"}
 </script>
 
-        <div id="mobile-menu-container" class={`flex-column bg-dark-purple`} style={`display: ${menuOpen ? "flex" : "none"};`}>
+        <div id="mobile-menu-container" class="flex-column bg-dark-purple flex">
             <div id="mobile-menu-top-container" aria-label="Mobile Menu Top Container" class="flex flex-row flex-center">
                 <Button id="mobile-menu-top-back-button" aria-label="Mobile Menu Top Back Button" className="bg-purple bg-hover-light-purple button-glow-purple text-inherit rounded-sm cursor-pointer" onclick={OnMenuClose}>
                     <Fa icon={faChevronLeft} id="mobile-menu-top-back-arrow" color="white"/>
@@ -54,10 +58,11 @@
         &-container {
             position: fixed;
             z-index: 3;
+            width: 0;
             top: 0;
-            right: 0;
-            transition: transform 1s ease;
+            right: -37px;
             border: 3px solid var(--light-purple);
+            transition: 0.3s ease-in-out;
         }
         &-top-container {
             font-size: 16px;
@@ -70,14 +75,6 @@
             padding-left: 0.5rem;
             padding-right: 0.5rem;
         }
-    }
-
-    .mobile-menu-active {
-        transform: translateX(275px);
-    }
-
-    .mobile-menu-inactive {
-        transform: translateX(-275px);
     }
 
     .mobile-menu-list-item {

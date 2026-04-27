@@ -10,7 +10,12 @@
     let menuOpen: boolean = $state(false);
 
     const OnMenuOpen = () => {
-        menuOpen = !menuOpen;
+        const mobileMenuContainer = document.getElementById("mobile-menu-container");
+        if(mobileMenuContainer) {
+            mobileMenuContainer.style.width = "275px";
+            mobileMenuContainer.style.right = "0";
+            menuOpen = !menuOpen;
+        }
     }
 </script>
     
