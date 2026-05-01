@@ -41,10 +41,10 @@
                                 </div>
                                 <p id="socials-label" aria-label="Socials Label" class="flex flex-column space-above">
                                     <span>
-                                        Created solely by John Keyes.
+                                        This website was created solely by John Keyes.
                                     </span>
                                     <span class="space-infront">
-                                        &copy; 2025 LyKeyTech LLC
+                                        Powered by Svelte, TypeScript, SCSS, and Github.
                                     </span>
                                 </p>
                             {/snippet}

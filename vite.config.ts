@@ -14,15 +14,3 @@ export default defineConfig({
     }
 	
 });
-
-/*
-css: {
-        preprocessorOptions: {
-            scss: {                                 
-                additionalData: `
-                @use '$lib/styles/app.scss' as *;
-                `,
-            },
-        }
-    }
-*/
