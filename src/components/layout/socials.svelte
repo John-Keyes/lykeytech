@@ -23,9 +23,9 @@
                                     <a id="socials-link-1" aria-label="Socials Links 1" title="Socials Links 1" class="space-infront" href="https://github.com/John-Keyes" target="_blank" rel="noopener noreferrer">
                                         <Fa icon={faGithub} id="socials-link-icon-1" color="white" size="2x"/>
                                     </a>
-                                    <a id="socials-link-2" aria-label="Socials Link 2" title="Socials Links 2" class="space-infront" href="https://www.upwork.com/freelancers/~018106e7e0817e9ad0" target="_blank" rel="noopener noreferrer">
+                                    <!--a id="socials-link-2" aria-label="Socials Link 2" title="Socials Links 2" class="space-infront" href="https://www.upwork.com/freelancers/~018106e7e0817e9ad0" target="_blank" rel="noopener noreferrer">
                                         <Fa icon={faUpwork} id="socials-link-icon-2" color="white" size="2x"/>
-                                    </a>
+                                    </a-->
                                     <a id="socials-link-3" aria-label="Socials Link 3" title="Socials Links 3" class="space-infront" href="https://www.instagram.com/lykeytech" target="_blank" rel="noopener noreferrer">
                                         <Fa icon={faInstagram} id="socials-link-icon-3" color="white" size="2x"/>
                                     </a>
