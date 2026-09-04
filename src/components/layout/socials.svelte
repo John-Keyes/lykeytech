@@ -17,9 +17,9 @@
                                 <img id="socials-qrcode" aria-label="Socials QRCode" class="space-above card-img-blur border border-light-purple button-glow-purple" src={qrCode} alt="Website QR Code" width="150" height="150"/>
                                 <h3 id="socials-title" aria-label="Socials Title">Socials</h3>
                                 <div id="socials-links-container" aria-label="Socials Links Container" class="flex flex-row">
-                                    <a id="socials-link-0" aria-label="Socials Links 0" title="Socials Links 0" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">
+                                    <!--a id="socials-link-0" aria-label="Socials Links 0" title="Socials Links 0" href="https://www.linkedin.com/in/john-keyes-ba4a7820b/" target="_blank" rel="noopener noreferrer">
                                         <Fa icon={faLinkedin} id="socials-link-icon-0" color="white" size="2x"/>
-                                    </a>
+                                    </a-->
                                     <a id="socials-link-1" aria-label="Socials Links 1" title="Socials Links 1" class="space-infront" href="https://github.com/John-Keyes" target="_blank" rel="noopener noreferrer">
                                         <Fa icon={faGithub} id="socials-link-icon-1" color="white" size="2x"/>
                                     </a>
